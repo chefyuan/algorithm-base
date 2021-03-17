@@ -112,7 +112,7 @@ class Solution {
 
 **动图解析**
 
-![leetcode560和为k的子数组](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode560和为k的子数组.1266gnukwxr4.gif)
+
 
 **题目代码**
 
