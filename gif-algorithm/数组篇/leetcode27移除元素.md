@@ -75,7 +75,7 @@ class Solution {
 
 **动图解析:**
 
-![](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/leetcode 27 移除数组元素.1vwhe9cxcssg.gif)
+![](https://img-blog.csdnimg.cn/20210317194638700.gif#pic_center)
 
 **题目代码：**
 
