@@ -1,0 +1,76 @@
+### 剑指 offer 3 数组中重复的数字
+
+**题目描述**
+
+找出数组中重复的数字。
+
+
+在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+
+示例 1：
+
+输入：
+[2, 3, 1, 0, 2, 5, 3]
+输出：2 或 3 
+
+**HashSet**
+
+**解析**
+
+这种题目或许一下就让人想到 HashSet，题目描述很清楚就是让我们找到数组中重复的元素，那我们第一下想到的就是 HashSet，我们遍历数组，如果发现 set 含有该元素则返回，不含有则存入哈希表，题目代码也很简单
+
+**题目代码**
+
+```java
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        // HashSet
+        HashSet<Integer> set = new HashSet<Integer>();
+        for (int x : nums) {
+            //发现某元素存在，返回
+            if (set.contains(x)) {
+                return x;
+            }
+            //存入哈希表
+            set.add(x);
+        }
+        return -1;
+    }
+}
+```
+
+**原地置换**
+
+**解析**
+
+这一种方法也是我们经常用到的，主要用于重复出现的数，缺失的数等题目中，下面我们看一下这个原地置换法，原地置换的大体思路就是将我们**指针对应**的元素放到属于他的位置（索引对应的地方）。我们可以这样理解，每个人都有自己的位置，我们需要和别人调换回到属于自己的位置，调换之后，如果发现我们的位置上有人了，则返回。大致意思了解了，下面看代码的执行过程。通过视频一下就可以搞懂啦。
+
+![剑指offer3数组中重复的数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/剑指offer3数组中重复的数.2p6cd5os0em0.gif)
+
+
+
+**题目代码**
+
+```java
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        if (nums.length == 0) {
+            return -1;
+        }
+        for (int i = 0; i < nums.length; ++i) {
+            while (nums[i] != i) {
+                //发现重复元素
+                if (nums[i] == nums[nums[i]]) {
+                    return nums[i];
+                }
+                //置换，将指针下的元素换到属于他的索引处
+                int temp = nums[i];
+                nums[i] = nums[temp];
+                nums[temp] = temp;
+            }
+        }
+        return -1;
+    }
+}
+```
+
