@@ -36,7 +36,7 @@
 
 **视频解析**
 
-![leetcode 523 连续的子数组和](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/leetcode 523 连续的子数组和.1dgqjn0e8we8.gif)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210318094237943.gif#pic_center)
 
 **题目代码**
 
