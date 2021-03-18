@@ -112,7 +112,7 @@ class Solution {
 
 **动图解析**
 
-
+![](https://img-blog.csdnimg.cn/2021031809231883.gif#pic_center)
 
 **题目代码**
 
