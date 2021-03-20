@@ -123,3 +123,5 @@
 - [【唠嗑】厨子的2020](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8E%A8%E5%AD%90%E7%9A%842020.md)
 - [【分享】在家如何高效学习](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0.md)
 - [【科普】比特币原理详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AF%A6%E8%A7%A3.md)
+
+（拼命更新中。。。。。。）
