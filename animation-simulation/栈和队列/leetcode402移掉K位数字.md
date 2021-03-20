@@ -1,4 +1,10 @@
-# 移除K位数字
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+>
+> 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+>
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+
+#### [402. 移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)
 
 今天给大家带来一个栈的中等题目，移掉K位数字，题目很简单，但是很有趣。另外明天继续给大家带来一道栈和队列题目（困难），那么咱们的栈和队列模块就结束啦，下周开始整字符串的题目啦！
 

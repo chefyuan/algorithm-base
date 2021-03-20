@@ -1,5 +1,11 @@
 
 
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+>
+> 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+>
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+
 #### [剑指 Offer 09. 用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 
 今天给大家带来一个有意思的题目，思路很easy，但是刚刷题的小伙伴，示例理解起来可能会有点费劲，花里胡哨一大堆是啥意思啊。在之前的文章《不知道这篇文章合不合你的胃口》中写了栈是先进后出，队列是先进先出。本题让我们用两个先进后出的栈，完成一个先进先出的队列。我们应该怎么实现呢？

@@ -3,7 +3,7 @@
 
 立志用动画将晦涩难懂的算法描述的通俗易懂。
 
-热烈欢迎你的批评指正，但是不接受骂人。感谢支持。
+热烈欢迎你的批评指正，感谢支持。
 
 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
 
