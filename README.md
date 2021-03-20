@@ -81,9 +81,22 @@
 
 ### 栈和队列
 
-
+- [【动画模拟】leetcode 225 队列实现栈](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/225.%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88.md)
+- [【动画模拟】剑指 Offer 09. 用两个栈实现队列](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/%E5%89%91%E6%8C%87Offer09%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97.md)
+- [【动画模拟】leetcode 20 有效的括号](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/leetcode20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7.md)
+- [【动画模拟】leetcode1047 删除字符串中的所有相邻重复项](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/leetcode1047%20%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E7%9B%B8%E9%82%BB%E9%87%8D%E5%A4%8D%E9%A1%B9.md)
+- [【动画模拟】leetcode 402 移掉 K 位数字](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/leetcode402%E7%A7%BB%E6%8E%89K%E4%BD%8D%E6%95%B0%E5%AD%97.md)
 
 ### 二分查找及其变种
+
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
 
 ### 单调队列单调栈
 
