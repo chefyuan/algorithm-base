@@ -71,7 +71,7 @@
 
 - [【动画模拟】剑指 offer 2 倒数第 k 个节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87offer2%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9.md)
 - [【动画模拟】面试题 02.03. 链表中间节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.03.%20%E9%93%BE%E8%A1%A8%E4%B8%AD%E9%97%B4%E8%8A%82%E7%82%B9.md)
-- [【动画模拟】剑指  offer 52 两个链表的第一个公共节点]([algorithm-base/剑指Offer52两个链表的第一个公共节点.md at main · chefyuan/algorithm-base (github.com)](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/链表篇/剑指Offer52两个链表的第一个公共节点.md))
+- [【动画模拟】剑指  offer 52 两个链表的第一个公共节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87Offer52%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E8%8A%82%E7%82%B9.md)
 - [【动画模拟】leetcode 234 回文链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/234.%20%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.md)
 - [【动画模拟】leetcode 142 环形链表2](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode142%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A82.md)
 - [【动画模拟】leetcode 86 分隔链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode86%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8.md)
@@ -89,14 +89,14 @@
 
 ### 二分查找及其变种
 
-- 【动画模拟】
-- 【动画模拟】
-- 【动画模拟】
-- 【动画模拟】
-- 【动画模拟】
-- 【动画模拟】
-- 【动画模拟】
-- 【动画模拟】
+- [【动画模拟】二分查找详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3.md)
+- [【动画模拟】leetcode 35 搜索插入位置](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode35%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.md)
+- [【动画模拟】leetcode 34 查找元素的第一个位置和最后一个位置](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode34%E6%9F%A5%E6%89%BE%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE.md)
+- [【绘图描述】找出第一个大于或小于目标元素的索引](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/%E6%89%BE%E5%87%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%A4%A7%E4%BA%8E%E6%88%96%E5%B0%8F%E4%BA%8E%E7%9B%AE%E6%A0%87%E7%9A%84%E7%B4%A2%E5%BC%95.md)
+- [【动画模拟】leetcode 33 旋转数组中查找目标元素（不含重复元素）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode33%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%9C%89%E5%BA%8F%E6%9F%A5%E6%89%BE%E7%9B%AE%E6%A0%87%E5%85%83%E7%B4%A0(%E4%B8%8D%E5%8C%85%E5%90%AB%E9%87%8D%E5%A4%8D%E5%80%BC).md)
+- [【绘图描述】leetcode 81 旋转数组中查找目标元素（包含重复元素）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode%2081%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%9C%89%E5%BA%8F%E6%9F%A5%E6%89%BE%E7%9B%AE%E6%A0%87%E5%85%83%E7%B4%A0(%E5%8C%85%E5%90%AB%E9%87%8D%E5%A4%8D%E5%80%BC)%20.md)
+- [【绘图面熟】leetcode 153 寻找旋转数组中的最小值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode151%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BC.md)
+- [【动画模拟】leetcode 74 二维数组的二分查找](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
 
 ### 单调队列单调栈
 
@@ -115,3 +115,10 @@
 - [【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 
+### 一些分享
+
+【唠嗑】厨子的2020
+
+【分享】在家如何高效学习
+
+[【科普】比特币原理详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AF%A6%E8%A7%A3.md)
