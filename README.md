@@ -13,19 +13,19 @@
 
 <img src="https://raw.githubusercontent.com/tan45du/test/master/头像.6xbspp91v380.jpg" style="zoom:50%;" />
 
-## 🍖数据结构（前置知识）
+# 📢数据结构（前置知识）
 
 - [【动画模拟】哈希表详解，万字长文](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/Hash%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【动画模拟】栈和队列详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图解析】链表详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 
-### 字符串匹配算法
+### 🔋字符串匹配算法
 
 - [【动画模拟】字符串匹配 BF 算法](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/BF%E7%AE%97%E6%B3%95.md)
 - [【动画模拟】字符串匹配 BM 算法](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/BM.md)
 - [【动画模拟】字符串匹配 KMP 算法](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/KMP.md)
 
-### 排序算法
+### 🧮排序算法
 
 - [【动画模拟】冒泡排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.md)
 - [【动画模拟】简单选择排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F.md)
@@ -35,14 +35,14 @@
 - [【动画模拟】快速排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F.md)
 - [【动画模拟】堆排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%A0%86%E6%8E%92%E5%BA%8F.md)
 
-### 排序算法秒杀题目
+### 🍗排序算法秒杀题目
 
 - [【动画模拟】荷兰国旗](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97.md)
 - [【反证解决】数组合成最小的数，最大数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%90%88%E6%88%90.md)
 - [【动画模拟】逆序对问题](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E9%80%86%E5%BA%8F%E5%AF%B9%E9%97%AE%E9%A2%98.md)
 - [【动画模拟】翻转对问题](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E7%BF%BB%E8%BD%AC%E5%AF%B9.md)
 
-### 数组篇
+### 🍖数组篇
 
 - [【动画模拟】leetcode 1 两数之和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode1%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.md)
 - [【动画模拟】leetcode 27 移除元素](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode27%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.md)
@@ -57,19 +57,19 @@
 - [【动画模拟】leetcode 54 螺旋矩阵](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode54%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5.md)
 - [【动画模拟】leetcode 59 螺旋矩阵2](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode59%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52.md)
 
-### 求和问题
+### 🦞求和问题
 
 - [【动画模拟】leetcode 01 两数之和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%B1%82%E5%92%8C%E9%97%AE%E9%A2%98/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.md)
 - [【动画模拟】leetcode 15 三数之和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%B1%82%E5%92%8C%E9%97%AE%E9%A2%98/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)
 - [【动画模拟】leetcode 18 四数之和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%B1%82%E5%92%8C%E9%97%AE%E9%A2%98/%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.md)
 
-### 求次数问题
+### 🍓求次数问题
 
 - [【动画模拟】leetcode 136 只出现一次的数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%B1%82%E6%AC%A1%E6%95%B0%E9%97%AE%E9%A2%98/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0.md)
 - [【动画模拟】leetcode 137  只出现一次的数字 II](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%B1%82%E6%AC%A1%E6%95%B0%E9%97%AE%E9%A2%98/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B02.md)
 - [【动画模拟】leetcode 260 只出现一次的数字 III](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%B1%82%E6%AC%A1%E6%95%B0%E9%97%AE%E9%A2%98/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B03.md)
 
-### 链表篇
+### 🍅链表篇
 
 - [【动画模拟】剑指 offer 2 倒数第 k 个节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87offer2%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9.md)
 - [【动画模拟】面试题 02.03. 链表中间节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.03.%20%E9%93%BE%E8%A1%A8%E4%B8%AD%E9%97%B4%E8%8A%82%E7%82%B9.md)
@@ -81,7 +81,7 @@
 - [【动画模拟】leetcode 82 删除排序链表的重复元素2](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode82%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0II.md)
 - [【动画模拟】面试题 02.05 链表求和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.05.%20%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C.md)
 
-### 栈和队列
+### 🏳‍🌈栈和队列
 
 - [【动画模拟】leetcode 225 队列实现栈](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/225.%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88.md)
 - [【动画模拟】剑指 Offer 09. 用两个栈实现队列](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/%E5%89%91%E6%8C%87Offer09%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97.md)
@@ -89,7 +89,7 @@
 - [【动画模拟】leetcode1047 删除字符串中的所有相邻重复项](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/leetcode1047%20%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E6%89%80%E6%9C%89%E7%9B%B8%E9%82%BB%E9%87%8D%E5%A4%8D%E9%A1%B9.md)
 - [【动画模拟】leetcode 402 移掉 K 位数字](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/leetcode402%E7%A7%BB%E6%8E%89K%E4%BD%8D%E6%95%B0%E5%AD%97.md)
 
-### 二分查找及其变种
+### 🏬二分查找及其变种
 
 - [【动画模拟】二分查找详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3.md)
 - [【动画模拟】leetcode 35 搜索插入位置](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode35%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.md)
@@ -100,7 +100,7 @@
 - [【绘图面熟】leetcode 153 寻找旋转数组中的最小值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode151%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E5%80%BC.md)
 - [【动画模拟】leetcode 74 二维数组的二分查找](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE.md)
 
-### 单调队列单调栈
+### 💒单调队列单调栈
 
 - [【动画模拟】剑指 Offer 59 - II. 队列的最大值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E5%89%91%E6%8C%87offer59%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
 - [【动画模拟】剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
@@ -109,7 +109,7 @@
 - [【动画模拟】leetcode 739 每日温度](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/leetcode739%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.md)
 - [【动画模拟】leetcode 42 接雨水](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%8E%A5%E9%9B%A8%E6%B0%B4.md)
 
-### 前缀和
+### 🛳前缀和
 
 - [【动画模拟】leetcode 724 寻找数组的中心索引](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode724%E5%AF%BB%E6%89%BE%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E5%BF%83%E7%B4%A2%E5%BC%95.md)
 - [【动画模拟】leetcode 523 连续的子数组和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode523%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.md)
@@ -117,7 +117,7 @@
 - [【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 
-### 一些分享
+### 🛬一些分享
 
 - [【刷题必备】刷题时常用函数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/Leetcode%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0.md)
 - [【唠嗑】厨子的2020](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8E%A8%E5%AD%90%E7%9A%842020.md)
