@@ -1,3 +1,11 @@
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+>
+> 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+>
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+
+### 前缀和详解
+
 今天我们来说一下刷题时经常用到的前缀和思想，前缀和思想和滑动窗口会经常用在求子数组和子串问题上，当我们遇到此类问题时，则应该需要想到此类解题方式，该文章深入浅出描述前缀和思想，读完这个文章就会有属于自己的解题框架，遇到此类问题时就能够轻松应对。
 
 下面我们先来了解一下什么是前缀和。
@@ -22,7 +30,7 @@
 
 好啦，我们开始实战吧。
 
-### leetcode 724. 寻找数组的中心索引
+#### [724. 寻找数组的中心下标](https://leetcode-cn.com/problems/find-pivot-index/)
 
 **题目描述**
 
