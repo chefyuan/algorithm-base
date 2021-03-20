@@ -5,9 +5,9 @@
 
 热烈欢迎你的批评指正，但是不接受骂人。感谢支持。
 
-如果阅读时，发现错误，或者动画不可以显示的问题可以添加我 微信好友  [tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg) ，备注 **github  + 题目 + 问题**
+如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 **github  + 题目 + 问题 **向我反馈
 
-该仓库会一直维护。
+感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 
 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
 
@@ -16,7 +16,6 @@
 - [【动画模拟】哈希表详解，万字长文](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/Hash%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【动画模拟】栈和队列详解](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图解析】链表详解](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
-- [【刷题必备】刷题时常用函数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/Leetcode%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0.md)
 
 ### 字符串匹配算法
 
@@ -118,6 +117,7 @@
 
 ### 一些分享
 
+- [【刷题必备】刷题时常用函数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/Leetcode%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0.md)
 - [【唠嗑】厨子的2020](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8E%A8%E5%AD%90%E7%9A%842020.md)
 - [【分享】在家如何高效学习](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0.md)
 - [【科普】比特币原理详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AF%A6%E8%A7%A3.md)

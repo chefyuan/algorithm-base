@@ -1,6 +1,6 @@
 
 
-### leetcode 59 螺旋矩阵 2
+### [59.螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii)
 
 给你一个正整数 `n` ，生成一个包含 `1` 到 `n2` 所有元素，且元素按顺时针顺序螺旋排列的 `n x n` 正方形矩阵 `matrix` 。
 
@@ -141,3 +141,8 @@ class Solution {
 }
 ```
 
+如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 **github  + 题目 + 问题 **向我反馈
+
+感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+
+另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
