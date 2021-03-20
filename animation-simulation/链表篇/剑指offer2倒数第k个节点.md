@@ -20,15 +20,15 @@
 
 首先一个指针移动K-1位（这里可以根据你的初始化指针决定），然后另一个指针开始启动，他俩移动速度一样，所以他俩始终相差K-1位，当第一个指针到达链表尾部时，第二个指针的指向则为倒数第K个节点。
 
-![倒数k个节点](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/倒数k个节点.3uh5e9jvbwc0.gif)
+![](https://img-blog.csdnimg.cn/img_convert/506c4d70f4c50c66994711c8506462a8.gif)
 
 感觉这个方法既巧妙又简单，大家可以自己动手打一下，这个题目是经典题目。
 
 ```java
 class Solution {
-    public ListNode getKthFromEnd(ListNode head, int k) {
+    public ListNode getKthFromEnd (ListNode head, int k) {
         //特殊情况
-        if(head==null){
+        if (head == null) {
             return head;
         }
         //初始化两个指针
@@ -38,8 +38,8 @@ class Solution {
         pro = head;
         after = head;
         //先移动绿指针到指定位置
-        for(int i = 0; i < k-1; i++) {
-            pro=pro.next;
+        for (int i = 0; i < k-1; i++) {
+            pro = pro.next;
         } 
         //两个指针同时移动
         while (pro.next != null) {

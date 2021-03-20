@@ -7,7 +7,7 @@
 
 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我 微信好友  [tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg) ，备注 **github  + 题目 + 问题**
 
-该仓库会一直维护，尽快将内容补充完毕。
+该仓库会一直维护。
 
 ### 数据结构（前置知识）
 
