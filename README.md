@@ -52,6 +52,7 @@
 - [【绘图描述】leetcode 66 加一](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode66%E5%8A%A0%E4%B8%80.md)
 - [【动画模拟】leetcode 75 颜色分类](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode75%E9%A2%9C%E8%89%B2%E5%88%86%E7%B1%BB.md)
 - [【动画模拟】leetcode 54 螺旋矩阵](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode54%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5.md)
+- [【动画模拟】leetcode 59 螺旋矩阵2](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode59%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52.md)
 
 ### 链表篇
 
