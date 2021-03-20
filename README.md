@@ -66,3 +66,12 @@
 - [【动画模拟】leetcode 82 删除排序链表的重复元素2](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode82%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0II.md)
 - [【动画模拟】面试题 02.05 链表求和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.05.%20%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C.md)
 
+### 栈和队列
+
+### 二分查找及其变种
+
+### 单调栈
+
+### 前缀和
+
+[【动画模拟】leetcode 523 连续的子数组和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode523%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.md)
