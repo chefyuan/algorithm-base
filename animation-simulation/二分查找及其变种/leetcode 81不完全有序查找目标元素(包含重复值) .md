@@ -1,3 +1,9 @@
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+>
+> 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+>
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+
 ## **查找目标元素（含重复元素）**
 
 我们通过刚才的例子了解了，如果在不完全有序的数组中查找目标元素，但是我们的不完全有序数组中是不包含重复元素的，那如果我们的数组中包含重复元素我们应该怎么做呢？见下图
@@ -10,7 +16,7 @@
 
 所以我们需要对其进行改进，我们只需将重复元素去掉即可，当我们的 nums[left] == nums[mid] 时，让 left ++ 即可，比如 1，3，1，1，1此时 nums[mid] == nums[left] 则 left ++,那我们此时会不会错过目标值呢？其实并不会，只是去掉了某些重复元素，如果此时我们的目标元素是3，则我们left++，之后情况就变为了上题中的情况。
 
-### leetcode81. 搜索旋转排序数组 II
+#### [81. 搜索旋转排序数组 II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)
 
 #### **题目描述**
 
