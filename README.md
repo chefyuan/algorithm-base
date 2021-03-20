@@ -56,3 +56,7 @@
 
 ### 链表篇
 
+[【动画模拟】剑指 offer 2 倒数第 k 个节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87offer2%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9.md)
+
+【动画模拟】面试题 02.03. 链表中间节点
+
