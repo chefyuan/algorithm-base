@@ -9,6 +9,8 @@
 
 该仓库会一直维护。
 
+另外希望手机阅读的同学可以来我的 **公众号：袁厨的算法小屋** 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击**刷题小队**进入。 
+
 ### 数据结构（前置知识）
 
 - [【动画模拟】哈希表详解，万字长文](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/Hash%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
@@ -54,6 +56,12 @@
 - [【动画模拟】leetcode 54 螺旋矩阵](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode54%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5.md)
 - [【动画模拟】leetcode 59 螺旋矩阵2](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode59%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52.md)
 
+### 求和问题
+
+### 求次数问题
+
+
+
 ### 链表篇
 
 - [【动画模拟】剑指 offer 2 倒数第 k 个节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87offer2%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9.md)
@@ -70,8 +78,29 @@
 
 ### 二分查找及其变种
 
-### 单调栈
+### 单调队列单调栈
+
+[【动画模拟】剑指 Offer 59 - II. 队列的最大值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E5%89%91%E6%8C%87offer59%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
+
+[【动画模拟】剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
+
+[【动画模拟】leetcode 155 最小栈](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%9C%80%E5%B0%8F%E6%A0%88.md)
+
+[【动画模拟】leetcode 739 每日温度](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/leetcode739%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.md)
+
+[【动画模拟】leetcode 42 接雨水](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%8E%A5%E9%9B%A8%E6%B0%B4.md)
 
 ### 前缀和
 
+[【动画模拟】leetcode 724 寻找数组的中心索引](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode724%E5%AF%BB%E6%89%BE%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E5%BF%83%E7%B4%A2%E5%BC%95.md)
+
 [【动画模拟】leetcode 523 连续的子数组和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode523%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C.md)
+
+[【动画模拟】leetcode 560 和为 K 的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode560%E5%92%8C%E4%B8%BAK%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
+
+[【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
+
+[【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
+
+未完待续
+
