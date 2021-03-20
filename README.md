@@ -16,6 +16,7 @@
 - [【动画模拟】哈希表详解，万字长文](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/Hash%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【动画模拟】栈和队列详解](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图解析】链表详解](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
+- [【刷题必备】刷题时常用函数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/Leetcode%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0.md)
 
 ### 字符串匹配算法
 
@@ -117,6 +118,6 @@
 
 ### 一些分享
 
-- 【唠嗑】厨子的2020
+- [【唠嗑】厨子的2020](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8E%A8%E5%AD%90%E7%9A%842020.md)
 - [【分享】在家如何高效学习](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0.md)
 - [【科普】比特币原理详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AF%A6%E8%A7%A3.md)
