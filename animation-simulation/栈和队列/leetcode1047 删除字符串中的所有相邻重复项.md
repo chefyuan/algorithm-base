@@ -19,7 +19,7 @@
 
 
 
-![删除重复元素对](E:\Typora笔记\CSDN\leetcode通关笔记\博客动图\删除重复元素对.gif)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210320141506967.gif)
 
 
 

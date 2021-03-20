@@ -39,7 +39,7 @@
 
 废话不多说我们直接上动图，把该题吃透！
 
-![移除K位数字](E:\Typora笔记\CSDN\leetcode通关笔记\博客动图\移除K位数字.gif)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210320141440557.gif)
 
 PPT中的文字
 
@@ -73,7 +73,6 @@ class Solution {
             stack.pop();
             k--;
         }
-        //这个是最后栈为空时，删除一位，比如我们的10，删除一位为0，按上面逻辑我们会返回""，所以我们让其返回"0"
          if (stack.isEmpty()) {
              return "0";
          }

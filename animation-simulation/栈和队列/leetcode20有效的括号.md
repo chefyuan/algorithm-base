@@ -41,7 +41,7 @@
 
 下面我们直接上动图。
 
-![合法的括号](E:\Typora笔记\CSDN\leetcode通关笔记\博客动图\合法的括号.gif)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210320141414239.gif)
 
 题目代码：
 
