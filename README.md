@@ -13,7 +13,7 @@
 
 <img src="https://raw.githubusercontent.com/tan45du/test/master/头像.6xbspp91v380.jpg" style="zoom:50%;" />
 
-# 📢数据结构（前置知识）
+### 📢数据结构（前置知识）
 
 - [【动画模拟】哈希表详解，万字长文](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/Hash%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【动画模拟】栈和队列详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
