@@ -8,13 +8,13 @@
 
 这种情况也很容易处理，和咱们的leetcode33搜索旋转排序数组，题目类似，只不过一个需要搜索目标元素，一个搜索最小值，我们搜索目标元素很容易处理，但是我们搜索最小值应该怎么整呢？见下图
 
-![640 (3)](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/640 (3).6ck28790c280.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321134701939.png)
 
 我们需要在一个旋转数组中，查找其中的最小值，如果我们数组是完全有序的很容易，我们只需要返回第一个元素即可，但是此时我们是旋转过的数组。
 
 我们需要考虑以下情况
 
-![640 (4)](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/640 (4).2iwrg2xci9a0.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021032113472644.png)
 
 我们见上图，我们需要考虑的情况是
 
@@ -26,7 +26,7 @@
 
   
 
-![640 (5)](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/640 (5).78yd8y1g14w0.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321134748668.png)
 
 
 
@@ -56,7 +56,7 @@
 
 我们在上面的描述中已经和大家分析过几种情况，下面我们一起来看一下，[5,6,7,0,1,2,3]的执行过程，相信通过这个例子，大家就能把这个题目整透了。
 
-![640 (6)](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/640 (6).1f8qlopg764g.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321134814233.png)
 
 **题目代码**
 
