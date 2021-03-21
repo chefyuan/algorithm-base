@@ -81,6 +81,16 @@
 - [【动画模拟】leetcode 82 删除排序链表的重复元素2](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode82%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0II.md)
 - [【动画模拟】面试题 02.05 链表求和](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.05.%20%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C.md)
 
+### 🚁双指针
+
+- [【动画模拟】二分查找详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3.md)
+- [【动画模拟】leetcode 35 搜索插入位置](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E5%8F%8A%E5%85%B6%E5%8F%98%E7%A7%8D/leetcode35%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.md)
+- [【动画模拟】leetcode 27 移除元素](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode27%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.md)
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+- 【动画模拟】
+
 ### 🏳‍🌈栈和队列
 
 - [【动画模拟】leetcode 225 队列实现栈](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/225.%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88.md)
