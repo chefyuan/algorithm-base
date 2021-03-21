@@ -16,7 +16,7 @@
 
 示例1：
 
-![image-20201114152731856](C:\Users\ybj\AppData\Roaming\Typora\typora-user-images\image-20201114152731856.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321131949755.png)
 
 > 输入：head = [3,2,0,-4], pos = 1
 > 输出：true
@@ -26,7 +26,7 @@
 
 题目很容易理解，让我们判断链表中是否有环，我们只需通过我们的快慢指针即可，我们试想一下，如果链表中有环的话，一个速度快的指针和一个速度慢的指针在环中运动的话，若干圈后快指针肯定可以追上慢指针的。这是一定的。
 
-![image-20201114155240573](C:\Users\ybj\AppData\Roaming\Typora\typora-user-images\image-20201114155240573.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321132015849.png)
 
 好啦，做题思路已经有了，让我们一起看一下代码的执行过程吧。\
 
