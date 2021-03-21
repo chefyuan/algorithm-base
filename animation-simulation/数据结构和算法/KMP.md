@@ -1,5 +1,11 @@
 ## KMP算法（Knuth-Morris-Pratt）
 
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+>
+> 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+>
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+
 我们刚才讲了 BM 算法，虽然不是特别容易理解，但是如果你用心看的话肯定可以看懂的，我们再来看一个新的算法，这个算法是考研时必考的算法。实际上 BM 和 KMP 算法的本质是一样的，你理解了 BM 再来理解 KMP 那就是分分钟的事啦。
 
 我们先来看一个实例
@@ -121,8 +127,3 @@ class Solution {
 
 
 
-如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
-
-感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
-
-另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
