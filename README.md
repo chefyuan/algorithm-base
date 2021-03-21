@@ -88,8 +88,8 @@
 - [【动画模拟】leetcode 27 移除元素](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode27%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0.md)
 - [【动画模拟】leetcode 209 长度最小的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【动画模拟】leetcode 141 环形链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode141%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)
-- 【动画模拟】leetcode 160 相交链表
-- 【动画模拟】
+- [【动画模拟】leetcode 160 相交链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.md)
+- [【动画模拟】leetcode 328 奇偶链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode328%E5%A5%87%E5%81%B6%E9%93%BE%E8%A1%A8.md)
 
 ### 🏳‍🌈栈和队列
 
