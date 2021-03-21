@@ -8,11 +8,11 @@
 
 我们通过刚才的例子了解了，如果在不完全有序的数组中查找目标元素，但是我们的不完全有序数组中是不包含重复元素的，那如果我们的数组中包含重复元素我们应该怎么做呢？见下图
 
-![640](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/640.667bvokp3980.png)
+![640](https://img-blog.csdnimg.cn/img_convert/9f77a33a7ff5b3fd8bbb98d77cb8a499.png)
 
 如上图，如果我们继续使用刚才的代码，则会报错这是为什么呢?我们来分析一下。
 
-![640 (1)](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/640 (1).ue8v83e5fkg.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321134336356.png)
 
 所以我们需要对其进行改进，我们只需将重复元素去掉即可，当我们的 nums[left] == nums[mid] 时，让 left ++ 即可，比如 1，3，1，1，1此时 nums[mid] == nums[left] 则 left ++,那我们此时会不会错过目标值呢？其实并不会，只是去掉了某些重复元素，如果此时我们的目标元素是3，则我们left++，之后情况就变为了上题中的情况。
 
