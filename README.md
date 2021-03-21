@@ -7,7 +7,7 @@
 
 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
 
-感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
+感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助，另外给刚开始刷题，但是不知道从哪里开始刷的同学，整理了一份[**刷题大纲**](https://mp.weixin.qq.com/s/fTMzLrv5Ou2Xf3_br80J0g)，可以先按这个顺序刷，刷完之后应该就能入门了。
 
 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
 
@@ -114,7 +114,7 @@
 
 - [【动画模拟】剑指 Offer 59 - II. 队列的最大值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E5%89%91%E6%8C%87offer59%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
 - [【动画模拟】剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.md)
-- [【动画模拟】leetcode 1438 绝对值不超过限制的最长子数组](https://github.com/chefyuan/algorithm-base/blob/main/gif-algorithm/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode1438%E7%BB%9D%E5%AF%B9%E5%80%BC%E4%B8%8D%E8%B6%85%E8%BF%87%E9%99%90%E5%88%B6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E6%95%B0%E7%BB%84.md)
+- [【动画模拟】leetcode 1438 绝对值不超过限制的最长子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode1438%E7%BB%9D%E5%AF%B9%E5%80%BC%E4%B8%8D%E8%B6%85%E8%BF%87%E9%99%90%E5%88%B6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【动画模拟】leetcode 155 最小栈](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%9C%80%E5%B0%8F%E6%A0%88.md)
 - [【动画模拟】leetcode 739 每日温度](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/leetcode739%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6.md)
 - [【动画模拟】leetcode 42 接雨水](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E5%8D%95%E8%B0%83%E6%A0%88/%E6%8E%A5%E9%9B%A8%E6%B0%B4.md)
