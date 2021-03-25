@@ -51,6 +51,7 @@
 - [【反证解决】数组合成最小的数，最大数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%90%88%E6%88%90.md)
 - [【动画模拟】逆序对问题](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E9%80%86%E5%BA%8F%E5%AF%B9%E9%97%AE%E9%A2%98.md)
 - [【动画模拟】翻转对问题](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E7%BF%BB%E8%BD%AC%E5%AF%B9.md)
+- [【动画模拟】链表插入排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode147%E5%AF%B9%E9%93%BE%E8%A1%A8%E8%BF%9B%E8%A1%8C%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.md)
 
 ### 🍖数组篇
 
