@@ -21,7 +21,7 @@
 
 **另外希望手机阅读的同学可以来我的 <u>[公众号：袁厨的算法小屋](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
 
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/头像.6xbspp91v380.jpg" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png" width = "150px" hight = "150px"/> </div>
 
 ### 📢数据结构（前置知识）
 
