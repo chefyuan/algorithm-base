@@ -8,7 +8,7 @@
 
 我们刚才说过了 BF 算法，但是 BF 算法是有缺陷的，比如我们下面这种情况
 
-![BF第一次](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/BF第一次.2qo0876qvs80.png) 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401200433751.png)
 
 
 
@@ -18,7 +18,7 @@
 
 我们可以跳过其中某些步骤，直接到下面这个步骤。那我们是依据什么原则呢？
 
-![BM3](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/BM3.7iamevkxf0g0.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401200635476.png)
 
 ### 坏字符规则
 
@@ -32,7 +32,7 @@ BM 算法是从后往前进行比较，此时我们发现比较的第一个字�
 
 那我们在模式串中找到坏字符该怎么办呢？
 
-![含有坏字符](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/含有坏字符.10z8yxka8z8g.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401200838199.png)
 
 此时我们的坏字符为 f ,我们在模式串中，查找发现含有坏字符 f,我们则需要移动模式串 T ,将模式串中的 f 和坏字符对齐。见下图。
 
@@ -74,7 +74,7 @@ BM 算法是从后往前进行比较，此时我们发现比较的第一个字�
 
 好后缀其实也很容易理解，我们之前说过 BM 算法是从右往左进行比较，下面我们来看下面这个例子。
 
-![好后缀1](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/好后缀1.4j88yw6hecu0.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401201215799.png)
 
 这里如果我们按照坏字符进行移动是不合理的，这时我们可以使用好后缀规则，那么什么是好后缀呢？
 
@@ -82,7 +82,7 @@ BM 算法是从右往左进行比较，发现坏字符的时候此时 cac  已�
 
 是不是感觉有点拗口，没关系，我们看下图，红色代表坏字符，绿色代表好后缀
 
-![](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/好后缀对其.5wf80nidao80.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401201254453.png)
 
 ![](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/好后缀中间.7b6m6ki25l00.png)
 
