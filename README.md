@@ -17,8 +17,6 @@
 
 **所以我就想着帮助大家尽快度过这段时期，让刷题初期的你对刷题没有那么排斥**
 
-**欢迎你的批评指正，但是不接受骂人，感谢支持，大家如果能感受到厨子的用心，那就给俺点个小星星吧**
-
 
 
 > **PS：基地的所有代码均在刷题网站 AC 大家可以放心食用**
@@ -35,7 +33,7 @@
 
 **刷题笔记**：链接：https://pan.baidu.com/s/1y5u5uzMhdbbzTq6wsrKSKA   提取码：chef 
 
-**另外希望手机阅读的同学可以来我的 <u>[公众号：袁厨的算法小屋](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
+**希望手机阅读的同学可以来我的 <u>[公众号：袁厨的算法小屋](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png" width = "150px" hight = "150px"/> </div>
 
