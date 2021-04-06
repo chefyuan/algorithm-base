@@ -24,7 +24,7 @@
 
 我们来看一下匹配成功部分的所有前缀
 
-![公共前后缀](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/公共前后缀.3wib411usww0.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401204019428.png)
 
 我们的最长公共前后缀如下图，则我们需要这样移动
 
