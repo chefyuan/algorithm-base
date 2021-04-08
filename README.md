@@ -35,7 +35,7 @@
 
 **刷题笔记**：链接：https://pan.baidu.com/s/1gNIhOv83ZMxDEEFXLWChuA   提取码：chef 
 
-**希望手机阅读的同学可以来我的 <u>[公众号：袁厨的算法小屋](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
+**希望手机阅读的同学可以来我的 [公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png)两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png" width = "150px" hight = "150px"/> </div>
 
