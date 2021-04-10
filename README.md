@@ -1,7 +1,5 @@
 # algorithm-base
-**致各位题友的一封信（使用仓库前必读）**
-
-
+### ❤️[**致各位题友的一封信（使用仓库前必读）**](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/read.md)
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/头像.6xbspp91v380.jpg" width = "150px" hight = "150px"/> </div>
 
