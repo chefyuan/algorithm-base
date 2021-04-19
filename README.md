@@ -180,6 +180,7 @@
 - [比特币原理详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%AF%A6%E8%A7%A3.md)
 - [github 年报](https://mp.weixin.qq.com/s/_-6h9D8VaXUtNenTXbTp5w)
 - [如何在电脑同时登陆两个微信](https://mp.weixin.qq.com/s/HpdMxTvR_0XxIUbaRja6cw)
+- [那些贼好用的写作软件](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB.md)
 
 ### 🍖C++学习
 
