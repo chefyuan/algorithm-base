@@ -35,15 +35,15 @@
 
 **需要进阶的老哥，可以看下我之前看过的一些资料，还有一些大神的刷题笔记**
 
-**链接：https://pan.baidu.com/s/1NMDx37vz4BdbpYrk8L7-4g   提取码：jrnb** 
+**链接：https://pan.baidu.com/s/1NMDx37vz4BdbpYrk8L7-4g    提取码：jrnb** 
 
 **希望手机阅读的同学可以来我的 [公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png)两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
 
+**大家也可以来我的知乎唠唠嗑，在那里更新一些其他的东西   [知乎：算法基地](https://www.zhihu.com/people/suan-fa-ji-di)**
+
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png" width = "150px" hight = "150px"/> </div>
 
-**另外想要进阶的老哥，可以看下我之前看过的刷题笔记，写的很棒。扫描上面二维码回复[【鱼香肉丝】]()。**
 
-**大家也可以来我的知乎唠唠嗑，在那里更新一些其他的东西   [知乎：算法基地](https://www.zhihu.com/people/suan-fa-ji-di)**
 
 ------
 
