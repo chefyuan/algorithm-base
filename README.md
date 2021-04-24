@@ -1,4 +1,6 @@
 # **algorithm-base**
+[![](https://img.shields.io/badge/Zhihu-知乎-blue)](https://www.zhihu.com/people/suan-fa-ji-di)@算法基地         [![](https://img.shields.io/badge/WX-公众号-green)](https://mp.weixin.qq.com/s/BcRXQGncUpydeSuQRywTSA)@袁厨的算法小屋       [![](https://img.shields.io/badge/GitHub-仓库-red)](https://github.com/chefyuan/algorithm-base)@算法基地 
+
 ### **❤️致各位题友的一封信（使用仓库前必读）**
 
 大家刚开始刷题时，会有不知道该从何刷起，也看不懂别人题解的情况
