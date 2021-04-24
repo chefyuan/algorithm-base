@@ -1,5 +1,9 @@
 # **algorithm-base**
-[![](https://img.shields.io/badge/Zhihu-知乎-blue)](https://www.zhihu.com/people/suan-fa-ji-di)@算法基地         [![](https://img.shields.io/badge/WX-公众号-green)](https://mp.weixin.qq.com/s/BcRXQGncUpydeSuQRywTSA)@袁厨的算法小屋       [![](https://img.shields.io/badge/GitHub-仓库-red)](https://github.com/chefyuan/algorithm-base)@算法基地 
+<div  align="left">   <a href = "https://www.zhihu.com/people/suan-fa-ji-di"><img src="https://img.shields.io/badge/Zhihu-知乎-blue" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@算法基地</span>&nbsp&nbsp&nbsp&nbsp
+    <a href = "https://mp.weixin.qq.com/s/BcRXQGncUpydeSuQRywTSA"><img src="https://img.shields.io/badge/WX-公众号-green" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@袁厨的算法小屋</span>
+    &nbsp&nbsp&nbsp&nbsp
+    <a href = "https://github.com/chefyuan/algorithm-base"><img src="https://img.shields.io/badge/GitHub-仓库-red" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp @算法基地</span> 
+     </div>
 
 ### **❤️致各位题友的一封信（使用仓库前必读）**
 
