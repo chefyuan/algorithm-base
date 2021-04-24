@@ -229,7 +229,7 @@ HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
 
 往hashmap里面插入数据
 
-```
+```java
 for (int num : arr){
      map.put(num, map.getOrDefault(num, 0) + 1);//如果没有则添加，如果有则加1
  }  
