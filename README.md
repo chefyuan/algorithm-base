@@ -216,6 +216,10 @@
 
 - [操作系统](https://mp.weixin.qq.com/s/lh6an9l6av7XitrVLLyEKw)
 
+### 🍬小程序&云开发学习
+
+- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 鱼皮
+
 ### 🍭面经
 
 - [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
