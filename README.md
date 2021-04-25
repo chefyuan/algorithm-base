@@ -218,7 +218,7 @@
 
 ### 🍬小程序&云开发学习
 
-- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 鱼皮
+- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 [鱼皮](https://github.com/liyupi)
 
 ### 🍭面经
 
