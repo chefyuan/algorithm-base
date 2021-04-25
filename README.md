@@ -101,6 +101,7 @@
 - [【动画模拟】leetcode 75 颜色分类](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode75%E9%A2%9C%E8%89%B2%E5%88%86%E7%B1%BB.md)
 - [【动画模拟】leetcode 54 螺旋矩阵](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode54%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5.md)
 - [【动画模拟】leetcode 59 螺旋矩阵2](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E7%BB%84%E7%AF%87/leetcode59%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B52.md)
+- [【动画模拟】leetcode 233 数字 1 的个数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%91%E6%8C%87offer/1%E7%9A%84%E4%B8%AA%E6%95%B0.md)
 
 ### 🦞求和问题
 
