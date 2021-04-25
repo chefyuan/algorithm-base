@@ -174,7 +174,9 @@
 - [【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 
+### 💡智力题
 
+- [【绘图描述】赛马问题](https://mp.weixin.qq.com/s/w_Gk29yZDIQqhXCKrdKdwA)
 
 ------
 
@@ -190,6 +192,17 @@
 - [如何在电脑同时登陆两个微信](https://mp.weixin.qq.com/s/HpdMxTvR_0XxIUbaRja6cw)
 - [那些贼好用的写作软件](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB.md)
 
+### ⛽️学习经验
+
+- [如何高效找到优质编程项目？](https://mp.weixin.qq.com/s/ZFfbayZLYHi1Sm3iczqzZQ)
+- [万年自学党聊聊如何选择学习资源？](https://mp.weixin.qq.com/s/mlMql9RJCd7THt6rpGb8UA)
+- [有哪些参与项目的好途径？](https://mp.weixin.qq.com/s/zPQpPKeSojR7A26IfVaKIQ)
+- [编程入门到进大厂，你需要这套学习方法](https://mp.weixin.qq.com/s/nZ9kv8Q0WJdkZgOgyWW2jA)
+
+### 💎找编程资源
+
+- [编程导航](https://www.code-nav.cn)
+
 ### 🍖C++学习
 
 - [程序喵大人](https://github.com/fightingwangzq/cpp-learning)
@@ -203,7 +216,13 @@
 
 - [操作系统](https://mp.weixin.qq.com/s/lh6an9l6av7XitrVLLyEKw)
 
+### 🍬小程序&云开发学习
+
+- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 [鱼皮](https://github.com/liyupi)
+
 ### 🍭面经
+
+- [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
 
 - [一个半月拿到阿里字节拼多多美团offer总结](https://mp.weixin.qq.com/s/YziTP0jqYSNS0mP18qGlAw)
 
