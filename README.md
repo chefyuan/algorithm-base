@@ -181,10 +181,6 @@
 
 
 
-### 💡智力题
-
-- [【绘图描述】赛马问题](https://mp.weixin.qq.com/s/w_Gk29yZDIQqhXCKrdKdwA)
-
 ### 🛬一些分享
 
 - [刷题时常用函数](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/Leetcode%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%92%8C%E5%87%BD%E6%95%B0.md)
