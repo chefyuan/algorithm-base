@@ -33,6 +33,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -53,6 +55,31 @@ class Solution {
         return rearr;
     }
 }
+```
+
+C++ Code:
+```c++
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        if(nums.size()<2)
+            return {};
+        vector<int> ans;
+        for(int i=0;i<nums.size();++i)
+        {
+            for(int j=i+1;j<nums.size();++j)
+            {
+                if(nums[i]+nums[j]==target)
+                {
+                    ans.push_back(i);
+                    ans.push_back(j);
+                    return ans;
+                }
+            }
+        }
+        return ans;
+    }
+};
 ```
 
 **哈希表**
