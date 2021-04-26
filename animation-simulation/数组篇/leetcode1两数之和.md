@@ -69,6 +69,8 @@ class Solution {
 
 **题目代码：**
 
+Java Code:
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -86,6 +88,38 @@ class Solution {
 
     }
 }
+```
+
+C++  Code:
+
+```cpp
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> m;
+        for (int i = 0; i < nums.size(); ++i) {
+            int t = target - nums[i];
+            if (m.count(t)) return { m[t], i };
+            m[A[i]] = i;
+        }
+        return {};
+    }
+};
+```
+
+JS Code:
+
+```js
+const twoSum = function (nums, target) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const diff = target - nums[i];
+    if (map.has(diff)) {
+      return [map.get(diff), i];
+    }
+    map.set(nums[i], i);
+  }
+};
 ```
 
 
