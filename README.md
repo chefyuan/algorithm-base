@@ -201,8 +201,8 @@
 ### 🍖其他知识
 
 - [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning) by 帅强 
-- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 [鱼皮](https://github.com/liyupi)
-- [找编程资源](https://www.code-nav.cn) by 编程导航
+- [编程资源](https://www.code-nav.cn) by [鱼皮](https://github.com/liyupi)
+- [Java知识地图](https://github.com/smileArchitect/JavaMap)  by 帅小雷
 
 ### 🍰数据库学习
 
