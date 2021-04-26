@@ -50,6 +50,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {    
@@ -73,6 +75,28 @@ class Solution {
         return i;       
     }
 }
+```
+C++ Code:
+```c++
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int len=nums.size();
+        if(len==0)
+            return len;
+        int i=0;
+        for(;i<len;++i){
+            if(nums[i]==val){
+                for(int j=i;j<len-1;++j){
+                    nums[j]=nums[j+1];
+                }
+                --i;
+                --len;
+            }
+        }
+        return len;
+    }
+};
 ```
 
 **双指针**
@@ -106,6 +130,26 @@ class Solution {
           return i;
     }
 }
+```
+
+C++ Code:
+```c++
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int len=nums.size();
+        if(len==0)
+            return len;
+        int i=0;
+        for(int j=0;j<len;++j){
+            if(nums[j]==val)
+                continue;
+            else
+                nums[i++]=nums[j];
+        }
+        return i;
+    }
+};
 ```
 
 Python3 Code:
