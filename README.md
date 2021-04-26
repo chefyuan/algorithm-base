@@ -201,7 +201,7 @@
 ### 🍖其他知识
 
 - [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning) by 帅强 
-- [编程资源](https://www.code-nav.cn) by [鱼皮](https://github.com/liyupi)
+- [编程资源](https://www.code-nav.cn) by 鱼皮
 - [Java知识地图](https://github.com/smileArchitect/JavaMap)  by 帅小雷
 
 ### 🍰数据库学习
