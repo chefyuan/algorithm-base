@@ -85,6 +85,8 @@ class Solution {
 
 **题目代码：**
 
+Java Code:
+
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {
@@ -104,5 +106,18 @@ class Solution {
           return i;
     }
 }
+```
+
+Python3 Code:
+
+```py
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        i = 0
+        for j in range(len(nums)):
+            if nums[j] != val:
+                nums[i] = nums[j]
+                i += 1
+        return i
 ```
 
