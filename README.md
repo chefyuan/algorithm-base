@@ -221,5 +221,8 @@
 
 拼命更新中。。。。。。
 
+------
 
 
+
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/赞赏码.2mrhxsmxexa0.png" width = "200px" hight = "200px"/> </div>
