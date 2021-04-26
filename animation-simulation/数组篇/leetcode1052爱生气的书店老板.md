@@ -56,6 +56,8 @@ winsum 也会发生变化， winsum 需要加上新加入窗口的值，减去�
 
 好啦，知道怎么做了，我们直接开整吧。
 
+Java Code:
+
 ```java
 class Solution {
     public int maxSatisfied(int[] customers, int[] grumpy, int X) {
@@ -101,5 +103,16 @@ class Solution {
 }
 ```
 
+Python3 Code:
+
+```py
+class Solution:
+    def maxSatisfied(self, customers: List[int], grumpy: List[int], X: int) -> int:
+        t = ans = sum(customers[:X]) + sum(map(lambda x: customers[X+x[0]] if x[1] == 0 else 0, enumerate(grumpy[X:])))
+        for j in range(X, len(customers)):
+            t += customers[j] * grumpy[j] - customers[j-X] * grumpy[j-X]
+            ans = max(ans, t)
+        return ans
+```
  
 

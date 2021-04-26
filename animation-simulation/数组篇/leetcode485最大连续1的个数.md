@@ -66,6 +66,8 @@ class Solution {
 
 好啦，下面我们直接看代码吧。
 
+Java Code:
+
 ```java
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
@@ -86,5 +88,22 @@ class Solution {
 
     }
 }
+```
+
+Python3 Code:
+
+
+```py
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        ans = i = t = 0
+        for j in range(len(nums)):
+            if nums[j] == 1:
+                t += 1
+                ans = max(ans, t)
+            else:
+                i = j + 1
+                t = 0
+        return ans
 ```
 
