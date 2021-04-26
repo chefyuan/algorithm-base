@@ -27,13 +27,20 @@
 
 所以基地里的题解都尽量用动画模拟，加深大家对题目的理解。往下看吧
 
+因为一个人的精力有限，所以基基地目前只有 JAVA 代码，欢迎大家贡献其他版本代码。
 
+注意事项
 
-> **PS：基地的所有代码均在刷题网站 AC 大家可以放心食用**
+> - 提交的代码必须符合编码规范
+> - 必须经过测试，可以在刷题网站上面 AC 
+> - 符合动画思想
+> - 可以对代码进行简写，难懂的地方注意添加注释，因为我们的基地主要是为刚刷题的同学服务，所以就尽量让大家容易理解一些。
 
+如果想要贡献代码的大佬可以添加我的微信 **tan45du_one** 备注贡献仓库即可。
 
+在这里先替所有使用仓库的同学，谢谢各位贡献者啦。
 
-如果老哥觉得仓库很用心的话，麻烦老哥点个 star ，这也是我一直更新下去的动力。
+如果老哥觉得仓库很用心的话，麻烦大佬帮忙点个 star ，这也是我们一直更新下去的动力。
 
 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助，
 
@@ -191,20 +198,11 @@
 - [如何在电脑同时登陆两个微信](https://mp.weixin.qq.com/s/HpdMxTvR_0XxIUbaRja6cw)
 - [那些贼好用的写作软件](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB.md)
 
-### ⛽️学习经验
+### 🍖其他知识
 
-- [如何高效找到优质编程项目？](https://mp.weixin.qq.com/s/ZFfbayZLYHi1Sm3iczqzZQ)
-- [万年自学党聊聊如何选择学习资源？](https://mp.weixin.qq.com/s/mlMql9RJCd7THt6rpGb8UA)
-- [有哪些参与项目的好途径？](https://mp.weixin.qq.com/s/zPQpPKeSojR7A26IfVaKIQ)
-- [编程入门到进大厂，你需要这套学习方法](https://mp.weixin.qq.com/s/nZ9kv8Q0WJdkZgOgyWW2jA)
-
-### 💎找编程资源
-
-- [编程导航](https://www.code-nav.cn)
-
-### 🍖C++学习
-
-- [程序喵大人](https://github.com/fightingwangzq/cpp-learning)
+- [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning) by 帅强 
+- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 [鱼皮](https://github.com/liyupi)
+- [找编程资源](https://www.code-nav.cn) by 编程导航
 
 ### 🍰数据库学习
 
@@ -215,16 +213,10 @@
 
 - [操作系统](https://mp.weixin.qq.com/s/lh6an9l6av7XitrVLLyEKw)
 
-### 🍬小程序&云开发学习
-
-- [什么是云开发？](https://mp.weixin.qq.com/s/m4ok3OW29TberTtounLdcw) by 腾讯云开发高级布道师 [鱼皮](https://github.com/liyupi)
-
 ### 🍭面经
 
-- [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
-
 - [一个半月拿到阿里字节拼多多美团offer总结](https://mp.weixin.qq.com/s/YziTP0jqYSNS0mP18qGlAw)
-
+- [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
 - [在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
 
 拼命更新中。。。。。。
