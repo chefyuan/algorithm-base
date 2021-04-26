@@ -83,6 +83,8 @@ class Solution {
 
 题目代码：
 
+Java Code:
+
 ```java
 class Solution {
     public int firstMissingPositive(int[] nums) {
@@ -113,5 +115,31 @@ class Solution {
         }
     }
 }
+```
+
+Python3 Code:
+
+```py
+class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        n = len(nums)
+
+        def swap(nums, a, b):
+            temp = nums[a]
+            nums[a] = nums[b]
+            nums[b] = temp
+        i = 0
+        while i < n:
+            num = nums[i]
+            # 已经就位
+            if num <= 0 or num >= n or num == i + 1 or nums[num - 1] == num:
+                i += 1
+            # 可以交换
+            else:
+                swap(nums, i, num - 1)
+        for i in range(n):
+            if nums[i] != i + 1:
+                return i + 1
+        return n + 1
 ```
 
