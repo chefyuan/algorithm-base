@@ -122,6 +122,8 @@ class Solution {
 
 **题目代码**
 
+Java Code：
+
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
@@ -148,5 +150,36 @@ class Solution {
         return count;
     }
 }
+```
+
+C++ Code：
+
+```cpp
+public:
+    int subarraySum(vector<int>& nums, int k) {
+         if (nums.size() == 0) {
+            return 0;
+        }
+        map <int, int> m; 
+        //细节，这里需要预存前缀和为 0 的情况，会漏掉前几位就满足的情况
+        //例如输入[1,1,0]，k = 2 如果没有这行代码，则会返回0,漏掉了1+1=2，和1+1+0=2的情况
+        //输入：[3,1,1,0] k = 2时则不会漏掉
+        //因为presum[3] - presum[0]表示前面 3 位的和，所以需要m.insert({0,1}),垫下底
+        m.insert({0, 1});
+        int count = 0;
+        int presum = 0;
+        for (int x : nums) {
+            presum += x;
+            //当前前缀和已知，判断是否含有 presum - k的前缀和，那么我们就知道某一区间的和为 k 了。
+            if (m.find(presum - k) != m.end()) {
+                count += m[presum - k];//获取presum-k前缀和出现次数
+            }
+            //更新
+           if(m.find(presum) != m.end()) m[presum]++;
+           else m[presum] = 1;
+        }
+        return count;
+    }
+};
 ```
 
