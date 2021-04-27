@@ -61,6 +61,8 @@
 
 理解了我们前缀和的概念（不知道好像也可以做，这个题太简单了哈哈）。我们可以一下就能把这个题目做出来，先遍历一遍求出数组的和，然后第二次遍历时，直接进行对比左半部分和右半部分是否相同，如果相同则返回 true，不同则继续遍历。
 
+Java Code: 
+
 ```java
 class Solution {
     public int pivotIndex(int[] nums) {
@@ -82,4 +84,27 @@ class Solution {
 }
 ```
 
-### 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        int presum = 0;
+        //数组的和
+        for (int x : nums) {
+           presum += x;
+        }      
+        int leftsum = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            //发现相同情况
+            if (leftsum == presum - nums[i] - leftsum) {
+                return i;
+            }
+            leftsum += nums[i];          
+        }
+        return -1;
+    }
+};
+```
+

@@ -43,6 +43,8 @@
 
 我们来解析一下哈希表，key 代表的是含有 1 个奇数的前缀区间，value 代表这种子区间的个数，含有两个，也就是nums[0],nums[0,1].后面含义相同，那我们下面直接看代码吧，一下就能读懂。
 
+Java Code:
+
 ```java
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
@@ -70,7 +72,39 @@ class Solution {
 }
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    int numberOfSubarrays(vector<int>& nums, int k) {
+        if (nums.size() == 0) {
+            return 0;
+        }
+        map <int, int> m;
+        //统计奇数个数，相当于我们的 presum
+        int oddnum = 0;
+        int count = 0;
+        m.insert({0,1});
+        for (int & x : nums) {
+            // 统计奇数个数
+            oddnum += x & 1;
+            // 发现存在，则 count增加
+            if (m.find(oddnum - k) != m.end()) {
+             count += m[oddnum - k];
+            }
+            //存入
+            if(m.find(oddnum) != m.end()) m[oddnum]++;
+            else m[oddnum] = 1; 
+        }
+        return count;
+    } 
+};
+```
+
 但是也有一点不同，就是我们是统计奇数的个数，数组中的奇数个数肯定不会超过原数组的长度，所以这个题目中我们可以用数组来模拟 HashMap ，用数组的索引来模拟 HashMap 的 key，用值来模拟哈希表的 value。下面我们直接看代码吧。
+
+Java Code:
 
 ```java
 class Solution {
@@ -93,4 +127,27 @@ class Solution {
 }
 ```
 
-### 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    int numberOfSubarrays(vector<int>& nums, int k) {
+        int len = nums.size();
+        vector <int> map(len + 1, 0);
+        map[0] = 1;
+        int oddnum = 0;
+        int count = 0;
+        for (int i = 0; i < len; ++i) {
+            //如果是奇数则加一，偶数加0，相当于没加
+            oddnum += nums[i] & 1;
+            if (oddnum - k >= 0) {
+                count += map[oddnum-k];
+            }
+            map[oddnum]++;
+        }
+        return count;
+    } 
+};
+```
+

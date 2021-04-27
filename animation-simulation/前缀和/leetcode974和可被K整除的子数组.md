@@ -87,6 +87,8 @@ int key = (presum % K + K) % K;
 
 那么这个题目我们可不可以用数组，代替 map 呢？当然也是可以的，因为此时我们的哈希表存的是余数，余数最大也只不过是 K-1所以我们可以用固定长度 K 的数组来模拟哈希表。
 
+Java Code:
+
 ```java
 class Solution {
     public int subarraysDivByK(int[] A, int K) {
@@ -105,5 +107,28 @@ class Solution {
         return count;
     }
 }
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    int subarraysDivByK(vector<int>& A, int K) {
+        vector <int> map (K, 0);
+      	int len = A.size();
+        int count = 0;
+        int presum = 0;
+        map[0] = 1;
+         for (int i = 0; i < len; ++i) {
+            presum += A[i];
+            //求key
+            int key = (presum % K + K) % K;
+            //count添加次数，并将当前的map[key]++;
+            count += (map[key]++);         
+        }
+        return count;
+    }
+};
 ```
 
