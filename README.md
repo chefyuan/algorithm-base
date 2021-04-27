@@ -52,7 +52,7 @@
 
 >  **下载地址：[点我](https://pan.baidu.com/s/1xiCHAbX7HSGyE9yX5KPvJA )  提取码：jrnb**
 
-想要手机阅读的大佬，可以来我的[公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png)**，另外想要**和题友们一起刷题**的同学可以来我的小屋，**点击**刷题小队**进入，另外群里老哥还会不定期发布内推消息，面经等，需要的可以进一下,不过来的时候**记得备注目的**，希望这个群能对你们有一丢丢帮助吧，一起加油。
+想要手机阅读的大佬，可以来我的[公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png)进行阅读，两个平台同步更新，另外想要和题友们一起刷题**的同学可以来我的小屋，**点击**刷题小队**进入，另外群里老哥还会不定期发布内推消息，面经等，需要的可以进一下,不过来的时候**记得备注**，希望这个群能对你们有一丢丢帮助吧，一起加油。
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png" width = "150px" hight = "150px"/> </div>
 
