@@ -46,6 +46,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public boolean checkSubarraySum(int[] nums, int k) {
@@ -71,5 +73,31 @@ class Solution {
 }
 ```
 
+C++ Code:
 
+```cpp
+class Solution {
+public:
+    bool checkSubarraySum(vector<int>& nums, int k) {
+        map <int, int> m;
+        //细节2
+        m.insert({0,-1});
+        int presum = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            presum += nums[i];
+            //细节1，防止 k 为 0 的情况
+            int key = k == 0 ? presum : presum % k;
+            if (m.find(key) != m.end()) {
+                if (i - m[key] >= 2) {
+                     return true;
+                }
+                //因为我们需要保存最小索引，当已经存在时则不用再次存入，不然会更新索引值
+                continue;           
+            } 
+            m.insert({key, i});                  
+        }
+        return false;
+    }
+};
+```
 

@@ -58,6 +58,7 @@ class CQueue {
 
 大家可以点击该链接[剑指 Offer 09. 用两个栈实现队列](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)去实现一下，下面我们看代码。
 
+Java Code:
 ```java
 class CQueue {
      //初始化两个栈
@@ -87,5 +88,26 @@ class CQueue {
         return stack2.pop();
     }
 }
+```
+
+JS Code:
+```javascript
+var CQueue = function() {
+    this.stack1 = [];
+    this.stack2 = [];
+};
+
+CQueue.prototype.appendTail = function(value) {
+    this.stack1.push(value);
+};
+
+CQueue.prototype.deleteHead = function() {
+    if (!this.stack2.length) {
+        while(this.stack1.length) {
+            this.stack2.push(this.stack1.pop());
+        }
+    }
+    return this.stack2.pop() || -1;
+};
 ```
 

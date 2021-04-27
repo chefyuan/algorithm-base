@@ -38,6 +38,7 @@
 
 **题目代码**
 
+Java Code:
 ```java
 public class Solution {
     public boolean hasCycle(ListNode head) {
@@ -56,3 +57,18 @@ public class Solution {
 }
 ```
 
+JS Code:
+```javascript
+var hasCycle = function(head) {
+    let fast = head;
+    let slow = head;
+    while (fast && fast.next) {
+        fast = fast.next.next;
+        slow = slow.next;
+        if (fast === slow) {
+            return true;
+        }
+    }
+    return false;
+};
+```
