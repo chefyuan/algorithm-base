@@ -46,15 +46,15 @@
 
 > 另外我和几位老哥，给刚开始刷题，但是不知道从哪里开始刷的同学，整理了一份 【刷题大纲 】可以先按这个顺序刷，刷完之后应该就能入门，当然该仓库的大部分题解也是来自那个大纲。
 >
-> 大家可以扫描下方二维码，**回复【刷题大纲】阅读**。
+> 需要的同学可以去刷题群里看一下。
 
-我还把我之前学习算法时，**对我帮助很大的算法书籍，谷歌大神的刷题笔记，面经等整理在了云盘**，大家如果需要可以自己下载，比较适合有一定基础的同学。
+我把我之前学习算法时，**对我帮助很大的算法书籍，谷歌大神的刷题笔记，面经等整理在了云盘**，大家如果需要可以自己下载，比较适合有一定基础的同学。
 
 >  **下载地址：[点我](https://pan.baidu.com/s/1xiCHAbX7HSGyE9yX5KPvJA )  提取码：jrnb**
 
-希望手机阅读的同学可以来我的 [公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png)两个平台同步，**想要和题友一起刷题，互相监督**的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入，不过来的时候要记得备注。
+**想要和题友一起刷题，互相监督**的同学，扫描下方二维码进入，如果二维码过期，或者满 200 人 不能扫描进入时，可以添加我的微信 [**tan45du_one**](https://cdn.jsdelivr.net/gh/tan45du/tan45du.github.io@master/个人微信.15egrcgqd94w.jpg) 备注 **GitHub 进群**，我会尽快拉你，群里大佬挺多，可以学习下他们的学习方法，拜了个拜。
 
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片编辑_20210427140351.21ladtlz7p4w.jpg" width = "150px" hight = "150px"/> </div>
 
 
 
