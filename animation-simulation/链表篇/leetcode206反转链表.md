@@ -33,6 +33,7 @@ low = temp 即可。然后重复执行上诉操作直至最后，这样则完成
 
 我会对每个关键点进行注释，大家可以参考动图理解。
 
+Java Code:
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
@@ -62,9 +63,27 @@ class Solution {
 
 }
 ```
+JS Code:
+```javascript
+var reverseList = function(head) {
+    if(!head || !head.next) {
+        return head;
+    }
+    let low = null;
+    let pro = head;
+    while (pro) {
+        let temp = pro;
+        pro = pro.next;
+        temp.next = low;
+        low = temp;
+    }
+    return low;
+};
+```
 
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
 
+Java Code:
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
@@ -84,5 +103,18 @@ class Solution {
     }
 }
 
+```
+
+JS Code:
+```javascript
+var reverseList = function(head) {
+    if (!head || !head.next) {
+        return head;
+    }
+    let pro = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return pro;
+};
 ```
 
