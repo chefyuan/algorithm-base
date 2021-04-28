@@ -33,6 +33,10 @@ low = temp 即可。然后重复执行上诉操作直至最后，这样则完成
 
 我会对每个关键点进行注释，大家可以参考动图理解。
 
+
+
+**题目代码**
+
 Java Code:
 ```java
 class Solution {
@@ -81,7 +85,43 @@ var reverseList = function(head) {
 };
 ```
 
+C++代码
+
+```cpp
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+         //特殊情况
+        if (head == nullptr || head->next == nullptr) {
+            return head;
+        }
+        //反转
+        return reverse(head);
+    }
+    ListNode * reverse (ListNode * head) {
+        
+        ListNode * low = nullptr;
+        ListNode * pro = head;
+        while (pro != nullptr) {
+            //代表橙色指针
+            ListNode * temp = pro;
+            //移动绿色指针
+            pro = pro->next;
+            //反转节点
+            temp->next = low;
+            //移动黄色指针
+            low = temp;
+        }     
+        return low;
+    }
+};
+```
+
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
+
+
+
+**题目代码**
 
 Java Code:
 ```java
@@ -115,6 +155,29 @@ var reverseList = function(head) {
     head.next.next = head;
     head.next = null;
     return pro;
+};
+```
+
+C++代码:
+
+```cpp
+class Solution {
+public:
+    ListNode * reverseList(ListNode * head) {
+        //结束条件
+        if (head == nullptr || head->next == nullptr) {
+            return head;
+        }
+        //保存最后一个节点
+        ListNode * pro = reverseList(head->next);
+        //将节点进行反转。我们可以这样理解 4->next->next = 4;
+        //4->next = 5；
+        //则 5->next = 4 则实现了反转
+        head->next->next = head;
+        //防止循环
+        head->next = nullptr;
+        return pro;
+    }
 };
 ```
 

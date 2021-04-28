@@ -39,6 +39,10 @@
 
 ![删除重复节点2](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/删除重复节点2.3btmii5cgxa0.gif)
 
+**题目代码**
+
+Java Code:
+
 ```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
@@ -66,5 +70,37 @@ class Solution {
      return ret.next;
     }
 }
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        if(head == nullptr || head->next == nullptr){
+            return head;
+        }
+        ListNode * pre = head;
+        ListNode * low = new ListNode(0);
+        low->next = pre;
+        ListNode * ret = new ListNode(-1);
+        ret = low;
+        while(pre != nullptr && pre->next != nullptr) {
+            if (pre->val == pre->next->val) {
+                while (pre != nullptr && pre->next != nullptr && pre->val == pre->next->val) {
+                    pre = pre->next;
+                }
+                pre = pre->next;
+                low->next = pre;                     
+             }
+             else{
+                 pre = pre->next;
+                 low = low->next;
+             }
+        }
+     return ret->next;
+    }
+};
 ```
 

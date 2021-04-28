@@ -34,6 +34,12 @@
 
 是不是很容易理解，下面我们来看代码吧。
 
+
+
+**题目代码**
+
+Java Code:
+
 ```java
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
@@ -77,5 +83,49 @@ class Solution {
         return low;
     }
 }
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
+        ListNode * temp = new ListNode(-1);
+        temp->next = head;
+        ListNode * pro = temp;
+        //来到 left 节点前的一个节点
+        int i = 0;
+        for (; i < left-1; ++i) {
+            pro = pro->next;
+        }
+        // 保存 left 节点前的第一个节点
+        ListNode * leftNode = pro;
+        for (; i < right; ++i) {
+            pro = pro->next;
+        }
+        // 保存 right 节点后的节点
+        ListNode * rightNode = pro->next;
+        //切断链表
+        pro->next = nullptr;
+        ListNode * newhead = leftNode->next;
+        leftNode->next = nullptr;
+        leftNode->next = rever(newhead);
+        //重新接头
+        newhead->next = rightNode;
+        return temp->next;
+    }
+    ListNode * rever (ListNode * head) {
+        ListNode * low = nullptr;
+        ListNode * pro = head;
+        while (pro != nullptr) {
+            ListNode * temp = pro;
+            pro = pro->next;
+            temp->next = low;
+            low = temp;
+        }     
+        return low;
+    }
+};
 ```
 

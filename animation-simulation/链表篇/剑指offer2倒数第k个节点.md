@@ -30,6 +30,10 @@
 
 感觉这个方法既巧妙又简单，大家可以自己动手打一下，这个题目是经典题目。
 
+**题目代码**
+
+Java Code:
+
 ```java
 class Solution {
     public ListNode getKthFromEnd (ListNode head, int k) {
@@ -56,5 +60,36 @@ class Solution {
         return after;
     }
 }
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    ListNode * getKthFromEnd(ListNode * head, int k) {
+         //特殊情况
+        if (head == nullptr) {
+            return head;
+        }
+        //初始化两个指针
+        ListNode * pro = new ListNode(-1);
+        ListNode * after = new ListNode(-1);
+        //定义指针指向
+        pro = head;
+        after = head;
+        //先移动绿指针到指定位置
+        for (int i = 0; i < k-1; i++) {
+            pro = pro->next;
+        } 
+        //两个指针同时移动
+        while (pro->next != nullptr) {
+            pro = pro->next;
+            after = after->next;
+        }
+        //返回倒数第k个节点
+        return after;
+    }
+};
 ```
 
