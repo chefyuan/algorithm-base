@@ -82,6 +82,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public ListNode insertionSortList(ListNode head) {
@@ -121,7 +123,45 @@ class Solution {
 }
 ```
 
- 
+ C++ Code:
+
+```cpp
+class Solution {
+public:
+    ListNode* insertionSortList(ListNode* head) {
+        if (head == nullptr && head->next == nullptr) {
+            return head;
+        }
+        //哑节点
+        ListNode * dummyNode = new ListNode(-1);
+        dummyNode->next = head;
+        //pre负责指向新元素，last 负责指向新元素的前一元素
+        //判断是否需要执行插入操作
+        ListNode * pre = head->next;
+        ListNode * last = head;
+        ListNode * temphead = dummyNode;
+        while (pre != nullptr) {
+            //不需要插入到合适位置，则继续往下移动
+            if (last->val <= pre->val) {
+                pre = pre->next;
+                last = last->next;
+                continue;
+            }               
+            //开始出发，查找新元素的合适位置
+            temphead = dummyNode;
+            while (temphead->next->val <= pre->val) {
+                temphead = temphead->next;
+            }           
+            //此时我们已经找到了合适位置，我们需要进行插入，大家可以画一画
+            last->next = pre->next;
+            pre->next = temphead->next;
+            temphead->next = pre;
+            pre = last->next;
+        }
+        return dummyNode->next;
+    }
+};
+```
 
 
 

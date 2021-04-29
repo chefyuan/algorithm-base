@@ -34,6 +34,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 /**
  * Definition for singly-linked list.
@@ -75,7 +77,41 @@ class Solution {
 }
 ```
 
+C++ Code:
 
+```cpp
+class Solution {
+public:
+    ListNode* partition(ListNode* head, int x) {
+        if (head == nullptr) {
+            return head;
+        }
+        ListNode * pro = head;
+        ListNode * big = new ListNode(-1);
+        ListNode * small = new ListNode(-1); 
+        ListNode * headbig = big; 
+        ListNode * headsmall =small;  
+        //分     
+        while (pro != nullptr) {           
+            //大于时，放到 big 链表上
+            if (pro->val >= x) {
+                big->next = pro;
+                big = big->next;
+            // 小于放到 small 链表上
+            }else {
+                small->next = pro;
+                small = small->next;
+            }
+            pro = pro->next;
+        }
+        //细节
+        big->next = nullptr;
+        //合
+        small->next = headbig->next;
+        return headsmall->next;
+    }
+};
+```
 
 
 
