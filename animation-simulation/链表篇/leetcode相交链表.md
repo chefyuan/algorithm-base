@@ -79,6 +79,24 @@ public:
 };
 ```
 
+JS Code:
+```javascript
+var getIntersectionNode = function(headA, headB) {
+    let tempa = headA, tempb = headB
+    const map = new Map()
+    while(tempa){
+        map.set(tempa, 1)
+        tempa = tempa.next
+    }
+    while(tempb){
+        if(map.get(tempb))
+            return tempb
+        tempb = tempb.next
+    }
+    return tempb
+};
+```
+
 下面这个方法比较巧妙，不是特别容易想到，大家可以自己实现一下，这个方法也是利用我们的双指针思想。
 
 下面我们直接看动图吧，特别直观，一下就可以搞懂。
@@ -125,6 +143,18 @@ public:
         }
         return tempa;        
     }
+};
+```
+
+JS Code:
+```javascript
+var getIntersectionNode = function(headA, headB) {
+    let tempa = headA, tempb = headB
+    while(tempa !== tempb){
+        tempa = tempa ? tempa.next : headB
+        tempb = tempb ? tempb.next : headA
+    }
+    return tempa
 };
 ```
 
