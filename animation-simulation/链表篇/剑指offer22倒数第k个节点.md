@@ -93,3 +93,18 @@ public:
 };
 ```
 
+JS Code:
+```javascript
+var getKthFromEnd = function(head, k) {
+    if(!head) return head;
+    let pro = head, after = head;
+    for(let i = 0; i < k - 1; i++){
+        pro = pro.next;
+    }
+    while(pro.next){
+        pro = pro.next;
+        after = after.next;
+    }
+    return after;
+};
+```
