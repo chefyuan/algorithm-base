@@ -68,7 +68,7 @@
 - [【动画模拟】栈和队列详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图解析】链表详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图描述】递归详解](https://mp.weixin.qq.com/s/A4xG9IbQUjFwQoy9YcneCw)
-- 【动画模拟】树
+- [【动画模拟】树](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E5%9F%BA%E7%A1%80.md)
 
 ### 🔋字符串匹配算法
 
