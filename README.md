@@ -234,9 +234,9 @@
 ### 🍖其他知识
 
 - [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning) 
-- [编程资源](https://www.code-nav.cn) 
+- [编程资源](https://www.code-nav.cn)  by 编程导航
 - [Java知识地图](https://github.com/smileArchitect/JavaMap) 
-- [腾讯云开发](https://github.com/liyupi)
+- [腾讯云开发](https://github.com/liyupi) by 鱼皮
 
 ### 🍰数据库学习
 
