@@ -183,6 +183,32 @@
 - [【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 
+### 二叉树
+
+敬请期待。。。
+
+### 递归
+
+敬请期待。。。
+
+### 贪心
+
+敬请期待。。。
+
+### 回溯
+
+敬请期待。。。
+
+### 分治
+
+敬请期待。。。
+
+### 动态规划
+
+敬请期待。。。
+
+### 并查集
+
 
 
 ------
