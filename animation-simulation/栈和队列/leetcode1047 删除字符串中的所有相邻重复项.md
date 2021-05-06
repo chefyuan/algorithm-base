@@ -29,9 +29,11 @@
 
 
 
+**题目代码**
 
 
 
+Java Code:
 
 ```java
 class Solution {
@@ -67,3 +69,27 @@ class Solution {
 ```
 
 当然这个题目也可以用 set 来做，大家可以随意发挥
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+string removeDuplicates(string S) {
+         string str;
+         if (S.empty() || S.size() == 1) {
+             return S;
+         }
+         for (int i = 0; i<S.size(); i++) {
+             if(str.empty() || S[i] != str.back()) {                
+                 str.push_back(S[i]);
+             }
+             else {
+                 str.pop_back();
+             }
+         }
+         return str;
+    }
+};
+```
+
