@@ -68,6 +68,7 @@
 - [【动画模拟】栈和队列详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图解析】链表详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 - [【绘图描述】递归详解](https://mp.weixin.qq.com/s/A4xG9IbQUjFwQoy9YcneCw)
+- 【动画模拟】树
 
 ### 🔋字符串匹配算法
 
@@ -201,9 +202,9 @@
 ### 🍖其他知识
 
 - [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning) by 帅强 
-- [编程资源](https://www.code-navcn) by 编程导航
-- [Java知识地图](https://githubcom/smileArchitect/JavaMap)  by 帅小雷
-- [腾讯云开发](https://githubcom/liyupi) by 鱼皮
+- [编程资源](https://www.code-nav.cn) by 编程导航
+- [Java知识地图](https://github.com/smileArchitect/JavaMap)  by 帅小雷
+- [腾讯云开发](https://github.com/liyupi) by 鱼皮
 
 ### 🍰数据库学习
 
