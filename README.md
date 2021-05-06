@@ -183,31 +183,31 @@
 - [【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 
-### 二叉树
+### 🍍二叉树
 
 敬请期待。。。
 
-### 递归
+### 🥥递归
 
 敬请期待。。。
 
-### 贪心
+### 🍒贪心
 
 敬请期待。。。
 
-### 回溯
+### 🚃回溯
 
 敬请期待。。。
 
-### 分治
+### 🌆分治
 
 敬请期待。。。
 
-### 动态规划
+### 🧭动态规划
 
 敬请期待。。。
 
-### 并查集
+### 🌋并查集
 
 
 
@@ -225,6 +225,12 @@
 - [如何在电脑同时登陆两个微信](https://mp.weixin.qq.com/s/HpdMxTvR_0XxIUbaRja6cw)
 - [那些贼好用的写作软件](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB.md)
 
+### 🍭面经
+
+- [一个半月拿到阿里字节拼多多美团offer总结](https://mp.weixin.qq.com/s/YziTP0jqYSNS0mP18qGlAw)
+- [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
+- [在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
+
 ### 🍖其他知识
 
 - [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning) by 帅强 
@@ -241,11 +247,7 @@
 
 - [操作系统](https://mp.weixin.qq.com/s/lh6an9l6av7XitrVLLyEKw)
 
-### 🍭面经
 
-- [一个半月拿到阿里字节拼多多美团offer总结](https://mp.weixin.qq.com/s/YziTP0jqYSNS0mP18qGlAw)
-- [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
-- [在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
 
 拼命更新中。。。。。。
 
