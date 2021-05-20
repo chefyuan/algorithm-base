@@ -57,6 +57,8 @@ class Solution {
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public int findRepeatNumber(int[] nums) {
@@ -78,5 +80,24 @@ class Solution {
         return -1;
     }
 }
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    int findRepeatNumber(vector<int>& nums) {
+		if(nums.empty()) return 0;
+      	int n = nums.size();
+      	for(int i = 0; i < n; ++i){
+          while(nums[i] != i){
+            if(nums[i] == nums[nums[i]]) return nums[i];
+            swap(nums[i], nums[nums[i]]);
+          }
+        }
+      return -1;
+    }
+};
 ```
 
