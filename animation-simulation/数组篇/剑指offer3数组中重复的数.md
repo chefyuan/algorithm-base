@@ -88,7 +88,7 @@ C++ Code:
 class Solution {
 public:
     int findRepeatNumber(vector<int>& nums) {
-		if(nums.empty()) return 0;
+	if(nums.empty()) return 0;
       	int n = nums.size();
       	for(int i = 0; i < n; ++i){
           while(nums[i] != i){
