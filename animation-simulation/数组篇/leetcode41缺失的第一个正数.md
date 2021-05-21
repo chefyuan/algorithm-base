@@ -119,7 +119,7 @@ class Solution {
 
 Python3 Code:
 
-```py
+```python
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         n = len(nums)
