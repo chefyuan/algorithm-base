@@ -87,6 +87,10 @@
 - [【动画模拟】堆排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%A0%86%E6%8E%92%E5%BA%8F.md)
 - [【动画模拟】计数排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F.md)
 
+### 🍺二叉树基础
+
+- [前序遍历（迭代+Morris）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86(%E6%A0%88).md)
+
 ### 🍗排序算法秒杀题目
 
 - [【动画模拟】荷兰国旗](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97.md)
@@ -183,10 +187,6 @@
 - [【绘图描述】leetcode1248 统计「优美子数组」](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode1248%E5%AF%BB%E6%89%BE%E4%BC%98%E7%BE%8E%E5%AD%90%E6%95%B0%E7%BB%84.md)
 - [【绘图描述】leetcode 974 和可被 K 整除的子数组](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E5%89%8D%E7%BC%80%E5%92%8C/leetcode974%E5%92%8C%E5%8F%AF%E8%A2%ABK%E6%95%B4%E9%99%A4%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.md)
 
-### 🍍二叉树
-
-- 敬请期待。。。
-
 ### 🥥递归
 
 - 敬请期待。。。
@@ -224,8 +224,15 @@
 - [github 年报](https://mp.weixin.qq.com/s/_-6h9D8VaXUtNenTXbTp5w)
 - [如何在电脑同时登陆两个微信](https://mp.weixin.qq.com/s/HpdMxTvR_0XxIUbaRja6cw)
 - [那些贼好用的写作软件](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%B8%80%E4%BA%9B%E5%88%86%E4%BA%AB/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB.md)
+- [那些贼牛皮的办公工具](https://mp.weixin.qq.com/s/mJL1xCGZ3zJEPsrwg5d7oQ)
+
+### 🧊阅读分享
+
+- [高效阅读法](https://mp.weixin.qq.com/s/ZJZyZFM4qCjOnz14CVYbmg)
 
 ### 🍭面经
+
+- [校招进腾讯，二本也可以？](https://mp.weixin.qq.com/s/GZtdcHB94bwKVyaopSODuQ)
 
 - [一个半月拿到阿里字节拼多多美团offer总结](https://mp.weixin.qq.com/s/YziTP0jqYSNS0mP18qGlAw)
 - [从大学到秋招，我如何拿下腾讯offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
@@ -234,16 +241,10 @@
 ### 🍖其他知识
 
 - [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning)  by 喵哥
-
 - [C++拓跋阿秀](https://github.com/forthespada/InterviewGuide)      by秀哥
-
 - [编程资源](https://www.code-nav.cn)  by 编程导航
-
-- [Java知识地图](https://github.com/smileArchitect/JavaMap)  by 雷架
-
 - [腾讯云开发](https://github.com/liyupi) by 鱼皮
-
-  
+- [Java知识地图](https://github.com/smileArchitect/JavaMap)  by 雷架
 
 ### 🍰数据库学习
 
