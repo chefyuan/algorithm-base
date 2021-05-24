@@ -95,7 +95,7 @@ class Solution {
               return 0;
           }
           int i = 0;
-          for (int j = 0; j < nums.length; ++j) {
+          for (int j = 0; j < len; ++j) {
                 //如果等于目标值，则删除
                 if (nums[j] == val) {
                     continue;
@@ -110,7 +110,7 @@ class Solution {
 
 Python3 Code:
 
-```py
+```python
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         i = 0
@@ -119,5 +119,23 @@ class Solution:
                 nums[i] = nums[j]
                 i += 1
         return i
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int n = nums.size();
+      	if(!n) return 0;
+      	int i = 0;
+      	for(int j = 0; j < n; ++j){
+          if(nums[j] == val) continue;
+          nums[i++] = nums[j];
+        }
+      	return i;
+    }
+};
 ```
 
