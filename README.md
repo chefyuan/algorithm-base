@@ -36,7 +36,7 @@
 - 符合动画思想
 - 可以对代码进行简写，难懂的地方注意添加注释，因为我们的基地主要是为刚刷题的同学服务，所以就尽量让大家容易理解一些。
 
-如果想要贡献代码的大佬可以添加我的微信 [**tan45du_one**](https://cdn.jsdelivr.net/gh/tan45du/tan45du.github.io@master/个人微信.15egrcgqd94w.jpg) 备注贡献仓库即可。
+如果想要贡献代码的大佬可以添加我的微信 **[chefyuan105](https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png)** 备注贡献仓库即可。
 
 在这里先替所有使用仓库的同学，谢谢各位贡献者啦。
 
@@ -54,7 +54,7 @@
 
 想要手机阅读的大佬，可以来我的[公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png)进行阅读，两个平台同步更新，另外想要和题友们一起刷题**的同学可以来我的小屋，**点击**刷题小队**进入，另外群里老哥还会不定期发布内推消息，面经等，需要的可以进一下,不过来的时候**记得备注**，希望这个群能对你们有一丢丢帮助吧，一起加油。
 
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png" width = "150px" hight = "150px"/> </div>
 
 
 
@@ -264,3 +264,5 @@
 
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/赞赏码.2mrhxsmxexa0.png" width = "200px" hight = "200px"/> </div>
+
+#### 
