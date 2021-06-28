@@ -87,9 +87,11 @@
 - [【动画模拟】堆排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%A0%86%E6%8E%92%E5%BA%8F.md)
 - [【动画模拟】计数排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F.md)
 
-### 🍺二叉树基础
+### 🍺二叉树
 
-- [前序遍历（迭代+Morris）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86(%E6%A0%88).md)
+- [【动画模拟】前序遍历（迭代+Morris）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86(%E6%A0%88).md)
+- 【动画模拟】中序遍历（迭代+Morris）
+- 【动画模拟】后序遍历（迭代+Morris）
 
 ### 🍗排序算法秒杀题目
 
@@ -265,4 +267,4 @@
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/赞赏码.2mrhxsmxexa0.png" width = "200px" hight = "200px"/> </div>
 
-#### 
+###### #### 
