@@ -91,10 +91,10 @@
 
 - [【动画模拟】前序遍历（迭代）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86(%E6%A0%88).md)
 - [【动画模拟】前序遍历（Morris）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86(Morris).md)
-- 【动画模拟】中序遍历（迭代）
-- 【动画模拟】中序遍历（Morris）
-- 【动画模拟】后序遍历（迭代）
-- 【动画模拟】后序遍历（Morris）
+- [【动画模拟】中序遍历（迭代）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%EF%BC%88%E8%BF%AD%E4%BB%A3%EF%BC%89.md)
+- [【动画模拟】中序遍历（Morris）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%EF%BC%88Morris%EF%BC%89.md)
+- [【动画模拟】后序遍历（迭代）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%90%8E%E7%BB%AD%E9%81%8D%E5%8E%86%20(%E8%BF%AD%E4%BB%A3).md)
+- [【动画模拟】后序遍历（Morris）](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%90%8E%E7%BB%AD%E9%81%8D%E5%8E%86%EF%BC%88Morris%EF%BC%89.md)
 
 ### 🍗排序算法秒杀题目
 
