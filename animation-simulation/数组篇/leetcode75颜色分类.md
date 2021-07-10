@@ -38,6 +38,8 @@
 
 下面我们直接看代码吧，和三向切分基本一致。
 
+Java Code:
+
 ```java
 class Solution {
     public void sortColors(int[] nums) {
@@ -65,6 +67,35 @@ class Solution {
 }
 ```
 
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def sortColors(self, nums: List[int]): 
+        leng = len(nums)
+        left = 0
+        # 这里和三向切分不完全一致
+        i = left
+        right = leng - 1
+        while i <= right:
+            if nums[i] == 2:
+                self.swap(nums, i, right)
+                right -= 1
+            elif nums[i] == 0:
+                self.swap(nums, i, left)
+                i += 1
+                left += 1
+            else:
+                i += 1
+        return nums
+    
+    def swap(self, nums: List[int], i: int, j: int):
+        temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
+```
+
 另外我们看这段代码，有什么问题呢？那就是我们即使完全符合时，仍会交换元素，这样会大大降低我们的效率。
 
 例如：[0,0,0,1,1,1,2,2,2]
@@ -82,6 +113,8 @@ class Solution {
 ![](https://img-blog.csdnimg.cn/20210318093047325.gif#pic_center)
 
 另一种代码表示
+
+Java Code:
 
 ```java
 class Solution {
@@ -114,3 +147,31 @@ class Solution {
 }
 ```
 
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def sortColors(self, nums: List[int]):
+        left = 0
+        leng = len(nums)
+        right = leng - 1
+        i = 0
+        while i <= right:
+            if nums[i] == 0:
+                self.swap(nums, i, left)
+                left += 1
+            if nums[i] == 2:
+                self.swap(nums, i, right)
+                right -= 1
+                # 如果不等于 1 则需要继续判断，所以不移动 i 指针，i--
+                if nums[i] != 1:
+                    i -= 1
+            i += 1    
+        return nums
+
+    def swap(self, nums: List[int], i: int, j: int):
+        temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
+```

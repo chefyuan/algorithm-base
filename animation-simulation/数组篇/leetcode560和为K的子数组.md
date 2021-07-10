@@ -21,6 +21,8 @@
 
 这个题目的题意很容易理解，就是让我们返回和为 k 的子数组的个数，所以我们直接利用双重循环解决该题，这个是很容易想到的。我们直接看代码吧。
 
+Java Code:
+
 ```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
@@ -41,6 +43,8 @@ class Solution {
 }
 ```
 
+Python3版本的代码会超时
+
 下面我们我们使用前缀和的方法来解决这个题目，那么我们先来了解一下前缀和是什么东西。其实这个思想我们很早就接触过了。见下图
 
 ![](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/微信截图_20210113193831.4wk2b9zc8vm0.png)
@@ -60,6 +64,8 @@ presum [2] = presum[1] + nums[1],presum[3] = presum[2] + nums[2] ... 所以我�
 也就是前 5 项的和减去前 2 项的和，得到第 3 项到第 5 项的和。那么我们可以遍历 presum 就能得到和为 K 的子数组的个数啦。
 
 直接上代码。
+
+Java Code:
 
 ```java
 class Solution {
@@ -86,6 +92,8 @@ class Solution {
 }
 ```
 
+Python3版本的代码也会超时
+
 我们通过上面的例子我们简单了解了前缀和思想，那么我们如果继续将其优化呢？
 
 **前缀和 + HashMap**
@@ -93,6 +101,8 @@ class Solution {
 **解析**
 
 其实我们在之前的两数之和中已经用到了这个方法，我们一起来回顾两数之和 HashMap 的代码.
+
+Java Code:
 
 ```java
 class Solution {

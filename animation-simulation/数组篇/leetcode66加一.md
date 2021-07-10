@@ -44,6 +44,8 @@
 
 我们可以根据当前位 余10来判断，这样我们就可以区分属于第几种情况了，大家直接看代码吧，很容易理解的。
 
+Java Code:
+
 ```java
 class Solution {
     public int[] plusOne(int[] digits) {
@@ -65,3 +67,21 @@ class Solution {
 }
 ```
 
+Python Code:
+
+```python
+from typing import List
+class Solution:
+    def plusOne(self, digits: List[int])->List[int]:
+        # 获取长度
+        leng = len(digits)
+        for i in range(leng - 1, -1, -1):
+            digits[i] = (digits[i] + 1) % 10
+            # 第一种和第二种情况，如果此时某一位不为 0 ，则直接返回即可。
+            if digits[i] != 0:
+                return digits
+        # 第三种情况，因为数组初始化每一位都为0，我们只需将首位设为1即可
+        arr = [0] * (leng + 1)
+        arr[0] = 1
+        return arr
+```

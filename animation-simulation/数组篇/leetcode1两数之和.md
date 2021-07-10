@@ -33,6 +33,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -53,6 +55,25 @@ class Solution {
         return rearr;
     }
 }
+```
+
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def twoSum(nums: List[int], target: int)->List[int]:
+        if len(nums) < 2:
+            return [0]
+        rearr = [0] * 2
+        # 查询元素
+        for i in range(0, len(nums)):
+            for j in range(i + 1, len(nums)):
+                # 发现符合条件情况
+                if nums[i] + nums[j] == target:
+                    rearr[0] = i
+                    rearr[1] = j
+        return rearr
 ```
 
 **哈希表**
@@ -122,5 +143,19 @@ const twoSum = function (nums, target) {
 };
 ```
 
+Python3 Code:
 
+```python 
+from typing import List
+class Solution:
+    def twoSum(self, nums: List[int], target: int)->List[int]:
+        m = {}
+        for i in range(0, len(nums)):
+            # 如果存在则返回
+            if (target - nums[i]) in m.keys():
+                return [m[target - nums[i]], i]
+            # 不存在则存入
+            m[nums[i]] = i
+        return [0]
+```
 

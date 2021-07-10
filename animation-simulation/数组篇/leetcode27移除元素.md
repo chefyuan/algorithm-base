@@ -50,6 +50,8 @@
 
 **题目代码**
 
+Java Code:
+
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {    
@@ -73,6 +75,29 @@ class Solution {
         return i;       
     }
 }
+```
+
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def removeElement(self, nums: List[int], val: int)->int:
+        # 获取数组长度
+        leng = len(nums)
+        if 0 == leng:
+            return 0
+        i = 0
+        while i < leng:
+            # 发现符合条件的情况
+            if nums[i] == val:
+                # 前移一位
+                for j in range(i, leng - 1):
+                    nums[j] = nums[j + 1]
+                i -= 1
+                leng -= 1
+            i += 1
+        return i
 ```
 
 **双指针**
@@ -100,7 +125,7 @@ class Solution {
                 if (nums[j] == val) {
                     continue;
                 }
-                // 不等于目标值时，则赋值给num[i],i++
+                // 不等于目标值时，则赋值给nums[i],i++
                 nums[i++] = nums[j];
           }
           return i;

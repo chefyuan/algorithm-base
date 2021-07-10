@@ -43,6 +43,8 @@
 
 其实，我们只要把握两个重点即可，我们的 maxdeque 维护的是一个单调递减的双端队列，头部为当前窗口的最大值， mindeque 维护的是一个单调递增的双端队列，头部为窗口的最小值，即可。好啦我们一起看代码吧。
 
+Java Code:
+
 ```java
 class Solution {
     public int longestSubarray(int[] nums, int limit) {
@@ -74,5 +76,38 @@ class Solution {
         return maxwin;
     }
 }
+```
+
+Python Code:
+
+```python
+from typing import List
+import collections
+class Solution:
+    def longestSubarray(self, nums: List[int], limit: int)->int:
+        maxdeque = collections.deque()
+        mindeque = collections.deque()
+        leng = len(nums)
+        right = 0
+        left = 0
+        maxwin = 0
+        while right < leng:
+            while len(maxdeque) != 0 and maxdeque[-1] < nums[right]:
+                maxdeque.pop()
+            while len(mindeque) != 0 and mindeque[-1] > nums[right]:
+                mindeque.pop()
+            
+            maxdeque.append(nums[right])
+            mindeque.append(nums[right])
+            while (maxdeque[0] - mindeque[0]) > limit:
+                if maxdeque[0] == nums[left]:
+                    maxdeque.popleft()
+                if mindeque[0] == nums[left]:
+                    mindeque.popleft()
+                left += 1
+            # 保留最大窗口
+            maxwin = max(maxwin, right - left + 1)
+            right += 1
+        return maxwin
 ```
 

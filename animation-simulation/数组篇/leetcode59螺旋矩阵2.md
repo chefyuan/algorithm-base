@@ -66,6 +66,8 @@
 
 题目代码：
 
+Java Code:
+
 ```java
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
@@ -103,9 +105,44 @@ class Solution {
 
 ```
 
+Python3 Code:
 
+```python
+from typing import List
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]])->List[int]:
+        arr = []
+        left = 0
+        right = len(matrix[0]) - 1
+        top = 0
+        down = len(matrix) - 1
+        while True:
+            for i in range(left, right + 1):
+                arr.append(matrix[top][i])
+            top += 1
+            if top > down:
+                break
+            for i in range(top, down + 1):
+                arr.append(matrix[i][right])
+            right -= 1
+            if left > right:
+                break
+            for i in range(right, left - 1, -1):
+                arr.append(matrix[down][i])
+            down -= 1
+            if top > down:
+                break
+            for i in range(down, top - 1, -1):
+                arr.append(matrix[i][left])
+            left += 1
+            if left > right:
+                break
+        return arr
+```
 
 我们仅仅是将 54 反过来了，往螺旋矩阵里面插值，下面我们直接看代码吧,大家可以也可以对其改进，大家可以思考一下，如果修改能够让代码更简洁！
+
+Java Code:
 
 ```java
 class Solution {
@@ -145,5 +182,47 @@ class Solution {
         return arr;
     }
 }
+```
+
+Python3 Code:
+
+```python
+from typing import List
+import numpy as np
+class Solution:
+    def generateMatrix(self, n: int)->List[List[int]]:
+        arr = np.array([[0] * n] * n)
+        left = 0
+        right = n - 1
+        top = 0
+        buttom = n - 1
+        num = 1
+        numsize = n * n
+        while True:
+            for i in range(left, right + 1):
+                arr[top][i] = num
+                num += 1
+            top += 1
+            if num > numsize:
+                break
+            for i in range(top, buttom + 1):
+                arr[i][right] = num
+                num += 1
+            right -= 1
+            if num > numsize:
+                break
+            for i in range(right, left - 1, -1):
+                arr[buttom][i] = num
+                num += 1
+            buttom -= 1
+            if num > numsize:
+                break
+            for i in range(buttom, top - 1, -1):
+                arr[i][left] = num
+                num += 1
+            left += 1
+            if num > numsize:
+                break
+        return arr.tolist()
 ```
 

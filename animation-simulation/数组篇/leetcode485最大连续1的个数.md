@@ -30,6 +30,8 @@
 
 下面我们直接看代码吧
 
+Java Code:
+
 ```java
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
@@ -58,6 +60,29 @@ class Solution {
 }
 ```
 
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int])->int:
+        leng = len(nums)
+        left = 0
+        right = 0
+        maxcount = 0
+        while right < leng:
+            if nums[right] == 1:
+                right += 1
+                continue
+            # 保存最大值
+            maxcount = max(maxcount, right - left)
+            # 跳过 0 的情况
+            while right < leng and nums[right] == 0:
+                right += 1
+            # 同一起点继续遍历
+            left = right
+        return max(maxcount, right - left)
+```
 
 
 刚才的效率虽然相对高一些，但是代码不够优美，欢迎各位改进，下面我们说一下另外一种情况，一个特别容易理解的方法。
