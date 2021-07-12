@@ -68,6 +68,8 @@
 
 #### 题目代码
 
+Java Code:
+
 ```java
 class Solution {
     public int strStr(String haystack, String needle) {
@@ -101,9 +103,37 @@ class Solution {
 }
 ```
 
+Python Code:
+
+```python 
+from typing import List
+class Solution:
+    def strStr(self, haystack: str, needle: str)->int:
+        haylen = len(haystack)
+        needlen = len(needle)
+        # 特殊情况
+        if haylen < needlen:
+            return -1
+        if needlen == 0:
+            return 0
+        # 主串
+        for i in range(0, haylen - needlen + 1):
+            # 模式串
+            j = 0
+            while j < needlen:
+                if haystack[i + j] != needle[j]:
+                    break
+                j += 1
+            # 匹配成功
+            if j == needlen:
+                return i
+        return -1
+```
 
 
 我们看一下BF算法的另一种算法（显示回退），其实原理一样，就是对代码进行了一下修改，只要是看完咱们的动图，这个也能够一下就能看懂，大家可以结合下面代码中的注释和动图进行理解。
+
+Java Code:
 
 ```java
 class Solution {
@@ -132,3 +162,29 @@ class Solution {
 }
 ```
 
+Python Code:
+
+```python
+from typing import List
+class Solution:
+    def strStr(self, haystack: str, needle: str)->int:
+        # i代表主串指针，j模式串
+        i = 0
+        j = 0
+        # 主串长度和模式串长度
+        halen = len(haystack)
+        nelen = len(needle)
+        # 循环条件，这里只有 i 增长
+        while i < halen and j < nelen:
+            # 相同时，则移动 j 指针
+            if haystack[i] == needle[j]:
+                j += 1
+            else:
+                # 不匹配时，将 j 重新只想模式串的头部，将 i 本次匹配的开始位置的下一字符
+                i -= j
+                j = 0
+            i += 1
+            # 查询成功时返回索引，查询失败时返回 -1
+            renum = i - nelen if j == nelen else -1
+        return renum
+```

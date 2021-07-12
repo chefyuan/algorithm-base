@@ -46,6 +46,8 @@
 
 题目代码：
 
+Java Code:
+
 ```java
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
@@ -81,6 +83,41 @@ class Solution {
     }
 }
 
+```
+
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]])->List[int]:
+        arr = []
+        left = 0
+        right = len(matrix[0]) - 1
+        top = 0
+        down = len(matrix) - 1
+        while True:
+            for i in range(left, right + 1):
+                arr.append(matrix[top][i])
+            top += 1
+            if top > down:
+                break
+            for i in range(top, down + 1):
+                arr.append(matrix[i][right])
+            right -= 1
+            if left > right:
+                break
+            for i in range(right, left - 1, -1):
+                arr.append(matrix[down][i])
+            down -= 1
+            if top > down:
+                break
+            for i in range(down, top - 1, -1):
+                arr.append(matrix[i][left])
+            left += 1
+            if left > right:
+                break
+        return arr
 ```
 
 

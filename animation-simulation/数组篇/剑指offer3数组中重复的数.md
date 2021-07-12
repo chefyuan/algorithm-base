@@ -45,6 +45,22 @@ class Solution {
 }
 ```
 
+Python Code:
+
+```python
+from typing import List
+class Solution:
+    def findRepeatNumber(self, nums: List[int])->int:
+        s = set()
+        for x in nums:
+            # 如果发现某元素存在，则返回
+            if x in s:
+                return x
+            # 存入集合
+            s.add(x)
+        return -1
+```
+
 #### **原地置换**
 
 **解析**
@@ -101,3 +117,22 @@ public:
 };
 ```
 
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def findRepeatNumber(self, nums: List[int])->int:
+        if len(nums) == 0:
+            return -1
+        for i in range(0, len(nums)):
+            while nums[i] != i:
+                # 发现重复元素
+                if nums[i] == nums[nums[i]]:
+                    return nums[i]
+                # 置换，将指针下的元素换到属于它的索引处
+                temp = nums[i]
+                nums[i] = nums[temp]
+                nums[temp] = temp
+        return -1
+```

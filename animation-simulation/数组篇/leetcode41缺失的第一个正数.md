@@ -39,6 +39,8 @@
 
 ![缺失的第一个正数](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/缺失的第一个正数.1it1cow5aa8w.gif)
 
+Java Code:
+
 ```java
 class Solution {
     public int firstMissingPositive(int[] nums) {
@@ -65,6 +67,27 @@ class Solution {
 }
 ```
 
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def firstMissingPositive(self, nums: List[int])->int:
+        if len(nums) == 0:
+            return 1
+        # 因为是返回第一个正整数，不包括 0，所以需要长度加1，细节1
+        res = [0] * (len(nums) + 1)
+        # 将数组元素添加到辅助数组中
+        for x in nums:
+            if x > 0 and x < len(res):
+                res[x] = x
+        # 遍历查找,发现不一样时直接返回
+        for i in range(1, len(res)):
+            if res[i] != i:
+                return i
+        # 缺少最后一个，例如 1，2，3此时缺少 4 ，细节2 
+        return len(res)
+```
 
 
 我们通过上面的例子了解这个解题思想，我们有没有办法不使用辅助数组完成呢？我们可以使用原地置换，直接在 nums 数组内，将值换到对应的索引处，与上个方法思路一致，只不过没有使用辅助数组，理解起来也稍微难理解一些。

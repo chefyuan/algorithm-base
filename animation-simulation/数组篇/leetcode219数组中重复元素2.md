@@ -29,6 +29,8 @@
 
 这个题目和我们上面那个数组中的重复数字几乎相同，只不过是增加了一个判断相隔是否小于K位的条件，我们先用 HashMap 来做一哈，和刚才思路一致，我们直接看代码就能整懂
 
+Java Code:
+
 ```java
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
@@ -41,9 +43,9 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             // 如果含有
             if (map.containsKey(nums[i])) {
-                //判断是否小于K，如果小于则直接返回
+                //判断是否小于K，如果小于等于则直接返回
                 int abs = Math.abs(i - map.get(nums[i]));
-                if (abs <= k)  return true;//小于则返回        
+                if (abs <= k)  return true;//小于等于则返回        
             }
             //更新索引，此时有两种情况，不存在，或者存在时，将后出现的索引保存
             map.put(nums[i],i);
@@ -51,6 +53,29 @@ class Solution {
         return false;
     }
 }
+```
+
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int)->bool:
+        # 特殊情况
+        if len(nums) == 0:
+            return False
+        # 字典
+        m = {}
+        for i in range(0, len(nums)):
+            # 如果含有
+            if nums[i] in m.keys():
+                # 判断是否小于K，如果小于等于则直接返回
+                a = abs(i - m[nums[i]])
+                if a <= k:
+                    return True# 小于等于则返回  
+            # 更新索引，此时有两种情况，不存在，或者存在时，将后出现的索引保存
+            m[nums[i]] = i
+        return False
 ```
 
 **HashSet**
@@ -64,6 +89,8 @@ class Solution {
 
 
 **题目代码**
+
+Java Code
 
 ```java
 class Solution {
@@ -91,3 +118,25 @@ class Solution {
 }
 ```
 
+Python3 Code:
+
+```python
+from typing import List
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int)->bool:
+        # 特殊情况
+        if len(nums) == 0:
+            return False
+        # 集合
+        s = set()
+        for i in range(0, len(nums)):
+            # 如果含有，返回True
+            if nums[i] in s:
+                return True
+            # 添加新元素
+            s.add(nums[i])
+            # 维护窗口长度
+            if len(s) > k:
+                s.remove(nums[i - k])
+        return False
+```        
