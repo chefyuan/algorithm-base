@@ -96,15 +96,43 @@ public:
 JS Code:
 ```javascript
 var getKthFromEnd = function(head, k) {
+    //特殊情况
     if(!head) return head;
+    //初始化两个指针, 定义指针指向
     let pro = head, after = head;
+    //先移动绿指针到指定位置
     for(let i = 0; i < k - 1; i++){
         pro = pro.next;
     }
+    //两个指针同时移动
     while(pro.next){
         pro = pro.next;
         after = after.next;
     }
+    //返回倒数第k个节点
     return after;
 };
 ```
+
+Python Code:
+
+```python
+class Solution:
+    def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
+        # 特殊情况
+        if head is None:
+            return head
+        # 初始化两个指针, 定义指针指向
+        pro = head
+        after = head
+        # 先移动绿指针到指定位置
+        for _ in range(k - 1):
+            pro = pro.next
+        # 两个指针同时移动
+        while pro.next is not None:
+            pro = pro.next
+            after = after.next
+        # 返回倒数第k个节点
+        return after
+```
+
