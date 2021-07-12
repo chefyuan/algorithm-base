@@ -134,7 +134,7 @@
 
 ### 🍅链表篇
 
-- [【动画模拟】剑指 offer 2 倒数第 k 个节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87offer2%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9.md)
+- [【动画模拟】剑指 offer 2 倒数第 k 个节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87offer22%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9.md)
 - [【动画模拟】面试题 02.03. 链表中间节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.03.%20%E9%93%BE%E8%A1%A8%E4%B8%AD%E9%97%B4%E8%8A%82%E7%82%B9.md)
 - [【动画模拟】剑指  offer 52 两个链表的第一个公共节点](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/%E5%89%91%E6%8C%87Offer52%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E8%8A%82%E7%82%B9.md)
 - [【动画模拟】leetcode 234 回文链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/234.%20%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8.md)
