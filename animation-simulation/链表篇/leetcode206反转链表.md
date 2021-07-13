@@ -25,11 +25,9 @@
 
 则我们将 temp 指针指向 low 节点，此时则完成了反转。
 
-反转之后我们继续反转下一节点，则
+反转之后我们继续反转下一节点，则 low = temp 即可。然后重复执行上诉操作直至最后，这样则完成了反转链表。
 
-low = temp 即可。然后重复执行上诉操作直至最后，这样则完成了反转链表。
-
-我们下面看代码吧
+我们下面看代码吧。
 
 我会对每个关键点进行注释，大家可以参考动图理解。
 
@@ -41,15 +39,10 @@ Java Code:
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
-         //特殊情况
+        //特殊情况
         if (head == null || head.next == null) {
             return head;
         }
-        //反转
-        return reverse(head);
-    }
-    public ListNode reverse (ListNode head) {
-        
         ListNode low = null;
         ListNode pro = head;
         while (pro != null) {
@@ -64,42 +57,41 @@ class Solution {
         }     
         return low;
     }
-
 }
 ```
 JS Code:
 ```javascript
 var reverseList = function(head) {
+    //特殊情况
     if(!head || !head.next) {
         return head;
     }
     let low = null;
     let pro = head;
     while (pro) {
+        //代表橙色指针
         let temp = pro;
+        //移动绿色指针
         pro = pro.next;
+        //反转节点
         temp.next = low;
+        //移动黄色指针
         low = temp;
     }
     return low;
 };
 ```
 
-C++代码
+C++ Code:
 
 ```cpp
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-         //特殊情况
+        //特殊情况
         if (head == nullptr || head->next == nullptr) {
             return head;
         }
-        //反转
-        return reverse(head);
-    }
-    ListNode * reverse (ListNode * head) {
-        
         ListNode * low = nullptr;
         ListNode * pro = head;
         while (pro != nullptr) {
@@ -115,6 +107,28 @@ public:
         return low;
     }
 };
+```
+
+Python Code:
+
+```py
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+    	//特殊情况
+        if head is None or head.next is None:
+            return head
+        low = None
+        pro = head
+        while pro is not None:
+	        # 代表橙色指针
+            temp = pro
+            # 移动绿色指针
+            pro = pro.next
+            # 反转节点
+            temp.next = low
+            # 移动黄色指针
+            low = temp
+        return low
 ```
 
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
@@ -148,11 +162,17 @@ class Solution {
 JS Code:
 ```javascript
 var reverseList = function(head) {
+    //结束条件
     if (!head || !head.next) {
         return head;
     }
+    //保存最后一个节点
     let pro = reverseList(head.next);
+    //将节点进行反转。我们可以这样理解 4.next.next = 4;
+    //4.next = 5；
+    //则 5.next = 4 则实现了反转
     head.next.next = head;
+    //防止循环
     head.next = null;
     return pro;
 };
@@ -180,4 +200,42 @@ public:
     }
 };
 ```
+
+Python Code:
+
+```py
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+    	# 结束条件
+        if head is None or head.next is None:
+            return head
+        # 保存最后一个节点
+        pro = self.reverseList(head.next)
+        # 将节点进行反转。我们可以这样理解 4->next->next = 4;
+        # 4->next = 5；
+        # 则 5->next = 4 则实现了反转
+        head.next.next = head
+        # 防止循环
+        head.next = None
+        return pro
+```
+
+<br/>
+
+> 贡献者[@jaredliw](https://github.com/jaredliw)注：
+>
+> 这里提供一个比较直观的递归写法供大家参考。
+>
+> ```py
+> class Solution:
+>     def reverseList(self, head: ListNode, prev_nd: ListNode = None) -> ListNode:
+>     	# 结束条件
+>         if head is None:
+>             return prev_nd
+>         # 记录下一个节点并反转
+>         next_nd = head.next
+>         head.next = prev_nd
+>         # 给定下一组该反转的节点
+>         return self.reverseList(next_nd, head)
+> ```
 
