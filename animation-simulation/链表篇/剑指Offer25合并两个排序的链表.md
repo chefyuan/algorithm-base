@@ -15,7 +15,7 @@
 输出：1->1->2->3->4->4
 ```
 
-今天的题目思路很简单，但是一遍AC也是不容易的。链表大部分题目考察的都是考生代码的完整性和鲁棒性，所以有些题目我们看着思路很简单，但是想直接通过还是需要下一翻工夫的，所以建议大家将所有链表的题目都自己写一下。实在没有时间做的同学，可以自己在脑子里打一遍代码，想清没一行代码的作用。
+今天的题目思路很简单，但是一遍AC也是不容易的。链表大部分题目考察的都是考生代码的完整性和鲁棒性，所以有些题目我们看着思路很简单，但是想直接通过还是需要下一翻工夫的，所以建议大家将所有链表的题目都自己写一下。实在没有时间做的同学，可以自己在脑子里打一遍代码，想清每一行代码的作用。
 
 迭代法：
 
@@ -78,5 +78,48 @@ public:
          return headtemp->next;
     }
 };
+```
+
+JS Code:
+
+```js
+var mergeTwoLists = function(l1, l2) {
+    let headpro = new ListNode(-1);
+    let headtemp = headpro;
+    while (l1 && l2) {
+        //接上大的那个
+        if (l1.val >= l2.val) {
+            headpro.next = l2;
+            l2 = l2.next;
+        }
+        else {
+            headpro.next = l1;
+            l1 = l1.next;
+        }
+        headpro = headpro.next;
+    } 
+    headpro.next = l1 != null ? l1:l2;
+    return headtemp.next;
+};
+```
+
+Python Code:
+
+```py
+class Solution:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        headpro = ListNode(-1)
+        headtemp = headpro
+        while l1 and l2:
+            # 接上大的那个
+            if l1.val >= l2.val:
+                headpro.next = l2
+                l2 = l2.next
+            else:
+                headpro.next = l1
+                l1 = l1.next
+            headpro = headpro.next
+        headpro.next = l1 if l1 is not None else l2
+        return headtemp.next
 ```
 
