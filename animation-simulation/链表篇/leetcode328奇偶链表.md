@@ -46,7 +46,7 @@ class Solution {
          }
          ListNode odd = head;
          ListNode even = head.next;
-         ListNode evenhead = even;
+         ListNode evenHead = even;
 
          while (odd.next != null && even.next != null) {
              //将偶数位合在一起，奇数位合在一起
@@ -56,7 +56,7 @@ class Solution {
              even = even.next;
          }  
          //链接
-         odd.next = evenhead;
+         odd.next = evenHead;
          return head;
     }
 }
@@ -73,7 +73,7 @@ public:
          }
          ListNode * odd = head;
          ListNode * even = head->next;
-         ListNode * evenhead = even;
+         ListNode * evenHead = even;
 
          while (odd->next != nullptr && even->next != nullptr) {
              //将偶数位合在一起，奇数位合在一起
@@ -83,7 +83,7 @@ public:
              even = even->next;
          }  
          //链接
-         odd->next = evenhead;
+         odd->next = evenHead;
          return head;
     }
 };
@@ -95,13 +95,36 @@ var oddEvenList = function(head) {
     if(!head || !head.next) return head;
     let odd = head, even = head.next, evenHead = even;
     while(odd.next && even.next){
+        //将偶数位合在一起，奇数位合在一起
         odd.next = even.next;
         odd = odd.next;
         even.next = odd.next;
         even = even.next;
     }
+    //链接
     odd.next = evenHead;
     return head;
 };
+```
+
+Python Code:
+
+```py
+class Solution:
+    def oddEvenList(self, head: ListNode) -> ListNode:
+        if head is None or head.next is None:
+            return head
+        odd = head
+        even = head.next
+        evenHead = even
+        while odd.next is not None and even.next is not None:
+            # 将偶数位合在一起，奇数位合在一起
+            odd.next = even.next
+            odd = odd.next
+            even.next = odd.next
+            even = even.next
+        # 链接
+        odd.next = evenHead
+        return head
 ```
 
