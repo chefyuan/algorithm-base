@@ -37,31 +37,20 @@
 Java Code:
 
 ```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
 class Solution {
     public ListNode partition(ListNode head, int x) {
-        if (head == null) {
-            return head;
-        }
         ListNode pro = head;
         ListNode big = new ListNode(-1);
         ListNode small = new ListNode(-1); 
         ListNode headbig = big; 
-        ListNode headsmall =small;  
-        //分     
-        while (pro != null) {           
+        ListNode headsmall = small;  
+        //分
+        while (pro != null) {
             //大于时，放到 big 链表上
             if (pro.val >= x) {
                 big.next = pro;
                 big = big.next;
-            // 小于放到 small 链表上
+            //小于时，放到 small 链表上
             }else {
                 small.next = pro;
                 small = small.next;
@@ -83,21 +72,18 @@ C++ Code:
 class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
-        if (head == nullptr) {
-            return head;
-        }
         ListNode * pro = head;
         ListNode * big = new ListNode(-1);
         ListNode * small = new ListNode(-1); 
         ListNode * headbig = big; 
-        ListNode * headsmall =small;  
-        //分     
-        while (pro != nullptr) {           
+        ListNode * headsmall = small;  
+        //分
+        while (pro != nullptr) {
             //大于时，放到 big 链表上
             if (pro->val >= x) {
                 big->next = pro;
                 big = big->next;
-            // 小于放到 small 链表上
+            //小于时，放到 small 链表上
             }else {
                 small->next = pro;
                 small = small->next;
@@ -113,5 +99,65 @@ public:
 };
 ```
 
+JS Code:
 
+```js
+var partition = function(head, x) {
+    let pro = head;
+    let big = new ListNode(-1);
+    let small = new ListNode(-1); 
+    let headbig = big; 
+    let headsmall = small;  
+    //分
+    while (pro) {
+        //大于时，放到 big 链表上
+        if (pro.val >= x) {
+            big.next = pro;
+            big = big.next;
+        //小于时，放到 small 链表上
+        }else {
+            small.next = pro;
+            small = small.next;
+        }
+        pro = pro.next;
+    }
+    //细节
+    big.next = null;
+    //合
+    small.next = headbig.next;
+    return headsmall.next;
+};
+```
 
+Python Code:
+
+```py
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def partition(self, head: ListNode, x: int) -> ListNode:
+        pro = head
+        big = ListNode(-1)
+        small = ListNode(-1)
+        headbig = big
+        headsmall = small
+        # 分
+        while pro is not None:
+            # 大于时，放到 big 链表上
+            if pro.val >= x:
+                big.next = pro
+                big = big.next
+            # 小于时，放到 small 链表上
+            else:
+                small.next = pro
+                small = small.next
+            pro = pro.next
+        # 细节
+        big.next = None
+        # 合
+        small.next = headbig.next
+        return headsmall.next
+```
