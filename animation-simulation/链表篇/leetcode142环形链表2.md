@@ -46,6 +46,8 @@ public class Solution {
 }
 ```
 
+其它语言的代码请参考[这里](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode141%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)。
+
 判断链表是不是含有环很简单，但是我们想找到环的入口可能就没有那么容易了。（入口则为下图绿色节点）
 
 然后我们返回的则为绿色节点的索引，则返回2。
@@ -62,23 +64,22 @@ public class Solution {
 
 ![image-20201027182649669](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/image-20201027182649669.2g8gq4ik6xs0.png)
 
-
+Java Code:
 
 ```java
 public class Solution {
     public ListNode detectCycle(ListNode head) {
-        
          if (head == null) {
              return head;
          }
          if (head.next == null) {
              return head.next;
          }
-         //创建新的HashSet,用于保存节点
+         //创建新的HashSet，用于保存节点
          HashSet<ListNode> hash = new HashSet<ListNode>();
          //遍历链表
          while (head != null) {
-            //判断哈希表中是否含有某节点，没有则保存，含有则返回该节点
+             //判断哈希表中是否含有某节点，没有则保存，含有则返回该节点
              if (hash.contains(head)) {
                  return head;
              }
@@ -91,6 +92,70 @@ public class Solution {
 }
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        if (head == nullptr) return head;
+        if (head->next == nullptr) return head->next;
+        set<ListNode *> hash;
+        while (head != nullptr) {
+            if (hash.count(head)) {
+                return head;
+            }
+            hash.insert(head);
+            head = head->next;
+        }
+        return head;
+    }
+};
+```
+
+JS Code:
+
+```javascript
+var detectCycle = function(head) {
+    if (head === null) return head;
+    if (head.next === null) return head.next;
+    //创建新的HashSet，用于保存节点
+    let hash = new Set();
+    //遍历链表
+    while (head !== null) {
+        //判断哈希表中是否含有某节点，没有则保存，含有则返回该节点
+        if (hash.has(head)) {
+            return head;
+        }
+        //不含有，则进行保存，并移动指针
+        hash.add(head);
+        head = head.next;
+    }
+    return head;
+};
+```
+
+Python Code:
+
+```py
+class Solution:
+    def detectCycle(self, head: ListNode) -> ListNode:
+        if head is None:
+            return head
+        if head.next is None:
+            return head.next
+        # 创建新的HashSet，用于保存节点
+        hash = set()
+        while head is not None:
+            # 判断哈希表中是否含有某节点，没有则保存，含有则返回该节点
+            if head in hash:
+                return head
+            # 不含有，则进行保存，并移动指针
+            hash.add(head)
+            head = head.next
+        return head
+```
+
 
 
 ### 快慢指针
@@ -101,25 +166,25 @@ public class Solution {
 
 上图黄色节点为快慢指针相遇的节点，此时
 
-快指针走的距离：**a+(b+c)n+b**
+快指针走的距离：**a+(b+c)n+b**，n代表圈数。
 
 很容易理解b+c为环的长度，a为直线距离，b为绕了n圈之后又走了一段距离才相遇，所以相遇时走的总路程为a+(b+c)n+b，合并同类项得a+(n+1)b+nc。
 
-慢指针走的距离：**a+(b+c)m+b**,m代表圈数。
+慢指针走的距离：**a+(b+c)m+b**，m代表圈数。
 
-然后我们设快指针得速度是慢指针的2倍,含义为相同时间内，快指针走过的距离是慢指针的2倍。
+然后我们设快指针得速度是慢指针的2倍，含义为相同时间内，快指针走过的距离是慢指针的2倍。
 
-**a+(n+1)b+nc=2[a+(m+1)b+mc]**整理得**a+b=(n-2m)(b+c)，**那么我们可以从这个等式上面发现什么呢？**b+c**
+**a+(n+1)b+nc=2[a+(m+1)b+mc]**整理得**a+b=(n-2m)(b+c)，**那么我们可以从这个等式上面发现什么呢？
 
-为一圈的长度。也就是说a+b等于n-2m个环的长度。为了便于理解我们看一种特殊情况，当n-2m等于1，那么a+b=b+c整理得，a=c此时我们只需重新释放两个指针，一个从head释放，一个从相遇点释放，速度相同，因为a=c所以他俩必会在环入口处相遇，则求得入口节点索引。
+**b+c**为一圈的长度。也就是说a+b等于n-2m个环的长度。为了便于理解我们看一种特殊情况，当n-2m等于1，那么a+b=b+c整理得，a=c。此时我们只需重新释放两个指针，一个从head释放，一个从相遇点释放，速度相同，因为a=c所以他俩必会在环入口处相遇，则求得入口节点索引。
 
 算法流程：
 
-1.设置快慢指针，快指针速度为慢指针的2倍
+1.设置快慢指针，快指针速度为慢指针的2倍。
 
-2.找出相遇点
+2.找出相遇点。
 
-3.在head处和相遇点同时释放相同速度且速度为1的指针，两指针必会在环入口处相遇
+3.在head处和相遇点同时释放相同速度且速度为1的指针，两指针必会在环入口处相遇。
 
 ![环形链表2](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/环形链表2.elwu1pw2lw0.gif)
 
@@ -150,7 +215,6 @@ public class Solution {
             }
         } 
         return null;
-        
     }
 }
 ```
