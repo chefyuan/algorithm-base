@@ -197,21 +197,21 @@ public class Solution {
     public ListNode detectCycle(ListNode head) {
        //快慢指针
         ListNode fast = head;
-        ListNode low  = head;
+        ListNode slow = head;
         //设置循环条件
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
-            low = low.next;
+            slow = slow.next;
             //相遇
-            if (fast == low) {
+            if (fast == slow) {
                 //设置一个新的指针，从头节点出发，慢指针速度为1，所以可以使用慢指针从相遇点出发
-                ListNode newnode = head;
-                while (newnode != low) {        
-                    low = low.next;
-                    newnode = newnode.next;
+                ListNode newptr = head;
+                while (newptr != slow) {
+                    slow = slow.next;
+                    newptr = newptr.next;
                 }
                 //在环入口相遇
-                return low;
+                return slow;
             }
         } 
         return null;
@@ -227,26 +227,70 @@ public:
     ListNode *detectCycle(ListNode *head) {
         //快慢指针
         ListNode * fast = head;
-        ListNode * low  = head;
+        ListNode * slow = head;
         //设置循环条件
         while (fast != nullptr && fast->next != nullptr) {
             fast = fast->next->next;
-            low = low->next;
+            slow = slow->next;
             //相遇
-            if (fast == low) {
+            if (fast == slow) {
                 //设置一个新的指针，从头节点出发，慢指针速度为1，所以可以使用慢指针从相遇点出发
                 ListNode * newnode = head;
-                while (newnode != low) {        
-                    low = low->next;
+                while (newnode != slow) {
+                    slow = slow->next;
                     newnode = newnode->next;
                 }
                 //在环入口相遇
-                return low;
+                return slow;
             }
         } 
         return nullptr;
-        
     }
 };
+```
+
+JS Code:
+
+```js
+var detectCycle = function(head) {
+    let fast = head;
+    let slow = head;
+    while (fast && fast.next) {
+        fast = fast.next.next;
+        slow = slow.next;
+        if (fast == slow) {
+            let newptr = head;
+            while (newptr != slow) {
+                slow = slow.next;
+                newptr = newptr.next;
+            }
+            return slow;
+        }
+    }
+    return null;
+};
+```
+
+Python Code:
+
+```py
+class Solution:
+    def detectCycle(self, head: ListNode) -> ListNode:
+        # 快慢指针
+        fast = head
+        slow = head
+        # 设置循环条件
+        while fast is not None and fast.next is not None:
+            fast = fast.next.next
+            slow = slow.next
+            # 相遇
+            if fast is slow:
+                # 设置一个新的指针，从头节点出发，慢指针速度为1，所以可以使用慢指针从相遇点出发
+                newptr = head
+                while newptr is not slow:
+                    slow = slow.next
+                    newptr = newptr.next
+                # 在环入口相遇
+                return slow
 ```
 
