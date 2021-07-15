@@ -6,7 +6,7 @@
 
 #### [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 
-题目描述
+**题目描述**
 
 给定一个排序链表，删除所有含有重复数字的节点，只保留原始链表中没有重复出现的数字。
 
@@ -35,7 +35,7 @@
 
 这个题目也是利用我们的双指针思想，一个走在前面，一个在后面紧跟，前面的指针就好比是侦察兵，当发现重复节点时，后面指针停止移动，侦察兵继续移动，直到移动完重复节点，然后将该节点赋值给后节点。思路是不是很简单啊，那么我们来看一下动图模拟吧。
 
-注：这里为了表达更直观，所以仅显示了该链表中存在的节点
+注：这里为了表达更直观，所以仅显示了该链表中存在的节点。
 
 ![删除重复节点2](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/删除重复节点2.3btmii5cgxa0.gif)
 
@@ -46,20 +46,22 @@ Java Code:
 ```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        if(head == null||head.next==null){
-            return head;
-        }
+        //侦察兵指针
         ListNode pre = head;
-        ListNode low = new ListNode(0);
-        low.next = pre;
-        ListNode ret = new ListNode(-1);
-        ret = low;
+        //创建虚拟头节点，接上head
+        ListNode dummy = new ListNode(-1);
+        dummy.next = pre;
+        //跟随的指针
+        ListNode low = dummy;
         while(pre != null && pre.next != null) {
             if (pre.val == pre.next.val) {
+                //移动侦察兵指针直到找到与上一个不相同的元素
                 while (pre != null && pre.next != null && pre.val == pre.next.val) {
                     pre = pre.next;
                 }
+                //while循环后，pre停留在最后一个重复的节点上
                 pre = pre.next;
+                //连上新节点
                 low.next = pre;                     
              }
              else{
@@ -67,7 +69,7 @@ class Solution {
                  low = low.next;
              }
         }
-     return ret.next;
+     return dummy.next;//注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
     }
 }
 ```
@@ -78,20 +80,22 @@ C++ Code:
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
-        if(head == nullptr || head->next == nullptr){
-            return head;
-        }
+        //侦察兵指针
         ListNode * pre = head;
-        ListNode * low = new ListNode(0);
-        low->next = pre;
-        ListNode * ret = new ListNode(-1);
-        ret = low;
+        //创建虚拟头节点，接上head
+        ListNode * dummy = new ListNode(-1， head);
+        dummy->next = pre;
+        //跟随的指针
+        ListNode * low = dummy;
         while(pre != nullptr && pre->next != nullptr) {
             if (pre->val == pre->next->val) {
+                //移动侦察兵指针直到找到与上一个不相同的元素
                 while (pre != nullptr && pre->next != nullptr && pre->val == pre->next->val) {
                     pre = pre->next;
                 }
+                //while循环后，pre停留在最后一个重复的节点上
                 pre = pre->next;
+                //连上新节点
                 low->next = pre;                     
              }
              else{
@@ -99,8 +103,65 @@ public:
                  low = low->next;
              }
         }
-     return ret->next;
+     return dummy->next;//注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
     }
 };
+```
+
+JS Code:
+
+```javascript
+var deleteDuplicates = function(head) {
+    //侦察兵指针
+    let pre = head;
+    //创建虚拟头节点，接上head
+    let dummy = new ListNode(-1);
+    dummy.next = pre;
+    //跟随的指针
+    let low = dummy;
+    while(pre != null && pre.next != null) {
+        if (pre.val == pre.next.val) {
+            //移动侦察兵指针直到找到与上一个不相同的元素
+            while (pre != null && pre.next != null && pre.val === pre.next.val) {
+                pre = pre.next;
+            }
+            //while循环后，pre停留在最后一个重复的节点上
+            pre = pre.next;
+            //连上新节点
+            low.next = pre;                     
+         }
+         else{
+             pre = pre.next;
+             low = low.next;
+         }
+    }
+    return dummy.next;//注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
+};
+```
+
+Python Code:
+
+```py
+class Solution:
+    def deleteDuplicates(self, head: ListNode) -> ListNode:
+        # 侦察兵指针
+        pre = head
+        # 创建虚拟头节点，接上head
+        dummy = ListNode(-1, head)
+        # 跟随的指针
+        low = dummy
+        while pre is not None and pre.next is not None:
+            if pre.val == pre.next.val:
+                # 移动侦察兵指针直到找到与上一个不相同的元素
+                while pre is not None and pre.next is not None and pre.val == pre.next.val:
+                    pre = pre.next
+                # while循环后，pre停留在最后一个重复的节点上
+                pre = pre.next
+                # 连上新节点
+                low.next = pre
+            else:
+                pre = pre.next
+                low = low.next
+        return low.next  # 注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
 ```
 
