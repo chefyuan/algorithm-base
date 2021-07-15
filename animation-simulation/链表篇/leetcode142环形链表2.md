@@ -18,35 +18,7 @@
 
 我们可以这样假设，两个孩子在操场顺时针跑步，一个跑的快，一个跑的慢，跑的快的那个孩子总会追上跑的慢的孩子。
 
-环形链表：
-
-```java
-public class Solution {
-    public boolean hasCycle(ListNode head) {
-        //特殊情况，无节点或只有一个节点的情况
-        if(head == null || head.next == null){
-            return false;
-        }
-        //设置快慢指针
-        ListNode pro = head.next;
-        ListNode last = head;
-        //循环条件
-        while( pro != null && pro.next!=null){
-               pro=pro.next.next;
-               last=last.next;
-               //两指针相遇
-               if(pro == last){
-                   return true;
-               }
-        }
-        //循环结束，指针没有相遇，说明没有环。相当于快指针遍历了一遍链表
-        return false;
-        
-    }
-}
-```
-
-其它语言的代码请参考[这里](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode141%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)。
+代码请参考[【动画模拟】leetcode 141 环形链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode141%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)。
 
 判断链表是不是含有环很简单，但是我们想找到环的入口可能就没有那么容易了。（入口则为下图绿色节点）
 
@@ -100,11 +72,15 @@ public:
     ListNode *detectCycle(ListNode *head) {
         if (head == nullptr) return head;
         if (head->next == nullptr) return head->next;
+        //创建新的HashSet，用于保存节点
         set<ListNode *> hash;
+        //遍历链表
         while (head != nullptr) {
+            //判断哈希表中是否含有某节点，没有则保存，含有则返回该节点
             if (hash.count(head)) {
                 return head;
             }
+            //不含有，则进行保存，并移动指针
             hash.insert(head);
             head = head->next;
         }
@@ -137,7 +113,7 @@ var detectCycle = function(head) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def detectCycle(self, head: ListNode) -> ListNode:
         if head is None:
@@ -253,17 +229,22 @@ JS Code:
 
 ```js
 var detectCycle = function(head) {
+    //快慢指针
     let fast = head;
     let slow = head;
+    //设置循环条件
     while (fast && fast.next) {
         fast = fast.next.next;
         slow = slow.next;
+        //相遇
         if (fast == slow) {
             let newptr = head;
+            //设置一个新的指针，从头节点出发，慢指针速度为1，所以可以使用慢指针从相遇点出发
             while (newptr != slow) {
                 slow = slow.next;
                 newptr = newptr.next;
             }
+            //在环入口相遇
             return slow;
         }
     }
@@ -273,7 +254,7 @@ var detectCycle = function(head) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def detectCycle(self, head: ListNode) -> ListNode:
         # 快慢指针

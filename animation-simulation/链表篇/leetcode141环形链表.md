@@ -12,7 +12,7 @@
 
 > 给定一个链表，判断链表中是否有环。pos代表环的入口，若为-1，则代表无环。
 >
-> 如果链表中存在环，则返回 true 。 否则，返回 false 。
+> 如果链表中存在环，则返回 true 。否则，返回 false 。
 
 示例1：
 
@@ -56,22 +56,6 @@ public class Solution {
 }
 ```
 
-JS Code:
-```javascript
-var hasCycle = function(head) {
-    let fast = head;
-    let slow = head;
-    while (fast && fast.next) {
-        fast = fast.next.next;
-        slow = slow.next;
-        if (fast === slow) {
-            return true;
-        }
-    }
-    return false;
-};
-```
-
 C++ Code:
 
 ```cpp
@@ -92,17 +76,34 @@ public:
 };
 ```
 
+JS Code:
+
+```javascript
+var hasCycle = function(head) {
+    let fast = head;
+    let slow = head;
+    while (fast && fast.next) {
+        fast = fast.next.next;
+        slow = slow.next;
+        if (fast === slow) {
+            return true;
+        }
+    }
+    return false;
+};
+```
+
 Python Code:
 
-```py
+```python
 class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         fast = head
         slow = head
         while fast and fast.next:
             fast = fast.next.next
-            low = low.next
-            if fast == low:
+            slow = slow.next
+            if fast == slow:
                 return True
         return False
 ```

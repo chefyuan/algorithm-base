@@ -48,9 +48,9 @@ class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         //侦察兵指针
         ListNode pre = head;
-        //创建虚拟头节点，接上head
+        //创建哑节点，接上head
         ListNode dummy = new ListNode(-1);
-        dummy.next = pre;
+        dummy.next = head;
         //跟随的指针
         ListNode low = dummy;
         while(pre != null && pre.next != null) {
@@ -82,9 +82,9 @@ public:
     ListNode* deleteDuplicates(ListNode* head) {
         //侦察兵指针
         ListNode * pre = head;
-        //创建虚拟头节点，接上head
-        ListNode * dummy = new ListNode(-1， head);
-        dummy->next = pre;
+        //创建哑节点，接上head
+        ListNode * dummy = new ListNode(-1);
+        dummy->next = head;
         //跟随的指针
         ListNode * low = dummy;
         while(pre != nullptr && pre->next != nullptr) {
@@ -141,7 +141,7 @@ var deleteDuplicates = function(head) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def deleteDuplicates(self, head: ListNode) -> ListNode:
         # 侦察兵指针
@@ -162,6 +162,6 @@ class Solution:
             else:
                 pre = pre.next
                 low = low.next
-        return low.next  # 注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
+        return dummy.next  # 注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
 ```
 

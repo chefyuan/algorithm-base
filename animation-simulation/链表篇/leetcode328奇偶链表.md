@@ -26,7 +26,7 @@
 
 #### 题目解析
 
-题目也很容易理解就是让我们将原来奇数位的结点放一起，偶数位的结点放一起。这里需要注意，和结点值无关，是奇数位和偶数位结点。
+题目也很容易理解就是让我们将原来奇数位的结点放一起，偶数位的结点放一起。这里需要注意，题目和结点值无关，是奇数位和偶数位结点。
 
 我们可以先将奇数位和在一起，再将偶数位和在一起，最后再将两个链表合并很简单，我们直接看动画模拟吧。
 
@@ -109,7 +109,7 @@ var oddEvenList = function(head) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def oddEvenList(self, head: ListNode) -> ListNode:
         if head is None or head.next is None:

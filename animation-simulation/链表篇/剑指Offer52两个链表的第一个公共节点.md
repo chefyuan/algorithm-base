@@ -115,7 +115,7 @@ var getIntersectionNode = function(headA, headB) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         tempa = headA
@@ -207,7 +207,7 @@ var getIntersectionNode = function(headA, headB) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         # 定义两个节点

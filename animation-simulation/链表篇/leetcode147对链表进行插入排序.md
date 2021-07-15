@@ -8,7 +8,7 @@
 
 [【绘图解析】链表详解](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%B3%E4%BA%8E%E9%93%BE%E8%A1%A8%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 
-另外大家如果忘记了[【动画模拟】插入排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.md)和[【动画模拟】归并排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.md)思想的话，可以先复习一下，不然这两道题目会看的云里雾里。
+另外大家如果忘记了[【动画模拟】插入排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F.md)和[【动画模拟】归并排序](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F.md)思想的话，可以先复习一下，不然这两道题目会看得云里雾里。
 
 #### [147. 对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 
@@ -30,7 +30,7 @@
 
 我们的指针在数组时，可以随意的前后移动，将指针指向值和新元素的值比较后，将新元素插入到合适的位置。
 
-我们知道链表查询元素的时间复杂度为 O（n）,我们只能够通过遍历链表查询元素。
+我们知道链表查询元素的时间复杂度为O(n)，我们只能够通过遍历链表查询元素。
 
 那么我们怎么才能将新元素放到合适的位置呢？见下图。
 
@@ -68,7 +68,7 @@
 
 我们想要将 3 插入到 2 和 4 的中间，此时我们三个指针分别指向 2，4，3。
 
-我们共分 4 步，来完成这个操作，见下图
+我们共分 4 步，来完成这个操作，见下图。
 
 ![](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/44444444.29mvcvs4yrms.png)
 
@@ -143,9 +143,9 @@ public:
                 continue;
             }               
             //开始出发，查找新元素的合适位置
-            temphead = dummyNode;
+            ListNode * temphead = dummyNode;
             while (temphead->next->val <= pre->val) {
-                ListNode * temphead = temphead->next;
+                temphead = temphead->next;
             }           
             //此时我们已经找到了合适位置，我们需要进行插入，大家可以画一画
             last->next = pre->next;
@@ -195,7 +195,7 @@ var insertionSortList = function(head) {
 
 Python Code:
 
-```py
+```python
 class Solution:
     def insertionSortList(self, head: ListNode) -> ListNode:
         if head is None or head.next is None:
