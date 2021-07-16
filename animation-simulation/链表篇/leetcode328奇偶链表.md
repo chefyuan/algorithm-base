@@ -26,7 +26,7 @@
 
 #### 题目解析
 
-题目也很容易理解就是让我们将原来奇数位的结点放一起，偶数位的结点放一起。这里需要注意，和结点值无关，是奇数位和偶数位结点。
+题目也很容易理解就是让我们将原来奇数位的结点放一起，偶数位的结点放一起。这里需要注意，题目和结点值无关，是奇数位和偶数位结点。
 
 我们可以先将奇数位和在一起，再将偶数位和在一起，最后再将两个链表合并很简单，我们直接看动画模拟吧。
 
@@ -46,7 +46,7 @@ class Solution {
          }
          ListNode odd = head;
          ListNode even = head.next;
-         ListNode evenhead = even;
+         ListNode evenHead = even;
 
          while (odd.next != null && even.next != null) {
              //将偶数位合在一起，奇数位合在一起
@@ -56,7 +56,7 @@ class Solution {
              even = even.next;
          }  
          //链接
-         odd.next = evenhead;
+         odd.next = evenHead;
          return head;
     }
 }
@@ -73,7 +73,7 @@ public:
          }
          ListNode * odd = head;
          ListNode * even = head->next;
-         ListNode * evenhead = even;
+         ListNode * evenHead = even;
 
          while (odd->next != nullptr && even->next != nullptr) {
              //将偶数位合在一起，奇数位合在一起
@@ -83,7 +83,7 @@ public:
              even = even->next;
          }  
          //链接
-         odd->next = evenhead;
+         odd->next = evenHead;
          return head;
     }
 };
@@ -95,13 +95,36 @@ var oddEvenList = function(head) {
     if(!head || !head.next) return head;
     let odd = head, even = head.next, evenHead = even;
     while(odd.next && even.next){
+        //将偶数位合在一起，奇数位合在一起
         odd.next = even.next;
         odd = odd.next;
         even.next = odd.next;
         even = even.next;
     }
+    //链接
     odd.next = evenHead;
     return head;
 };
+```
+
+Python Code:
+
+```python
+class Solution:
+    def oddEvenList(self, head: ListNode) -> ListNode:
+        if head is None or head.next is None:
+            return head
+        odd = head
+        even = head.next
+        evenHead = even
+        while odd.next is not None and even.next is not None:
+            # 将偶数位合在一起，奇数位合在一起
+            odd.next = even.next
+            odd = odd.next
+            even.next = odd.next
+            even = even.next
+        # 链接
+        odd.next = evenHead
+        return head
 ```
 
