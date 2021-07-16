@@ -85,6 +85,42 @@ class Solution {
 
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        vector <int> arr;
+        int left = 0, right = matrix[0].size()-1;
+        int top = 0, down = matrix.size()-1;
+        while (true) {
+             for (int i = left; i <= right; ++i) {
+                 arr.emplace_back(matrix[top][i]);
+             }
+             top++;
+             if (top > down) break;
+             for (int i = top; i <= down; ++i) {
+                 arr.emplace_back(matrix[i][right]);
+             }
+             right--;
+             if (left > right) break;
+             for (int i = right; i >= left; --i) {
+                 arr.emplace_back(matrix[down][i]);
+             }
+             down--;
+             if (top > down) break;
+             for (int i = down; i >= top; --i) {
+                 arr.emplace_back(matrix[i][left]);
+             }
+             left++;
+             if (left > right) break;
+        }
+        return arr;
+    }
+};
+```
+
 Python3 Code:
 
 ```python
