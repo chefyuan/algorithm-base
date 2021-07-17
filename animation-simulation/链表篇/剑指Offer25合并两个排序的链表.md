@@ -123,3 +123,27 @@ class Solution:
         return headtemp.next
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var l1 = l1, l2 = l2
+        var headpro: ListNode? = ListNode(-1)
+        var headtemp = headpro
+        while l1 != nil && l2 != nil {
+            //接上大的那个
+            if l1!.val >= l2!.val {
+                headpro?.next = l2
+                l2 = l2!.next
+            } else {
+                headpro?.next = l1
+                l1 = l1!.next
+            }
+            headpro = headpro?.next
+        }
+        headpro?.next = l1 != nil ? l1 : l2
+        return headtemp?.next
+    }
+}
+```

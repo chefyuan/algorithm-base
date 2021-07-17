@@ -165,3 +165,34 @@ class Solution:
         return dummy.next  # 注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+        // 侦察兵指针
+        var pre = head
+        // 创建哑节点，接上head
+        var dummy = ListNode(-1)
+        dummy.next = head
+        // 跟随的指针
+        var low:ListNode? = dummy
+        while pre != nil && pre?.next != nil {
+            if pre?.val == pre?.next?.val {
+                // 移动侦察兵指针直到找到与上一个不相同的元素
+                while pre != nil && pre?.next != nil && pre?.val == pre?.next?.val {
+                    pre = pre?.next
+                }
+                // while循环后，pre停留在最后一个重复的节点上
+                pre = pre?.next
+                // 连上新节点
+                low?.next = pre
+            } else {
+                pre = pre?.next
+                low = low?.next
+            }
+        }
+        return dummy.next // 注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
+    }
+}
+```

@@ -138,6 +138,32 @@ class Solution:
         return low
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func reverseList(_ head: ListNode?) -> ListNode? {
+        // 边界条件
+        if head == nil || head?.next == nil {
+            return head
+        }
+        var pro = head
+        var low: ListNode?
+        while pro != nil {
+            // 代表橙色指针
+            var temp = pro
+            // 移动绿色指针
+            pro = pro?.next
+            // 反转节点
+            temp?.next = low
+            // 移动黄色指针
+            low = temp
+        }
+        return low
+    }
+}
+```
+
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
 
 
@@ -225,6 +251,25 @@ class Solution:
         # 防止循环
         head.next = None
         return pro
+```
+
+Swift Code:
+
+```swift
+class Solution {
+    func reverseList(_ head: ListNode?) -> ListNode? {
+        // 结束条件
+        if head == nil || head?.next == nil {
+            return head
+        }
+        var pro = reverseList(head?.next)
+        // 将节点进行反转
+        head?.next?.next = head
+        // 防止循环
+        head?.next = nil
+        return pro
+    }
+}
 ```
 
 <br/>
