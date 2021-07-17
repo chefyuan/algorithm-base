@@ -12,13 +12,13 @@
 
 题目分析：
 
-自己思考一下
+自己思考一下：
 
 我们遇到这个题目，可能会有什么答题思路呢？
 
 你看我说的对不对，是不是会想到先遍历一遍链表知道 链表节点的个数，然后再计算出倒数第n个节点。
 
-比如链表长度为10，倒数第3个节点，不就是正数第8个节点呀，这种方法当然可以啦，是可以实现的，那么我们再思考一下有没有其他方法呢？哦，对，我们可以将链表元素保存到数组里面，然后直接就可以知道倒数第K个节点了。这个方法确实比刚才那个方法省时间了，但是所耗的空间更多了，那我们还有什么方法吗？
+比如链表长度为10，倒数第3个节点，不就是正数第8个节点呀，这种方法当然可以啦，是可以实现的，那么我们再思考一下有没有其他方法呢？哦，对，我们可以将链表元素保存到数组里面，然后直接就可以知道倒数第k个节点了。这个方法确实比刚才那个方法省时间了，但是所耗的空间更多了，那我们还有什么方法吗？
 
 我们可以继续利用我们的双指针呀，但是我们应该怎么做呢？
 
@@ -96,15 +96,43 @@ public:
 JS Code:
 ```javascript
 var getKthFromEnd = function(head, k) {
+    //特殊情况
     if(!head) return head;
+    //初始化两个指针, 定义指针指向
     let pro = head, after = head;
+    //先移动绿指针到指定位置
     for(let i = 0; i < k - 1; i++){
         pro = pro.next;
     }
+    //两个指针同时移动
     while(pro.next){
         pro = pro.next;
         after = after.next;
     }
+    //返回倒数第k个节点
     return after;
 };
 ```
+
+Python Code:
+
+```python
+class Solution:
+    def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
+        # 特殊情况
+        if head is None:
+            return head
+        # 初始化两个指针, 定义指针指向
+        pro = head
+        after = head
+        # 先移动绿指针到指定位置
+        for _ in range(k - 1):
+            pro = pro.next
+        # 两个指针同时移动
+        while pro.next is not None:
+            pro = pro.next
+            after = after.next
+        # 返回倒数第k个节点
+        return after
+```
+

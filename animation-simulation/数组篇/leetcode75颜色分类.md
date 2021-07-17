@@ -96,6 +96,27 @@ class Solution:
         nums[j] = temp
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int len = nums.size(), left = 0;
+        int i = left, right = len-1;
+        while (i <= right) {
+             if (nums[i] == 2) {
+                 swap(nums[i],nums[right--]);
+             } else if (nums[i] == 0) {
+                 swap(nums[i++],nums[left++]);
+             } else {
+                 i++;
+             }
+        }  
+    }
+};
+```
+
 Swift Code:
 
 ```swift
@@ -206,6 +227,29 @@ class Solution:
         temp = nums[i]
         nums[i] = nums[j]
         nums[j] = temp
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int left = 0, len = nums.size();
+        int right = len - 1;
+        for (int i = 0; i <= right; ++i) {
+            if (nums[i] == 0) {             
+                swap(nums[i],nums[left++]);
+            }
+            if (nums[i] == 2) {
+                swap(nums[i],nums[right--]);
+                if (nums[i] != 1) {
+                        i--;
+                    }
+                }
+            }
+        }
+};
 ```
 
 Swift Code:

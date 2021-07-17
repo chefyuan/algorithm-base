@@ -140,6 +140,42 @@ class Solution:
         return arr
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        vector <int> arr;
+        int left = 0, right = matrix[0].size()-1;
+        int top = 0, down = matrix.size()-1;
+        while (true) {
+             for (int i = left; i <= right; ++i) {
+                 arr.emplace_back(matrix[top][i]);
+             }
+             top++;
+             if (top > down) break;
+             for (int i = top; i <= down; ++i) {
+                 arr.emplace_back(matrix[i][right]);
+             }
+             right--;
+             if (left > right) break;
+             for (int i = right; i >= left; --i) {
+                 arr.emplace_back(matrix[down][i]);
+             }
+             down--;
+             if (top > down) break;
+             for (int i = down; i >= top; --i) {
+                 arr.emplace_back(matrix[i][left]);
+             }
+             left++;
+             if (left > right) break;
+        }
+        return arr;
+    }
+};
+```
+
 Swift Code:
 
 ```swift
@@ -263,6 +299,42 @@ class Solution:
         return arr.tolist()
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n) {
+        vector <vector <int>> arr(n, vector <int>(n));
+        int left = 0, right = n-1, top = 0, buttom = n - 1, num = 1, numsize = n * n;
+        while (true) {
+            for (int i = left; i <= right; ++i) {
+                arr[top][i] = num++;               
+            }
+            top++;
+            if (num > numsize) break;
+            for (int i = top; i <= buttom; ++i) {
+                arr[i][right] = num++;
+            }
+            right--;
+            if (num > numsize) break;
+            for (int i = right; i >= left; --i) {
+                arr[buttom][i] = num++;
+            }
+            buttom--;
+            if (num > numsize) break;
+            for (int i = buttom; i >= top; --i) {
+                arr[i][left] = num++;
+            }
+            left++;
+            if (num > numsize) break;
+            
+        }
+        return arr;
+    }
+};
+```
+
 Swift Code:
 
 ```swift
@@ -304,4 +376,3 @@ class Solution {
     }
 }
 ```
-

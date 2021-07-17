@@ -4,13 +4,11 @@
 >
 > 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
 
-今天我们来说一下反转链表 2，其实这个和 1 的思路差不多，今天先说一个比较好理解的方法，完全按照反转链表 1 的方法来解决，大家看这个题目之前要先看一下[【动画模拟】leetcode 206 反转链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode206%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)
+今天我们来说一下反转链表 2，其实这个和 1 的思路差不多，今天先说一个比较好理解的方法，完全按照反转链表 1 的方法来解决，大家看这个题目之前要先看一下[【动画模拟】leetcode 206 反转链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode206%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)。
 
 下面我们先来看一下题目。
 
 #### [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
-
-难度中等836
 
 给你单链表的头指针 `head` 和两个整数 `left` 和 `right` ，其中 `left <= right` 。请你反转从位置 `left` 到位置 `right` 的链表节点，返回 **反转后的链表** 。
 
@@ -43,7 +41,6 @@ Java Code:
 ```java
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-
         //虚拟头节点
         ListNode temp = new ListNode(-1);
         temp.next = head;
@@ -53,26 +50,28 @@ class Solution {
         for (; i < left-1; ++i) {
             pro = pro.next;
         }
-        // 保存 left 节点前的第一个节点
+        //保存 left 节点前的一个节点
         ListNode leftNode = pro;
+        //来到 right 节点
         for (; i < right; ++i) {
             pro = pro.next;
         }
-        // 保存 right 节点后的节点
+        //保存 right 节点后的一个节点
         ListNode rightNode = pro.next;
         //切断链表
-        pro.next = null;
-        ListNode newhead = leftNode.next;
-        leftNode.next = null;
-        leftNode.next = rever(newhead);
+        pro.next = null;//切断 right 后的部分
+        ListNode newhead = leftNode.next;//保存 left 节点
+        leftNode.next = null;//切断 left 前的部分
+        //反转
+        leftNode.next = reverse(newhead);
         //重新接头
         newhead.next = rightNode;
         return temp.next;
 
     }
     //和反转链表1代码一致
-    public ListNode rever (ListNode head) {
-         ListNode low = null;
+    public ListNode reverse (ListNode head) {
+        ListNode low = null;
         ListNode pro = head;
         while (pro != null) {
             ListNode temp = pro;
@@ -91,6 +90,7 @@ C++ Code:
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
+        //虚拟头节点
         ListNode * temp = new ListNode(-1);
         temp->next = head;
         ListNode * pro = temp;
@@ -99,23 +99,26 @@ public:
         for (; i < left-1; ++i) {
             pro = pro->next;
         }
-        // 保存 left 节点前的第一个节点
+        //保存 left 节点前的一个节点
         ListNode * leftNode = pro;
+        //来到 right 节点
         for (; i < right; ++i) {
             pro = pro->next;
         }
-        // 保存 right 节点后的节点
+        //保存 right 节点后的一个节点
         ListNode * rightNode = pro->next;
         //切断链表
-        pro->next = nullptr;
-        ListNode * newhead = leftNode->next;
-        leftNode->next = nullptr;
-        leftNode->next = rever(newhead);
+        pro->next = nullptr;//切断 right 后的部分
+        ListNode * newhead = leftNode->next;//保存 left 节点
+        leftNode->next = nullptr;//切断 left 前的部分
+        //反转
+        leftNode->next = reverse(newhead);
         //重新接头
         newhead->next = rightNode;
         return temp->next;
     }
-    ListNode * rever (ListNode * head) {
+    //和反转链表1代码一致
+    ListNode * reverse (ListNode * head) {
         ListNode * low = nullptr;
         ListNode * pro = head;
         while (pro != nullptr) {
@@ -127,5 +130,91 @@ public:
         return low;
     }
 };
+```
+
+JS Code:
+
+```js
+var reverseBetween = function(head, left, right) {
+    //虚拟头节点
+    let temp = new ListNode(-1);
+    temp.next = head;
+    let pro = temp;
+    //来到 left 节点前的一个节点
+    let i = 0;
+    for (; i < left-1; ++i) {
+        pro = pro.next;
+    }
+    //保存 left 节点前的一个节点
+    let leftNode = pro;
+    //来到 right 节点
+    for (; i < right; ++i) {
+        pro = pro.next;
+    }
+    //保存 right 节点后的一个节点
+    let rightNode = pro.next;
+    //切断链表
+    pro.next = null;//切断 right 后的部分
+    let newhead = leftNode.next;//保存 left 节点
+    leftNode.next = null;//切断 left 前的部分
+    //反转
+    leftNode.next = reverse(newhead);
+    //重新接头
+    newhead.next = rightNode;
+    return temp.next;
+};
+
+//和反转链表1代码一致
+var reverse = function(head) {
+    let low = null;
+    let pro = head;
+    while (pro) {
+        let temp = pro;
+        pro = pro.next;
+        temp.next = low;
+        low = temp;
+    }     
+    return low;
+};
+```
+
+Python Code:
+
+```python
+class Solution:
+    def reverseBetween(self, head: ListNode, left: int, right: int) -> ListNode:
+        # 虚拟头节点
+        temp = ListNode(-1)
+        temp.next = head
+        pro = temp
+        # 来到 left 节点前的一个节点
+        for _ in range(left - 1):
+            pro = pro.next
+        # 保存 left 节点前的第一个节点
+        leftNode = pro
+        for _ in range(right - left + 1):
+            pro = pro.next
+        # 保存 right 节点后的节点
+        rightNode = pro.next
+        # 切断链表
+        pro.next = None  # 切断 right 后的部分
+        newhead = leftNode.next  # 保存 left 节点
+        leftNode.next = None  # 切断 left 前的部分
+        # 反转
+        leftNode.next = self.reverse(newhead)
+        # 重新接头
+        newhead.next = rightNode
+        return temp.next
+        
+    # 和反转链表1代码一致
+    def reverse(self, head):
+        low = None
+        pro = head
+        while pro is not None:
+            temp = pro
+            pro = pro.next
+            temp.next = low
+            low = temp
+        return low
 ```
 

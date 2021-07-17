@@ -10,9 +10,9 @@
 
 #### 题目描述
 
-> 给定一个链表，判断链表中是否有环。pos代表环的入口，若为-1，则代表无环
+> 给定一个链表，判断链表中是否有环。pos代表环的入口，若为-1，则代表无环。
 >
-> 如果链表中存在环，则返回 true 。 否则，返回 false 。
+> 如果链表中存在环，则返回 true 。否则，返回 false 。
 
 示例1：
 
@@ -28,7 +28,7 @@
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210321132015849.png)
 
-好啦，做题思路已经有了，让我们一起看一下代码的执行过程吧。\
+好啦，做题思路已经有了，让我们一起看一下代码的执行过程吧。
 
 **动画模拟**
 
@@ -42,7 +42,6 @@ Java Code:
 ```java
 public class Solution {
     public boolean hasCycle(ListNode head) {
-    
          ListNode fast = head;
          ListNode low = head;
          while (fast != null && fast.next != null) {
@@ -57,7 +56,28 @@ public class Solution {
 }
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+         ListNode * fast = head;
+         ListNode * slow = head;
+         while (fast != nullptr && fast->next != nullptr) {
+             fast = fast->next->next;
+             slow = slow->next;
+             if (fast == slow) {
+                 return true;
+             }
+         }
+         return false;
+    }
+};
+```
+
 JS Code:
+
 ```javascript
 var hasCycle = function(head) {
     let fast = head;
@@ -73,23 +93,18 @@ var hasCycle = function(head) {
 };
 ```
 
-C++ Code:
+Python Code:
 
-```cpp
-class Solution {
-public:
-    bool hasCycle(ListNode *head) {
-         ListNode * fast = head;
-         ListNode * low = head;
-         while (fast != nullptr && fast->next != nullptr) {
-             fast = fast->next->next;
-             low = low->next;
-             if (fast == low) {
-                 return true;
-             }
-         }
-         return false;
-    }
-};
+```python
+class Solution:
+    def hasCycle(self, head: ListNode) -> bool:
+        fast = head
+        slow = head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                return True
+        return False
 ```
 
