@@ -78,6 +78,32 @@ class Solution:
         return False
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
+        if nums.count == 0 {
+            return false
+        }
+        var dict:[Int:Int] = [:]
+        for i in 0..<nums.count {
+            // 如果含有
+            if let v = dict[nums[i]] {
+                // 判断是否小于K，如果小于等于则直接返回
+                let abs = abs(i - v)
+                if abs <= k {
+                    return true
+                }
+            }
+            // 更新索引，此时有两种情况，不存在，或者存在时，将后出现的索引保存
+            dict[nums[i]] = i
+        }
+        return false
+    }
+}
+```
+
 **HashSet**
 
 **解析**
@@ -140,3 +166,28 @@ class Solution:
                 s.remove(nums[i - k])
         return False
 ```        
+
+Swift Code
+
+```swift
+class Solution {
+    func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
+        if nums.count == 0 {
+            return false
+        }
+        var set:Set<Int> = []
+        for i in 0..<nums.count {
+            // 含有该元素，返回true
+            if set.contains(nums[i]) {
+                return true
+            }
+            // 添加新元素
+            set.insert(nums[i])
+            if set.count > k {
+                set.remove(nums[i - k])
+            }
+        }
+        return false
+    }
+}
+```

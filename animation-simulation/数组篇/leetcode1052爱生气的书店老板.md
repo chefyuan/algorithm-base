@@ -114,5 +114,45 @@ class Solution:
             ans = max(ans, t)
         return ans
 ```
- 
 
+Swift Code
+
+```swift
+class Solution {
+    func maxSatisfied(_ customers: [Int], _ grumpy: [Int], _ minutes: Int) -> Int {
+        let len = customers.count
+        var winSum = 0, rightSum = 0, leftSum = 0
+        // 右区间的值
+        for i in minutes..<len {
+            if grumpy[i] == 0 {
+                rightSum += customers[i]
+            }
+        }
+        // 窗口的值
+        for i in 0..<minutes {
+            winSum += customers[i]
+        }
+        var maxCustomer = winSum + leftSum + rightSum
+        // 窗口左边缘
+        var left = 1, right = minutes
+        while right < len {
+            // 重新计算左区间的值，也可以用 customer 值和 grumpy 值相乘获得
+            if grumpy[left - 1] == 0 {
+                leftSum += customers[left - 1]
+            }
+            // 重新计算右区间值
+            if grumpy[right] == 0 {
+                rightSum -= customers[right]
+            }
+            // 窗口值
+            winSum = winSum - customers[left - 1] + customers[right]
+            maxCustomer = max(maxCustomer, winSum + leftSum + rightSum) // 保留最大值
+            // 移动窗口
+            left += 1
+            right += 1
+        }
+        
+        return maxCustomer
+    }
+}
+```
