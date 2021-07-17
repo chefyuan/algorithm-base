@@ -92,6 +92,8 @@
 
 #### 题目代码
 
+Java Code:
+
 ```java
 class Solution {
     public int search(int[] nums, int target) {
@@ -130,4 +132,6 @@ class Solution {
 }
 ```
 
-## 
+Go Code:
+```go
+```
