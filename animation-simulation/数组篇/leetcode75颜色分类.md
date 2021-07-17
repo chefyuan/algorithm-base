@@ -96,6 +96,27 @@ class Solution:
         nums[j] = temp
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int len = nums.size(), left = 0;
+        int i = left, right = len-1;
+        while (i <= right) {
+             if (nums[i] == 2) {
+                 swap(nums[i],nums[right--]);
+             } else if (nums[i] == 0) {
+                 swap(nums[i++],nums[left++]);
+             } else {
+                 i++;
+             }
+        }  
+    }
+};
+```
+
 另外我们看这段代码，有什么问题呢？那就是我们即使完全符合时，仍会交换元素，这样会大大降低我们的效率。
 
 例如：[0,0,0,1,1,1,2,2,2]
@@ -175,3 +196,27 @@ class Solution:
         nums[i] = nums[j]
         nums[j] = temp
 ```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int left = 0, len = nums.size();
+        int right = len - 1;
+        for (int i = 0; i <= right; ++i) {
+            if (nums[i] == 0) {             
+                swap(nums[i],nums[left++]);
+            }
+            if (nums[i] == 2) {
+                swap(nums[i],nums[right--]);
+                if (nums[i] != 1) {
+                        i--;
+                    }
+                }
+            }
+        }
+};
+```
+

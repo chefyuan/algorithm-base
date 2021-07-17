@@ -78,6 +78,22 @@ class Solution:
         return False
 ```
 
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        unordered_map <int, int> m;
+        for(int i = 0; i < nums.size(); ++i){
+            if(m.count(nums[i]) && i - m[nums[i]] <= k) return true;
+            m[nums[i]] = i;
+        }
+        return false;
+    }
+};
+```
+
 **HashSet**
 
 **解析**
@@ -139,4 +155,22 @@ class Solution:
             if len(s) > k:
                 s.remove(nums[i - k])
         return False
-```        
+```
+
+C++ Code:
+
+```cpp
+class Solution {
+public:
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        multiset <int> S;
+        for(int i = 0; i < nums.size(); ++i){
+            if(S.count(nums[i])) return true;
+            S.insert(nums[i]);
+            if(S.size() > k) S.erase(nums[i - k]);
+        }
+        return false;
+    }
+};
+```
+
