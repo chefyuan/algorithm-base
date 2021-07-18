@@ -134,4 +134,36 @@ class Solution {
 
 Go Code:
 ```go
+func search(nums []int, target int) int {
+    // 左右指针
+    left := 0
+    right := len(nums) - 1
+    for (left <= right) {
+        mid := left + ((right - left) >> 1)
+        rightNum, leftNum, midNum := nums[right], nums[left], nums[mid]
+        if midNum == target {
+            return mid
+        }
+
+        //落在同一数组的情况，同时落在数组1 或 数组2
+        if midNum >= leftNum {
+            //target 落在 left 和 mid 之间，则移动我们的right，完全有序的一个区间内查找
+            if midNum > target && target >= leftNum {
+                right = mid - 1
+            } else {
+                // target落在另一个无序区间， 但和原数组的性质相符， 所以可以继续循环
+                left = mid + 1
+            }
+        } else {
+            //target 落在 mid 和 right 之间，则移动我们的left，完全有序的一个区间内查找
+            if midNum < target && target <= rightNum  {
+                left = mid + 1
+            } else {
+                // target落在另一个无序区间， 但和原数组的性质相符， 所以可以继续循环
+                right = mid - 1
+            }
+        }
+    }
+    return -1
+} 
 ```
