@@ -4,7 +4,7 @@
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [1052. 爱生气的书店老板](https://leetcode-cn.com/problems/grumpy-bookstore-owner/)
 
@@ -48,7 +48,7 @@ rightsum 是窗口右区间的值，和左区间加和方式一样。那么我�
 
 我们此时移动了窗口，
 
-则左半区间范围扩大，但是 leftsum 的值没有变，这时因为新加入的值，所对应的 grumpy[i] == 1，所以其值不会发生改变，因为我们只统计 grumpy[i] == 0 的值， 
+则左半区间范围扩大，但是 leftsum 的值没有变，这时因为新加入的值，所对应的 grumpy[i] == 1，所以其值不会发生改变，因为我们只统计 grumpy[i] == 0 的值，
 
 右半区间范围减少，rightsum 值也减少，因为右半区间减小的值，其对应的 grumpy[i] == 0，所以 rightsum -=  grumpy[i]。
 
@@ -72,15 +72,15 @@ class Solution {
             }
         }
         //窗口的值
-        for (int i = 0; i < X; ++i) {        
-              winsum += customers[i];          
+        for (int i = 0; i < X; ++i) {
+              winsum += customers[i];
         }
         int leftsum = 0;
         //窗口左边缘
         int left = 1;
         //窗口右边缘
         int right = X;
-        int maxcustomer = winsum + leftsum + rightsum;     
+        int maxcustomer = winsum + leftsum + rightsum;
         while (right < customers.length) {
             //重新计算左区间的值，也可以用 customer 值和 grumpy 值相乘获得
             if (grumpy[left-1] == 0) {
@@ -97,7 +97,7 @@ class Solution {
             //移动窗口
             left++;
             right++;
-        }        
+        }
         return maxcustomer;
     }
 }
@@ -151,8 +151,54 @@ class Solution {
             left += 1
             right += 1
         }
-        
+
         return maxCustomer
     }
 }
+```
+
+C++ Code
+
+```C++
+class Solution
+{
+public:
+    int maxSatisfied(vector<int> &customers, vector<int> &grumpy, int minutes)
+    {
+        for_each(grumpy.begin(), grumpy.end(), [](auto &g){ g = !g; });
+        vector<int> osum(customers.size(), 0);
+
+        //先初始化第一个元素
+        osum[0] = customers[0] * grumpy[0];
+        //计算前缀和, osum是origin sum
+        for (int i = 1; i < osum.size(); i++)
+        {
+            osum[i] = osum[i - 1] + customers[i] * grumpy[i];
+        }
+
+        //计算连续minutes的和
+        vector<int> msum(customers.size() - minutes + 1, 0);
+        for (int i = 0; i < minutes; i++)
+        {
+            msum[0] += customers[i];
+        }
+        for (int i = 1; i < msum.size(); i++)
+        {
+            msum[i] = msum[i - 1] - customers[i - 1] + customers[i + minutes - 1];
+        }
+
+        //分成三段计算
+        int result = 0;
+        for (int i = 0; i < msum.size(); i++)
+        {
+            //左                                         中         右
+            //注意左的边界条件, 可以使用边界测试
+            int sum = ((i - 1 >= 0) ? osum[i - 1] : 0) + msum[i] + osum[osum.size() - 1] - osum[i + minutes - 1];
+            if (sum > result)
+                result = sum;
+        }
+
+        return result;
+    }
+};
 ```
