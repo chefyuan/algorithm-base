@@ -116,6 +116,62 @@ class Solution {
 }      
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    var list:[Int] = [] 
+    func postorderTraversal(_ root: TreeNode?) -> [Int] {
+        guard root != nil else {
+            return list
+        }
+        var p1 = root, p2: TreeNode?
+        while p1 != nil {
+            p2 = p1!.left
+            if p2 != nil {
+                while p2!.right != nil && p2!.right !== p1 {
+                    p2 = p2!.right
+                }
+                if p2!.right == nil {
+                    p2!.right = p1
+                    p1 = p1!.left
+                    continue
+                } else {
+                    p2!.right = nil
+                    postMorris(p1!.left)
+                }
+            }
+            p1 = p1!.right
+        }
+        //以根节点为起点的链表
+        postMorris(root!)
+        return list
+    }
+
+    func postMorris(_ root: TreeNode?) {
+        let reverseNode = reverseList(root)
+        //从后往前遍历
+        var cur = reverseNode
+        while cur != nil {
+            list.append(cur!.val)
+            cur = cur!.right
+        }
+        reverseList(reverseNode)
+    }
+
+    func reverseList(_ head: TreeNode?) -> TreeNode? {
+        var cur = head, pre: TreeNode?
+        while cur != nil {
+            let next = cur?.right
+            cur?.right = pre
+            pre = cur
+            cur = next
+        }
+        return pre
+    }
+}
+```
+
 时间复杂度 O（n）空间复杂度 O（1）
 
 总结：后序遍历比起前序和中序稍微复杂了一些，所以我们解题的时候，需要好好注意一下，迭代法的核心是利用一个指针来定位我们上一个遍历的节点，Morris 的核心是，将某节点的右子节点，看成是一条链表，进行反向遍历。

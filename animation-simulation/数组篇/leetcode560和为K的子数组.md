@@ -45,6 +45,8 @@ class Solution {
 
 Python3版本的代码会超时
 
+Swift版本的代码会超时
+
 下面我们我们使用前缀和的方法来解决这个题目，那么我们先来了解一下前缀和是什么东西。其实这个思想我们很早就接触过了。见下图
 
 ![](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/微信截图_20210113193831.4wk2b9zc8vm0.png)
@@ -160,3 +162,27 @@ class Solution {
 }
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func subarraySum(_ nums: [Int], _ k: Int) -> Int {
+        if nums.count == 0 {
+            return 0
+        }
+        var map: [Int: Int] = [:]
+        map[0] = 1 // 需要添加入一个元素垫底，已支持前几位就满足的情况
+        var presum = 0, count = 0
+
+        for x in nums {
+            presum += x
+            //当前前缀和已知，判断是否含有 presum - k的前缀和，那么我们就知道某一区间的和为 k 了。
+            if let v = map[presum - k] {
+                count += v //获取presum-k前缀和出现次数
+            }
+            map[presum] = (map[presum] ?? 0) + 1
+        }
+        return count
+    }
+}
+```

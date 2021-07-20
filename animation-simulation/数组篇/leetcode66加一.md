@@ -103,3 +103,23 @@ public:
 };
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func plusOne(_ digits: [Int]) -> [Int] {
+        let count = digits.count
+        var digits = digits
+        for i in stride(from: count - 1, through: 0, by: -1) {
+            digits[i] = (digits[i] + 1) % 10
+            if digits[i] != 0 {
+                return digits
+            }
+        }
+        var arr: [Int] = Array.init(repeating: 0, count: count + 1)
+        arr[0] = 1
+        return arr
+    }
+}
+```
+

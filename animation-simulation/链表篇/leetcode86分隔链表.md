@@ -157,3 +157,34 @@ class Solution:
         return headsmall.next
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func partition(_ head: ListNode?, _ x: Int) -> ListNode? {
+        var pro = head
+        var big = ListNode(-1)
+        var small = ListNode(-1)
+        var headbig = big
+        var headsmall = small
+        //分
+        while pro != nil {
+            //大于时，放到 big 链表上
+            if pro!.val >= x {
+                big.next = pro
+                big = big.next!
+            //小于时，放到 small 链表上
+            } else {
+                small.next = pro
+                small = small.next!
+            }
+            pro = pro?.next
+        }
+        //细节
+        big.next = nil
+        //合
+        small.next = headbig.next
+        return headsmall.next
+    }
+}
+```

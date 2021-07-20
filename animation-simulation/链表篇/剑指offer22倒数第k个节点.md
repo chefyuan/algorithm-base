@@ -136,3 +136,28 @@ class Solution:
         return after
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func getKthFromEnd(_ head: ListNode?, _ k: Int) -> ListNode? {
+        //特殊情况
+        if head == nil {
+            return head
+        }
+        //初始化两个指针
+        var pro = head, after = head
+        //先移动绿指针到指定位置
+        for i in 0..<k-1 {
+            pro = pro?.next
+        }
+        //两个指针同时移动
+        while pro?.next != nil {
+            pro = pro?.next
+            after = after?.next
+        }
+        //返回倒数第k个节点
+        return after
+    }
+}
+```

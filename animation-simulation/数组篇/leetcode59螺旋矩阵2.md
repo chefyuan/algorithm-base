@@ -176,6 +176,43 @@ public:
 };
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+        var arr:[Int] = []
+        var left = 0, right = matrix[0].count - 1
+        var top = 0, down = matrix.count - 1
+
+        while (true) {
+            for i in left...right {
+                arr.append(matrix[top][i])
+            }
+            top += 1
+            if top > down { break }
+            for i in top...down {
+                arr.append(matrix[i][right])
+            }
+            right -= 1
+            if left > right { break}
+            for i in stride(from: right, through: left, by: -1) {
+                arr.append(matrix[down][i])
+            }
+            down -= 1
+            if top > down { break}
+            for i in stride(from: down, through: top, by: -1) {
+                arr.append(matrix[i][left])
+            }
+            left += 1
+            if left > right { break}
+        }
+
+        return arr
+    }
+}
+```
+
 我们仅仅是将 54 反过来了，往螺旋矩阵里面插值，下面我们直接看代码吧,大家可以也可以对其改进，大家可以思考一下，如果修改能够让代码更简洁！
 
 Java Code:
@@ -298,3 +335,44 @@ public:
 };
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func generateMatrix(_ n: Int) -> [[Int]] {
+        var arr:[[Int]] = Array.init(repeating: Array.init(repeating: 0, count: n), count: n)
+        var left = 0, right = n - 1
+        var top = 0, bottom = n - 1
+        var num = 1, numSize = n * n
+
+        while true {
+            for i in left...right {
+                arr[top][i] = num
+                num += 1
+            }
+            top += 1
+            if num > numSize { break}
+            for i in top...bottom {
+                arr[i][right] = num
+                num += 1
+            }
+            right -= 1
+            if num > numSize { break}
+            for i in stride(from: right, through: left, by: -1) {
+                arr[bottom][i] = num
+                num += 1
+            }
+            bottom -= 1
+            if num > numSize { break}
+            for i in stride(from: bottom, through: top, by: -1) {
+                arr[i][left] = num
+                num += 1
+            }
+            left += 1
+            if num > numSize { break}
+        }
+
+        return arr
+    }
+}
+```

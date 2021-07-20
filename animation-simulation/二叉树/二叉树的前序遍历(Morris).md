@@ -103,4 +103,41 @@ class Solution {
 }
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func preorderTraversal(_ root: TreeNode?) -> [Int] {
+        var list:[Int] = []
+        guard root != nil else {
+            return list
+        }
+        var p1 = root, p2: TreeNode?
+        while p1 != nil {
+            p2 = p1!.left
+            if p2 != nil {
+                //找到左子树的最右叶子节点
+                while p2!.right != nil && p2!.right !== p1 {
+                    p2 = p2!.right
+                }
+                //添加 right 指针，对应 right 指针为 null 的情况
+                if p2!.right == nil {
+                    list.append(p1!.val)
+                    p2!.right = p1
+                    p1 = p1!.left
+                    continue
+                }
+                //对应 right 指针存在的情况，则去掉 right 指针
+                p2!.right = nil
+            } else {
+                list.append(p1!.val)
+            }
+            //移动 p1
+            p1 = p1!.right
+        }
+        return list
+    }
+}
+```
+
 好啦，今天就看到这里吧，咱们下期见！

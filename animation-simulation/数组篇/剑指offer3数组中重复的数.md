@@ -61,6 +61,24 @@ class Solution:
         return -1
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func findRepeatNumber(_ nums: [Int]) -> Int {
+        var set: Set<Int> = []
+        for n in nums {
+            if set.contains(n) { // 如果发现某元素存在，则返回
+                return n
+            }
+            set.insert(n) // 存入集合
+        }
+
+        return -1
+    }
+}
+```
+
 #### **原地置换**
 
 **解析**
@@ -135,4 +153,27 @@ class Solution:
                 nums[i] = nums[temp]
                 nums[temp] = temp
         return -1
+```
+
+Swift Code:
+
+```swift
+class Solution {
+    func findRepeatNumber(_ nums: [Int]) -> Int {
+        if nums.isEmpty {
+            return -1
+        }
+        var nums = nums;
+        for i in 0..<nums.count {
+            while nums[i] != i {
+                if nums[i] == nums[nums[i]] {
+                    return nums[i]
+                }
+                nums.swapAt(i, nums[i])
+            }
+        }
+
+        return -1
+    }
+}
 ```

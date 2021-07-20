@@ -135,6 +135,40 @@ class Solution:
         return tempb
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+        var tempa = headA
+        var tempb = headB
+        var arr:Set<ListNode> = []
+        //遍历链表A，将所有值都存到arr中
+        while tempa != nil {
+            arr.insert(tempa!)
+            tempa = tempa?.next
+        }
+        //遍历列表B，如果发现某个结点已在arr中则直接返回该节点
+        while tempb != nil {
+            if arr.contains(tempb!) {
+                return tempb
+            }
+            tempb = tempb?.next
+        }
+        //若上方没有返回，此刻tempb为null
+        return tempb
+    }
+}
+extension ListNode: Hashable, Equatable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(val)
+        hasher.combine(ObjectIdentifier(self))
+    }
+    public static func ==(lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs === rhs
+    }
+}
+```
 
 
 下面这个方法比较巧妙，不是特别容易想到，大家可以自己实现一下，这个方法也是利用我们的双指针思想。
@@ -219,6 +253,25 @@ class Solution:
             tempa = tempa.next if tempa is not None else headB
             tempb = tempb.next if tempb is not None else headA
         return tempa  # 返回tempb也行
+```
+
+Swift Code：
+
+```swift
+class Solution {
+    func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
+        //定义两个节点
+        var tempa = headA
+        var tempb = headB
+        //循环
+        while tempa != tempb {
+            // 如果不为空就指针下移，为空就跳到另一链表的头部
+            tempa = tempa != nil ? tempa?.next : headB
+            tempb = tempb != nil ? tempb?.next : headA
+        }
+        return tempa //返回tempb也行
+    }
+}
 ```
 
 好啦，链表的题目就结束啦，希望大家能有所收获，下周就要更新新的题型啦，继续坚持，肯定会有收获的。
