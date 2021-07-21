@@ -84,6 +84,32 @@ class Solution:
         return max(maxcount, right - left)
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func findMaxConsecutiveOnes(_ nums: [Int]) -> Int {
+
+        var left = 0, right = 0, res = 0
+        let len = nums.count
+        while right < len {
+            if nums[right] == 1 {
+                right += 1
+                continue
+            }
+            // 保存最大值
+            res = max(res, right - left)
+            // 跳过 0 的情况
+            while right < len && nums[right] == 0 {
+                right += 1
+            }
+            // 同一起点继续遍历
+            left = right
+        }
+        return max(res, right - left)
+    }
+}
+```
 
 刚才的效率虽然相对高一些，但是代码不够优美，欢迎各位改进，下面我们说一下另外一种情况，一个特别容易理解的方法。
 
@@ -132,3 +158,22 @@ class Solution:
         return ans
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func findMaxConsecutiveOnes(_ nums: [Int]) -> Int {
+        let len = nums.count
+        var maxCount = 0, count = 0
+        for i in 0..<len {
+            if nums[i] == 1 {
+                count += 1
+            } else { // 这里可以改成 while
+                maxCount = max(maxCount, count)
+                count = 0
+            }
+        }        
+        return max(maxCount, count)
+    }
+}
+```

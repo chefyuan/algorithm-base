@@ -132,8 +132,6 @@ class Solution:
         return head
 ```
 
-
-
 ### 快慢指针
 
 这个方法是比较巧妙的方法，但是不容易想到，也不太容易理解，利用快慢指针判断是否有环很容易，但是判断环的入口就没有那么容易，之前说过快慢指针肯定会在环内相遇，见下图。
@@ -275,3 +273,29 @@ class Solution:
                 return slow
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func detectCycle(_ head: ListNode?) -> ListNode? {
+        // 快慢指针
+        var fast = head, slow = head
+        while fast != nil && fast?.next != nil {
+            fast = fast?.next?.next
+            slow = slow?.next
+            // 相遇
+            if fast === slow {
+                // 设置一个新的指针，从头节点出发，慢指针速度为1，所以可以使用慢指针从相遇点出发
+                // 此处也可以不创新结点，直接将 fast = head
+                var newNode = head 
+                while newNode !== slow {
+                    slow = slow?.next
+                    newNode = newNode?.next
+                }
+                return slow
+            }
+        }
+        return nil
+    }
+}
+```

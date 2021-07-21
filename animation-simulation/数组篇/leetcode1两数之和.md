@@ -76,6 +76,32 @@ class Solution:
         return rearr
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        let count = nums.count
+        if count < 2 {
+            return [0]
+        }
+        
+        var rearr: [Int] = []
+        // 查询元素
+        for i in 0..<count {
+            for j in i+1..<count {
+                // 发现符合条件情况
+                if nums[i] + nums[j] == target {
+                    rearr.append(i)
+                    rearr.append(j)
+                }
+            }
+        }
+        return rearr
+    }
+}
+```
+
 **哈希表**
 
 **解析**
@@ -159,3 +185,20 @@ class Solution:
         return [0]
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var m:[Int:Int] = [:]
+        for i in 0..<nums.count {
+            let n = nums[i]
+            if let k = m[target - n] { // 如果存在则返回
+                return [k, i]
+            }
+            m[n] = i // 不存在则存入
+        }
+        return [0]
+    }
+}
+```

@@ -117,6 +117,38 @@ public:
 };
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func sortColors(_ nums: inout [Int]) {
+
+        let count = nums.count
+        var left = 0, i = left, right = count - 1
+        while i <= right {
+            if nums[i] == 2 {
+                //nums.swapAt(i, right) 直接调用系统方法
+                self.swap(&nums, i, right) // 保持风格统一走自定义交换
+                right -= 1
+            } else if nums[i] == 0 {
+                //nums.swapAt(i, left) 直接调用系统方法
+                self.swap(&nums, i, left) // 保持风格统一走自定义交换
+                i += 1
+                left += 1
+            } else {
+                i += 1
+            }
+        }
+    }
+
+    func swap(_ nums: inout [Int], _ i: Int, _ j: Int) {
+        let temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
+    }
+}
+```
+
 另外我们看这段代码，有什么问题呢？那就是我们即使完全符合时，仍会交换元素，这样会大大降低我们的效率。
 
 例如：[0,0,0,1,1,1,2,2,2]
@@ -220,3 +252,37 @@ public:
 };
 ```
 
+Swift Code:
+
+```swift
+class Solution {
+    func sortColors(_ nums: inout [Int]) {
+
+        let count = nums.count
+        var left = 0, i = left, right = count - 1
+        while i <= right {
+            if nums[i] == 0 {
+                //nums.swapAt(i, left) 直接调用系统方法
+                self.swap(&nums, i, left) // 保持风格统一走自定义交换
+                left += 1
+            } 
+            if nums[i] == 2 {
+                //nums.swapAt(i, right) 直接调用系统方法
+                self.swap(&nums, i, right) // 保持风格统一走自定义交换
+                right -= 1
+                //如果不等于 1 则需要继续判断，所以不移动 i 指针，i--
+                if nums[i] != 1 {
+                    i -= 1
+                }
+            }
+            i += 1
+        }
+    }
+
+    func swap(_ nums: inout [Int], _ i: Int, _ j: Int) {
+        let temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
+    }
+}
+```

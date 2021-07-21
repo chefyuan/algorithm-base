@@ -111,3 +111,152 @@ class Solution:
         return maxwin
 ```
 
+Swift Code
+
+Swift：数组模拟，超时（58 / 61 个通过测试用例）
+```swift
+class Solution {
+    func longestSubarray(_ nums: [Int], _ limit: Int) -> Int {
+        var maxQueue:[Int] = []
+        var minQueue:[Int] = []
+        let len = nums.count
+        var right = 0, left = 0, maxWin = 0
+        while right < len {
+            while !maxQueue.isEmpty && (maxQueue.last! < nums[right]) {
+                maxQueue.removeLast()
+            }
+            while !minQueue.isEmpty && (minQueue.last! > nums[right]) {
+                minQueue.removeLast()
+            }
+            maxQueue.append(nums[right])
+            minQueue.append(nums[right])
+            while (maxQueue.first! - minQueue.first!) > limit {
+                if maxQueue.first! == nums[left] {
+                    maxQueue.removeFirst()
+                }
+                if minQueue.first! == nums[left] {
+                    minQueue.removeFirst()
+                }
+                left += 1
+            }
+            maxWin = max(maxWin, right - left + 1)
+            right += 1
+        }
+        return maxWin
+    }
+}
+```
+
+Swift：使用双端队列（击败了100.00%）
+
+```swift
+class Solution {
+    func longestSubarray(_ nums: [Int], _ limit: Int) -> Int {
+        var maxQueue = Deque<Int>.init()
+        var minQueue = Deque<Int>.init()
+        let len = nums.count
+        var right = 0, left = 0, maxWin = 0
+        while right < len {
+            while !maxQueue.isEmpty && (maxQueue.peekBack()! < nums[right]) {
+                maxQueue.dequeueBack()
+            }
+            while !minQueue.isEmpty && (minQueue.peekBack()! > nums[right]) {
+                minQueue.dequeueBack()
+            }
+            maxQueue.enqueue(nums[right])
+            minQueue.enqueue(nums[right])
+            while (maxQueue.peekFront()! - minQueue.peekFront()!) > limit {
+                if maxQueue.peekFront()! == nums[left] {
+                    maxQueue.dequeue()
+                }
+                if minQueue.peekFront()! == nums[left] {
+                    minQueue.dequeue()
+                }
+                left += 1
+            }
+            maxWin = max(maxWin, right - left + 1)
+            right += 1
+        }
+        return maxWin
+    }
+
+    // 双端队列数据结构
+    public struct Deque<T> {
+        private var array: [T?]
+        private var head: Int
+        private var capacity: Int
+        private let originalCapacity: Int
+
+        public init(_ capacity: Int = 10) {
+            self.capacity = max(capacity, 1)
+            originalCapacity = self.capacity
+            array = [T?](repeating: nil, count: capacity)
+            head = capacity
+        }
+
+        public var isEmpty: Bool {
+            return count == 0
+        }
+
+        public var count: Int {
+            return array.count - head
+        }
+
+        public mutating func enqueue(_ element: T) {
+            array.append(element)
+        }
+
+        public mutating func enqueueFront(_ element: T) {
+            if head == 0 {
+            capacity *= 2
+            let emptySpace = [T?](repeating: nil, count: capacity)
+            array.insert(contentsOf: emptySpace, at: 0)
+            head = capacity
+            }
+
+            head -= 1
+            array[head] = element
+        }
+
+        public mutating func dequeue() -> T? {
+            guard head < array.count, let element = array[head] else { return nil }
+
+            array[head] = nil
+            head += 1
+
+            if capacity >= originalCapacity && head >= capacity*2 {
+            let amountToRemove = capacity + capacity/2
+            array.removeFirst(amountToRemove)
+            head -= amountToRemove
+            capacity /= 2
+            }
+            return element
+        }
+
+        public mutating func dequeueBack() -> T? {
+            if isEmpty {
+            return nil
+            } else {
+            return array.removeLast()
+            }
+        }
+
+        public func peekFront() -> T? {
+            if isEmpty {
+            return nil
+            } else {
+            return array[head]
+            }
+        }
+
+        public func peekBack() -> T? {
+            if isEmpty {
+            return nil
+            } else {
+            return array.last!
+            }
+        }
+    }
+}
+```
+

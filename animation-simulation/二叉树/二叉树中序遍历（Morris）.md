@@ -102,3 +102,34 @@ class Solution {
 }
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        var list:[Int] = []
+        guard root != nil else {
+            return list
+        }
+        var p1 = root, p2: TreeNode?
+        while p1 != nil {
+            p2 = p1!.left
+            if p2 != nil {
+                while p2!.right != nil && p2!.right !== p1 {
+                    p2 = p2!.right
+                }
+                if p2!.right == nil {
+                    p2!.right = p1
+                    p1 = p1!.left
+                    continue
+                } else {
+                    p2!.right = nil
+                }
+            }
+            list.append(p1!.val)
+            p1 = p1!.right
+        }
+        return list
+    }
+}
+```

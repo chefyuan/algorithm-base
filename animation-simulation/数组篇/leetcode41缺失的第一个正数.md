@@ -89,6 +89,33 @@ class Solution:
         return len(res)
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func firstMissingPositive(_ nums: [Int]) -> Int {
+        if nums.count == 0 {
+            return 1
+        }
+        // 因为是返回第一个正整数，不包括 0，所以需要长度加1，细节1
+        var res:[Int] = Array.init(repeating: 0, count: nums.count + 1)
+        // 将数组元素添加到辅助数组中
+        for x in nums {
+            if x > 0 && x < res.count {
+                res[x] = x
+            }
+        }
+        // 遍历查找,发现不一样时直接返回
+        for i in 1..<res.count {
+            if res[i] != i {
+                return i
+            }
+        }
+        // 缺少最后一个，例如 1，2，3此时缺少 4 ，细节2
+        return res.count
+    }
+}
+```
 
 我们通过上面的例子了解这个解题思想，我们有没有办法不使用辅助数组完成呢？我们可以使用原地置换，直接在 nums 数组内，将值换到对应的索引处，与上个方法思路一致，只不过没有使用辅助数组，理解起来也稍微难理解一些。
 
@@ -166,3 +193,42 @@ class Solution:
         return n + 1
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func firstMissingPositive(_ nums: [Int]) -> Int {
+        var nums = nums
+        let len = nums.count
+        if len == 0 {
+            return 1
+        }
+        // 遍历数组
+        for i in 0..<len {
+            // 需要考虑指针移动情况，大于0，小于len+1，不等与i+1，
+            // 两个交换的数相等时，防止死循环
+            while nums[i] > 0 
+                  && nums[i] < len + 1 
+                  && nums[i] != i + 1
+                  && nums[i] != nums[nums[i] - 1] 
+            {
+                //nums.swapAt(i, (nums[i] - 1)) // 系统方法
+                self.swap(&nums, i, (nums[i] - 1)) // 自定义方法
+            }
+        }
+        // 遍历寻找缺失的正整数
+        for i in 0..<len {
+            if nums[i] != i + 1 {
+                return i + 1
+            }
+        }
+
+        return len + 1
+    }
+    func swap(_ nums: inout [Int], _ i: Int, _ j: Int) {
+        let temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
+    }
+}
+```

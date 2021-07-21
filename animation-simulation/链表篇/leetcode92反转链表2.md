@@ -218,3 +218,50 @@ class Solution:
         return low
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func reverseBetween(_ head: ListNode?, _ left: Int, _ right: Int) -> ListNode? {
+        // 虚拟头结点
+        var temp = ListNode(-1)
+        temp.next = head
+        var pro:ListNode? = temp
+        // 来到 left 节点前的一个节点
+        var i = 0
+        for n in i..<left - 1 {
+            pro = pro?.next
+            i += 1
+        }
+        // 保存 left 节点前的一个节点
+        var leftNode = pro
+        // 来到 right 节点
+        for n in i..<right {
+            pro = pro?.next
+        }
+        // 保存 right 节点后的一个节点
+        var rightNode:ListNode? = pro?.next
+        // 切断链表
+        pro?.next = nil // 切断 right 后的部分
+        var newHead:ListNode? = leftNode?.next // 保存 left 节点
+        leftNode?.next = nil // 切断 left 前的部分
+        // 反转
+        leftNode?.next = reverse(newHead)
+        // 重新接头
+        newHead?.next = rightNode
+        return temp.next
+    }
+    // 和反转链表1代码一致
+    func reverse(_ head: ListNode?) -> ListNode? {
+        var low:ListNode?
+        var pro = head
+        while pro != nil {
+            var temp = pro
+            pro = pro?.next
+            temp?.next = low
+            low = temp
+        }
+        return low
+    }
+}
+```

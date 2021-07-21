@@ -128,3 +128,27 @@ class Solution:
         return head
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func oddEvenList(_ head: ListNode?) -> ListNode? {
+        if head == nil || head?.next == nil {
+            return head
+        }
+        var odd = head
+        var even = head?.next
+        var evenHead = even
+        while odd?.next != nil && even?.next != nil {
+            //将偶数位合在一起，奇数位合在一起
+            odd?.next = even?.next
+            odd = odd?.next
+            even?.next = odd?.next
+            even = even?.next
+        }
+        //链接
+        odd?.next = evenHead
+        return head
+    }
+}
+```

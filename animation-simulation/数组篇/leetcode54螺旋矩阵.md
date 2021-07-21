@@ -156,5 +156,40 @@ class Solution:
         return arr
 ```
 
+Swift Code
 
+```swift
+class Solution {
+    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
+        var arr:[Int] = []
+        var left = 0, right = matrix[0].count - 1
+        var top = 0, down = matrix.count - 1
+
+        while (true) {
+            for i in left...right {
+                arr.append(matrix[top][i])
+            }
+            top += 1
+            if top > down { break }
+            for i in top...down {
+                arr.append(matrix[i][right])
+            }
+            right -= 1
+            if left > right { break}
+            for i in stride(from: right, through: left, by: -1) {
+                arr.append(matrix[down][i])
+            }
+            down -= 1
+            if top > down { break}
+            for i in stride(from: down, through: top, by: -1) {
+                arr.append(matrix[i][left])
+            }
+            left += 1
+            if left > right { break}
+        }
+
+        return arr
+    }
+}
+```
 
