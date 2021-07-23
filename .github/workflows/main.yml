@@ -2,9 +2,9 @@ name: Format files
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -20,14 +20,13 @@ jobs:
         run: npm install --save-dev --save-exact prettier
 
       - name: Format files
-        run: prettier --write .
+        run: node_modules/.bin/prettier --write README.md animation-simulation/
 
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add .
-          git commit -m "代码重构 【Github Actions】"
+          git commit -am "代码重构 【Github Actions】"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
