@@ -2,7 +2,7 @@
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 ### [leetcode560. 和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
 
@@ -114,7 +114,7 @@ class Solution {
         //一次遍历
         for (int i = 0; i < nums.length; ++i) {
             //存在时，我们用数组得值为 key，索引为 value
-            if (map.containsKey(target - nums[i])){              
+            if (map.containsKey(target - nums[i])){
                return new int[]{i,map.get(target-nums[i])};
             }
             //存入值
@@ -185,4 +185,35 @@ class Solution {
         return count
     }
 }
+```
+
+C++ Code
+
+```C++
+class Solution
+{
+public:
+    int subarraySum(vector<int> &nums, int k)
+    {
+        unordered_map<int, int> smp;
+        int sum = 0;
+        //初始化"最外面"的0
+        smp[0] = 1;
+        int result = 0;
+        for(int i = 0; i < nums.size(); i++)
+        {
+            sum += nums[i];
+            auto mp = smp.find(sum - k);
+            if (mp != smp.end())
+            {
+                //map里面存的一定是在前面的元素
+                //可以尝试将map的value换为数组
+                result += mp->second;
+            }
+            smp[sum]++;
+        }
+
+        return result;
+    }
+};
 ```
