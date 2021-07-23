@@ -40,6 +40,8 @@
 
 #### 题目代码
 
+Java Code:
+
 ```java
 class Solution {
     public int searchInsert(int[] nums, int target) {
@@ -63,6 +65,29 @@ class Solution {
         //返回插入位置
         return left;
     }
+}
+```
+
+Go Code:
+
+```go
+func searchInsert(nums []int, target int) int {
+    left, right := 0, len(nums) - 1
+    for (left <= right) {
+        mid := left + ((right - left) >> 1)
+        // 查询成功
+        if nums[mid] == target {
+            return mid
+        // 右区间
+        } else if nums[mid] < target {
+            left = mid + 1
+        // 左区间
+        } else {
+            right = mid - 1
+        }
+    }
+    return left
+
 }
 ```
 
