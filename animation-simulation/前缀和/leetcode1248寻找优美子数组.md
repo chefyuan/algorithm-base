@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [1248. 统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays/)
 
@@ -12,7 +12,7 @@
 >
 > 如果某个 连续 子数组中恰好有 k 个奇数数字，我们就认为这个子数组是「优美子数组」。
 >
-> 请返回这个数组中「优美子数组」的数目。 
+> 请返回这个数组中「优美子数组」的数目。
 
 **示例 1：**
 
@@ -33,22 +33,22 @@
 
 如果上面那个题目我们完成了，这个题目做起来，分分钟的事，不信你去写一哈，百分百就整出来了，我们继续按上面的思想来解决。
 
- **HashMap**
+**HashMap**
 
 **解析**
 
-上个题目我们是求和为 K 的子数组，这个题目是让我们求 恰好有  k 个奇数数字的连续子数组，这两个题几乎是一样的，上个题中我们将前缀区间的和保存到哈希表中，这个题目我们只需将前缀区间的奇数个数保存到区间内即可，只不过将 sum += x 改成了判断奇偶的语句，见下图。
+上个题目我们是求和为 K 的子数组，这个题目是让我们求 恰好有 k 个奇数数字的连续子数组，这两个题几乎是一样的，上个题中我们将前缀区间的和保存到哈希表中，这个题目我们只需将前缀区间的奇数个数保存到区间内即可，只不过将 sum += x 改成了判断奇偶的语句，见下图。
 
 ![微信截图_20210114222339](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/微信截图_20210114222339.c0gwtdh8m94.png)
 
-我们来解析一下哈希表，key 代表的是含有 1 个奇数的前缀区间，value 代表这种子区间的个数，含有两个，也就是nums[0],nums[0,1].后面含义相同，那我们下面直接看代码吧，一下就能读懂。
+我们来解析一下哈希表，key 代表的是含有 1 个奇数的前缀区间，value 代表这种子区间的个数，含有两个，也就是 nums[0],nums[0,1].后面含义相同，那我们下面直接看代码吧，一下就能读懂。
 
 Java Code:
 
 ```java
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
-        
+
         if (nums.length == 0) {
             return 0;
         }
@@ -95,10 +95,10 @@ public:
             }
             //存入
             if(m.find(oddnum) != m.end()) m[oddnum]++;
-            else m[oddnum] = 1; 
+            else m[oddnum] = 1;
         }
         return count;
-    } 
+    }
 };
 ```
 
@@ -108,7 +108,7 @@ Java Code:
 
 ```java
 class Solution {
-    public int numberOfSubarrays(int[] nums, int k) {      
+    public int numberOfSubarrays(int[] nums, int k) {
         int len = nums.length;
         int[] map = new int[len + 1];
         map[0] = 1;
@@ -147,7 +147,6 @@ public:
             map[oddnum]++;
         }
         return count;
-    } 
+    }
 };
 ```
-

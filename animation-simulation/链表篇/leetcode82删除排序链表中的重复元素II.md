@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 
@@ -17,7 +17,6 @@
 输出: 1->2->5
 ```
 
-
 示例 2:
 
 ```java
@@ -25,7 +24,7 @@
 输出: 2->3
 ```
 
-> 注意这里会将重复的值全部删除，1，1，2，3最后只会保留2，3。
+> 注意这里会将重复的值全部删除，1，1，2，3 最后只会保留 2，3。
 
 这道题目还是很简单的，更多的是考察大家的代码完整性，删除节点也是题库中的一类题目，我们可以可以通过这个题目举一反三。去完成其他删除阶段的题目。
 
@@ -62,7 +61,7 @@ class Solution {
                 //while循环后，pre停留在最后一个重复的节点上
                 pre = pre.next;
                 //连上新节点
-                low.next = pre;                     
+                low.next = pre;
              }
              else{
                  pre = pre.next;
@@ -96,7 +95,7 @@ public:
                 //while循环后，pre停留在最后一个重复的节点上
                 pre = pre->next;
                 //连上新节点
-                low->next = pre;                     
+                low->next = pre;
              }
              else{
                  pre = pre->next;
@@ -111,31 +110,30 @@ public:
 JS Code:
 
 ```javascript
-var deleteDuplicates = function(head) {
-    //侦察兵指针
-    let pre = head;
-    //创建虚拟头节点，接上head
-    let dummy = new ListNode(-1);
-    dummy.next = pre;
-    //跟随的指针
-    let low = dummy;
-    while(pre != null && pre.next != null) {
-        if (pre.val == pre.next.val) {
-            //移动侦察兵指针直到找到与上一个不相同的元素
-            while (pre != null && pre.next != null && pre.val === pre.next.val) {
-                pre = pre.next;
-            }
-            //while循环后，pre停留在最后一个重复的节点上
-            pre = pre.next;
-            //连上新节点
-            low.next = pre;                     
-         }
-         else{
-             pre = pre.next;
-             low = low.next;
-         }
+var deleteDuplicates = function (head) {
+  //侦察兵指针
+  let pre = head;
+  //创建虚拟头节点，接上head
+  let dummy = new ListNode(-1);
+  dummy.next = pre;
+  //跟随的指针
+  let low = dummy;
+  while (pre != null && pre.next != null) {
+    if (pre.val == pre.next.val) {
+      //移动侦察兵指针直到找到与上一个不相同的元素
+      while (pre != null && pre.next != null && pre.val === pre.next.val) {
+        pre = pre.next;
+      }
+      //while循环后，pre停留在最后一个重复的节点上
+      pre = pre.next;
+      //连上新节点
+      low.next = pre;
+    } else {
+      pre = pre.next;
+      low = low.next;
     }
-    return dummy.next;//注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
+  }
+  return dummy.next; //注意，这里传回的不是head，而是虚拟节点的下一个节点，head有可能已经换了
 };
 ```
 

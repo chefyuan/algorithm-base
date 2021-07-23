@@ -1,4 +1,4 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
@@ -6,13 +6,13 @@
 
 #### [485. 最大连续 1 的个数](https://leetcode-cn.com/problems/max-consecutive-ones/)
 
-给定一个二进制数组， 计算其中最大连续1的个数。
+给定一个二进制数组， 计算其中最大连续 1 的个数。
 
 示例 1:
 
 > 输入: [1,1,0,1,1,1]
 > 输出: 3
-> 解释: 开头的两位和最后的三位都是连续1，所以最大连续1的个数是 3.
+> 解释: 开头的两位和最后的三位都是连续 1，所以最大连续 1 的个数是 3.
 
 我的这个方法比较奇怪，但是效率还可以，战胜了 100% , 尽量减少了 Math.max()的使用，我们来看一下具体思路，利用 right 指针进行探路，如果遇到 1 则继续走，遇到零时则停下，求当前 1 的个数。
 
@@ -22,11 +22,7 @@
 
 下面我们通过一个视频模拟代码执行步骤大家一下就能搞懂了。
 
- ![leetcode485最长连续1的个数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode485最长连续1的个数.7avzcthkit80.gif)
-
-
-
-
+![leetcode485最长连续1的个数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode485最长连续1的个数.7avzcthkit80.gif)
 
 下面我们直接看代码吧
 
@@ -142,7 +138,6 @@ class Solution {
 ```
 
 Python3 Code:
-
 
 ```py
 class Solution:

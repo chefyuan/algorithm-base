@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 > 为保证代码严谨性，文中所有代码均在 leetcode 刷题网站 AC ，大家可以放心食用。
 
@@ -24,21 +24,17 @@
 
 通过上面的一个例子，让我们简单了解了字符串匹配。
 
-字符串匹配：设 S 和 T 是给定的两个串，在主串 S 中找到模式串 T 的过程称为字符串匹配，如果在主串 S 中找到 模式串 T ，则称匹配成功，函数返回 T 在 S 中首次出现的位置，否则匹配不成功，返回  -1。
+字符串匹配：设 S 和 T 是给定的两个串，在主串 S 中找到模式串 T 的过程称为字符串匹配，如果在主串 S 中找到 模式串 T ，则称匹配成功，函数返回 T 在 S 中首次出现的位置，否则匹配不成功，返回 -1。
 
 例：
 
-
-
 ![字符串匹配](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/字符串匹配.3q9wqbh8ws40.png)
-
-
 
 在上图中，我们试图找到模式 T = baab,在主串 S = abcabaabcabac 中第一次出现的位置，即为红色阴影部分， T 第一次在 S 中出现的位置下标为 4 （ 字符串的首位下标是 0 ），所以返回 4。如果模式串 T 没有在主串 S 中出现，则返回 -1。
 
 解决上面问题的算法我们称之为字符串匹配算法，今天我们来介绍三种字符串匹配算法，大家记得打卡呀，说不准面试的时候就问到啦。
 
-## BF算法（Brute Force）
+## BF 算法（Brute Force）
 
 这个算法很容易理解，就是我们将模式串和主串进行比较，一致时则继续比较下一字符，直到比较完整个模式串。不一致时则将模式串后移一位，重新从模式串的首位开始对比，重复刚才的步骤下面我们看下这个方法的动图解析，看完肯定一下就能搞懂啦。
 
@@ -50,7 +46,7 @@
 
 #### 题目描述
 
-给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回  -1。
+给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从 0 开始)。如果不存在，则返回 -1。
 
 示例 1:
 
@@ -74,7 +70,7 @@ Java Code:
 class Solution {
     public int strStr(String haystack, String needle) {
         int haylen = haystack.length();
-        int needlen = needle.length(); 
+        int needlen = needle.length();
         //特殊情况
         if (haylen < needlen) {
             return -1;
@@ -95,7 +91,7 @@ class Solution {
             //匹配成功
             if (j == needlen) {
                 return i;
-            } 
+            }
 
         }
         return -1;
@@ -105,7 +101,7 @@ class Solution {
 
 Python Code:
 
-```python 
+```python
 from typing import List
 class Solution:
     def strStr(self, haystack: str, needle: str)->int:
@@ -130,8 +126,7 @@ class Solution:
         return -1
 ```
 
-
-我们看一下BF算法的另一种算法（显示回退），其实原理一样，就是对代码进行了一下修改，只要是看完咱们的动图，这个也能够一下就能看懂，大家可以结合下面代码中的注释和动图进行理解。
+我们看一下 BF 算法的另一种算法（显示回退），其实原理一样，就是对代码进行了一下修改，只要是看完咱们的动图，这个也能够一下就能看懂，大家可以结合下面代码中的注释和动图进行理解。
 
 Java Code:
 

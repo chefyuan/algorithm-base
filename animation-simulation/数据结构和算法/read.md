@@ -18,13 +18,9 @@
 
 **所以基地里的题解都尽量用动画模拟，加深大家对题目的理解。往下看吧**
 
-
-
 > **PS：基地的所有代码均在刷题网站 AC 大家可以放心食用**
 
-
-
-**如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  [tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg) ，备注  github  + 题目 + 问题  向我反馈**
+**如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 [tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg) ，备注 github + 题目 + 问题 向我反馈**
 
 **如果老哥觉得仓库很用心的话，麻烦老哥点个 star ，这也是我一直更新下去的动力！感谢支持。**
 
@@ -32,9 +28,8 @@
 
 **另外想要进阶的老哥可以看下我之前看过的这个谷歌大神的刷题笔记。**
 
-**刷题笔记**：链接：https://pan.baidu.com/s/1gNIhOv83ZMxDEEFXLWChuA   提取码：chef 
+**刷题笔记**：链接：https://pan.baidu.com/s/1gNIhOv83ZMxDEEFXLWChuA 提取码：chef
 
-**希望手机阅读的同学可以来我的 [公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png)两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。** 
+**希望手机阅读的同学可以来我的 [公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png)两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[刷题小队](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。**
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信图片_20210320152235.2c1f5hy6gmas.png" width = "150px" hight = "150px"/> </div>
-

@@ -1,4 +1,4 @@
-# Leetcode常用函数
+# Leetcode 常用函数
 
 ## 链表篇
 
@@ -7,14 +7,14 @@
 ### ListNode
 
 ```java
-ListNode list=new ListNode(0) 
+ListNode list=new ListNode(0)
 ```
 
-初始化一个值为0的空节点，提倡的写法
+初始化一个值为 0 的空节点，提倡的写法
 
 ### HashSet
 
-HashSet 基于 HashMap 来实现的，是一个不允许有重复元素的集合但是允许有null值，HashSet 是无序的，即不会记录插入的顺序。HashSet 不是线程安全的， 如果多个线程尝试同时修改 HashSet，则最终结果是不确定的。 您必须在多线程访问时显式同步对 HashSet 的并发访问。
+HashSet 基于 HashMap 来实现的，是一个不允许有重复元素的集合但是允许有 null 值，HashSet 是无序的，即不会记录插入的顺序。HashSet 不是线程安全的， 如果多个线程尝试同时修改 HashSet，则最终结果是不确定的。 您必须在多线程访问时显式同步对 HashSet 的并发访问。
 
 ```java
 HashSet<String> sites = new HashSet<String>();
@@ -22,7 +22,7 @@ HashSet<String> sites = new HashSet<String>();
 
 #### add()
 
-往HashSet里添加元素
+往 HashSet 里添加元素
 
 ```
 sites.add("我是袁厨，大家快快关注我吧");
@@ -32,7 +32,7 @@ sites.add("我是袁厨，大家快快关注我吧");
 
 #### remove()
 
-remover()size()也是会用到的函数，具体用法和ArrayList一样
+remover()size()也是会用到的函数，具体用法和 ArrayList 一样
 
 #### contains()
 
@@ -44,13 +44,11 @@ System.out.println(sites.contains("我是袁厨，大家快快关注我吧"));
 
 > 输出：true；
 
-
-
 ## 数组篇
 
 ### length
 
-该函数是用来得到数组长度的函数，这里需要注意的是length后面没有括号
+该函数是用来得到数组长度的函数，这里需要注意的是 length 后面没有括号
 
 ### sort()
 
@@ -85,7 +83,7 @@ return array;
 
 ### Arrays.copyOfRange()
 
-将一个原始的数组，从下标0开始复制，复制到上标2，生成一个新的数组
+将一个原始的数组，从下标 0 开始复制，复制到上标 2，生成一个新的数组
 
 ```
 int[] array = {1,2,3,4};
@@ -94,7 +92,7 @@ return ar;
 
 ```
 
-> array2:  1 , 2 ;
+> array2: 1 , 2 ;
 
 ### System.arraycopy();
 
@@ -125,11 +123,11 @@ length：想要复制的长度
 
 ### 逻辑运算符
 
-#### x | 0 
+#### x | 0
 
 得到的仍然是他本身，
 
-例：1001|0000=1001；或运算代表的是如果两位其中有一个1则返回1，否则为0；
+例：1001|0000=1001；或运算代表的是如果两位其中有一个 1 则返回 1，否则为 0；
 
 ```java
 public static void main(String[] args) {
@@ -142,9 +140,9 @@ public static void main(String[] args) {
 
 #### x & 0
 
-无论任何数都会输出0，这个也很好理解。
+无论任何数都会输出 0，这个也很好理解。
 
-例：1001&0000=0000;两位都为1才能返回1
+例：1001&0000=0000;两位都为 1 才能返回 1
 
 ```
 public static void main(String[] args) {
@@ -157,9 +155,9 @@ public static void main(String[] args) {
 
 #### x ^ 0
 
-得到的还是他本身，这个也很好理解，异或的含义就是如果相同输出0，如果不同输出1
+得到的还是他本身，这个也很好理解，异或的含义就是如果相同输出 0，如果不同输出 1
 
-例：0111^0000=0111第一位相同，其余位不同
+例：0111^0000=0111 第一位相同，其余位不同
 
 ```java
 public static void main(String[] args) {
@@ -172,7 +170,7 @@ public static void main(String[] args) {
 
 #### x | 1
 
-如果是奇数的话，还是它本身，偶数的话则加1；
+如果是奇数的话，还是它本身，偶数的话则加 1；
 
 ```java
 int x =-9 ;
@@ -185,7 +183,7 @@ System.out.println(y|1);
 
 #### x ^ 1
 
-如果是偶数则加1，如果是奇数则减1；
+如果是偶数则加 1，如果是奇数则减 1；
 
 ```java
 int x =-9 ;
@@ -198,7 +196,7 @@ System.out.println(y^1);
 
 #### x & 1
 
-得出最后一位是0还是1，通常会用来判断奇偶
+得出最后一位是 0 还是 1，通常会用来判断奇偶
 
 ```java
 int x =-9 ;
@@ -211,7 +209,7 @@ System.out.println(y&1);
 
 #### 1<<3
 
-代表的含义是将1左移3位，即0001 ---->1000则为2^3为8
+代表的含义是将 1 左移 3 位，即 0001 ---->1000 则为 2^3 为 8
 
 ```java
 System.out.println(1<<3);
@@ -221,35 +219,33 @@ System.out.println(1<<3);
 
 #### HashMap
 
-创建一个HashMap,两种数据类型
+创建一个 HashMap,两种数据类型
 
 ```
 HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
 ```
 
-往hashmap里面插入数据
+往 hashmap 里面插入数据
 
 ```java
 for (int num : arr){
      map.put(num, map.getOrDefault(num, 0) + 1);//如果没有则添加，如果有则加1
- }  
+ }
 ```
 
-遍历Hashmap,查询值为k的元素
+遍历 Hashmap,查询值为 k 的元素
 
 ```
 for (int k : hashmap.keySet())
       if (hashmap.get(k) == 1) return k;
-     
+
 ```
 
-遍历 HashSet 
+遍历 HashSet
 
 ```
 set.iterator().next();//迭代器
 ```
-
-
 
 ## 树篇
 
@@ -274,14 +270,14 @@ ArrayList 类是一个可以动态修改的数组，与普通数组的区别就�
 ```java
 public class Test {
     public static void main(String[] args) {
-        List<String> array = new ArrayList<>();        
+        List<String> array = new ArrayList<>();
         array.add("大家好我是袁厨");
         System.out.println(array);
     }
 }
 ```
 
-> 输出：大家好我是袁厨 
+> 输出：大家好我是袁厨
 
 #### get()
 
@@ -290,7 +286,7 @@ get()函数用于获取动态数组的元素，括号内为索引值
 ```java
 public class Test {
     public static void main(String[] args) {
-        List<String> array = new ArrayList<>();       
+        List<String> array = new ArrayList<>();
         array.add("大家好我是袁厨");
         System.out.println(array.get(0));//获取第一个元素
     }
@@ -298,7 +294,7 @@ public class Test {
 
 ```
 
-> 输出：大家好我是袁厨 
+> 输出：大家好我是袁厨
 
 #### set()
 
@@ -307,7 +303,7 @@ set()用于修改元素，括号内为索引值
 ```
 public class Test {
     public static void main(String[] args) {
-        List<String> array = new ArrayList<>();       
+        List<String> array = new ArrayList<>();
         array.add("大家好我是袁厨");
         array.set(0,"祝大家天天开心")
         System.out.println(array.get(0));//获取第一个元素
@@ -324,7 +320,7 @@ public class Test {
 ```
 public class Test {
     public static void main(String[] args) {
-        List<String> array = new ArrayList<>();       
+        List<String> array = new ArrayList<>();
         array.add("大家好我是袁厨");
         array.add("祝大家天天开心");
         array.remove(0);
@@ -337,7 +333,7 @@ public class Test {
 
 #### isEmpty()
 
-isEmpty()函数判断是否为空，这个函数用到的地方很多，队列和栈的时候总会用。总是会在while循环中使用
+isEmpty()函数判断是否为空，这个函数用到的地方很多，队列和栈的时候总会用。总是会在 while 循环中使用
 
 while(!queue.isEmpty()){
 
@@ -348,7 +344,7 @@ while(!queue.isEmpty()){
 ```
 public class Test {
     public static void main(String[] args) {
-        List<String> array = new ArrayList<>();       
+        List<String> array = new ArrayList<>();
         array.add("大家好我是袁厨");
         array.add("祝大家天天开心");
         array.remove(0);
@@ -411,14 +407,14 @@ public class Test{
     sBuffer.append("是");
     sBuffer.append("袁厨");
     sBuffer.append("大家点个关注吧");
-    System.out.println(sBuffer);  
+    System.out.println(sBuffer);
   }
 }
 ```
 
 > 输出：我的名字是袁厨大家点个关注吧
 
-String中的字符串是不允许修改的，这个StringBuffer可以进行修改，做字符串的题目时会经常用到，树的题目中也偶尔会遇到
+String 中的字符串是不允许修改的，这个 StringBuffer 可以进行修改，做字符串的题目时会经常用到，树的题目中也偶尔会遇到
 
 ### charAt(i)
 
@@ -438,9 +434,9 @@ public class Test {
 
 这个函数的用法，就跟我们根据数组的索引输出值一样。在字符串题目中也比较常用。
 
-### s.charAt(index)-'0' 
+### s.charAt(index)-'0'
 
-这个函数的用途是将字符串索引值变成int型。知道这个可以大大提高刷题效率。大家可以掌握一下。
+这个函数的用途是将字符串索引值变成 int 型。知道这个可以大大提高刷题效率。大家可以掌握一下。
 
 ```java
 public class Test {
@@ -457,16 +453,16 @@ public class Test {
 
 > 输出：java.lang.Integer
 
-###  Integer.toString()
+### Integer.toString()
 
-该函数用于将int型变为string型，比如这个**第9题求回文数**的题目，我们就是先将x变为字符串，然后再遍历字符串
+该函数用于将 int 型变为 string 型，比如这个**第 9 题求回文数**的题目，我们就是先将 x 变为字符串，然后再遍历字符串
 
 ```java
 class Solution {
     public boolean isPalindrome(int x) {
        if(x<0){
            return false;
-       } 
+       }
        //将int型变成string型，然后遍历字符串，不再需要使用额外数组进行存储
        String t = Integer.toString(x);
        int i = 0;
@@ -495,12 +491,12 @@ public String substring(int beginIndex);
 public String substring(int beginIndex, int endIndex);
 ```
 
-表示两种情况，一种是从beginIndex到结尾，一种是从beginIndex ->endIndex;
+表示两种情况，一种是从 beginIndex 到结尾，一种是从 beginIndex ->endIndex;
 
 ```
    String Str = new String("程序员爱做饭");
    System.out.println(Str.substring(3) );
-   System.out.println(Str.substring(4, 5) );  
+   System.out.println(Str.substring(4, 5) );
 ```
 
 > 输出：爱做饭，做
@@ -515,8 +511,8 @@ public static void main(String args[]){
         Integer y = 10;
         Integer z =5;
         Short a = 5;
-        System.out.println(x.equals(y));  
-        System.out.println(x.equals(z)); 
+        System.out.println(x.equals(y));
+        System.out.println(x.equals(z));
         System.out.println(x.equals(a));
     }
 ```
@@ -533,13 +529,11 @@ System.out.println(s);
 
 > 输出：12345
 
-### char数组变为String
+### char 数组变为 String
 
 ```java
 String newstr = new String (arr2,start,end);
 ```
-
-
 
 ### indexOf
 
@@ -561,7 +555,7 @@ return s.indexOf("LLL");
 Stack<TreeNode> stack = new Stack<TreeNode>();//创建栈
 ```
 
-上面的是创建新栈，栈的变量类型为TreeNode,我们用深度优先遍历树来举例
+上面的是创建新栈，栈的变量类型为 TreeNode,我们用深度优先遍历树来举例
 
 #### push()
 
@@ -576,7 +570,7 @@ Stack<TreeNode> stack = new Stack<TreeNode>();//创建栈
 移除堆栈顶部的对象，并作为此函数的值返回该对象。
 
 ```java
-TreeNode temp = stack.pop();//将栈顶元素出栈，赋值TreeNode变量temp 
+TreeNode temp = stack.pop();//将栈顶元素出栈，赋值TreeNode变量temp
 ```
 
 peek()
@@ -600,4 +594,3 @@ while(!stack.isEmpty()){
  //反转并变为字符串
 return str.reverse().toString();
 ```
-

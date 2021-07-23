@@ -1,10 +1,10 @@
-## KMP算法（Knuth-Morris-Pratt）
+## KMP 算法（Knuth-Morris-Pratt）
 
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 我们刚才讲了 BM 算法，虽然不是特别容易理解，但是如果你用心看的话肯定可以看懂的，我们再来看一个新的算法，这个算法是考研时必考的算法。实际上 BM 和 KMP 算法的本质是一样的，你理解了 BM 再来理解 KMP 那就是分分钟的事啦。
 
@@ -30,7 +30,7 @@
 
 ![原理](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/photo/原理.bghc3ecm4z4.png)
 
-好啦，看完上面的图，KMP的核心原理已经基本搞定了，但是我们现在的问题是，我们应该怎么才能知道他的最长公共前后缀的长度是多少呢？怎么知道移动多少位呢？
+好啦，看完上面的图，KMP 的核心原理已经基本搞定了，但是我们现在的问题是，我们应该怎么才能知道他的最长公共前后缀的长度是多少呢？怎么知道移动多少位呢？
 
 刚才我们在 BM 中说到，我们移动位数跟主串无关，只跟模式串有关，跟我们的 bc,suffix,prefix 数组的值有关，我们通过这些数组就可以知道我们每次移动多少位啦，其实 KMP 也有一个数组，这个数组叫做 next 数组，那么这个 next 数组存的是什么呢？
 
@@ -141,7 +141,7 @@ class Solution:
         nelen = len(needle)
         # 返回下标
         return self.kmp(haystack, halen, needle, nelen)
-    
+
     def kmp(self, hasyarr: str, halen: int, nearr: str, nelen: int)->int:
         # 获取next 数组
         next = self.next(nearr, nelen)
@@ -183,5 +183,3 @@ class Solution:
             next[i] = k
         return next
 ```
-
-
