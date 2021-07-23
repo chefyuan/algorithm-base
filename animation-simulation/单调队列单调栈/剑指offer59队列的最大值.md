@@ -101,4 +101,56 @@ class MaxQueue {
 }
 ```
 
+**GO语言版本：**
+
+```go
+type MaxQueue struct {
+    que []int	// 普通队列
+    deq []int	// 双端队列
+    size int	// que的队列长度
+}
+
+
+func Constructor() MaxQueue {
+    return MaxQueue{
+        que: []int{},
+        deq: []int{},
+    }
+}
+
+// Is_empty 表示队列是否为空
+func (mq *MaxQueue) Is_empty() bool {
+    return mq.size == 0
+}
+
+// Max_value 取最大值值，返回我们双端队列的对头即可，因为我们双端队列是单调递减的嘛 
+func (mq *MaxQueue) Max_value() int {
+    if mq.Is_empty() { return -1 }
+    return mq.deq[0]
+}
+
+// Push_back 入队
+func (mq *MaxQueue) Push_back(value int)  {
+    mq.que = append(mq.que, value)
+    // 维护单调递减队列
+    for len(mq.deq) != 0 && mq.deq[len(mq.deq) - 1] < value {
+        mq.deq = mq.deq[:len(mq.deq) - 1]
+    }
+    mq.deq = append(mq.deq, value)
+    mq.size++
+}
+
+// Pop_front 弹出队列头元素，并且返回其值。
+func (mq *MaxQueue) Pop_front() int {
+    if mq.Is_empty() { return -1 }
+    ans := mq.que[0]
+    mq.que = mq.que[1:]
+    if mq.deq[0] == ans {
+        mq.deq = mq.deq[1:]
+    }
+    mq.size--
+    return ans
+}
+```
+
 ### 
