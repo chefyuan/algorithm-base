@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 ### 前缀和详解
 
@@ -10,13 +10,13 @@
 
 下面我们先来了解一下什么是前缀和。
 
-前缀和其实我们很早之前就了解过的，我们求数列的和时，Sn = a1+a2+a3+...an; 此时Sn就是数列的前 n 项和。例 S5 = a1 + a2 +  a3 + a4 + a5; S2 = a1 + a2。所以我们完全可以通过 S5-S2 得到 a3+a4+a5 的值，这个过程就和我们做题用到的前缀和思想类似。我们的前缀和数组里保存的就是前 n 项的和。见下图
+前缀和其实我们很早之前就了解过的，我们求数列的和时，Sn = a1+a2+a3+...an; 此时 Sn 就是数列的前 n 项和。例 S5 = a1 + a2 + a3 + a4 + a5; S2 = a1 + a2。所以我们完全可以通过 S5-S2 得到 a3+a4+a5 的值，这个过程就和我们做题用到的前缀和思想类似。我们的前缀和数组里保存的就是前 n 项的和。见下图
 
 ![](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/微信截图_20210113193831.4wk2b9zc8vm0.png)
 
 我们通过前缀和数组保存前 n 位的和，presum[1]保存的就是 nums 数组中前 1 位的和，也就是 **presum[1]** = nums[0], **presum[2]** = nums[0] + nums[1] = **presum[1]** + nums[1]. 依次类推，所以我们通过前缀和数组可以轻松得到每个区间的和。
 
-例如我们需要获取  nums[2]  到  nums[4]  这个区间的和，我们则完全根据 presum 数组得到，是不是有点和我们之前说的字符串匹配算法中 BM,KMP 中的 next 数组和 suffix 数组作用类似。那么我们怎么根据 presum 数组获取 nums[2] 到 nums[4] 区间的和呢？见下图
+例如我们需要获取 nums[2] 到 nums[4] 这个区间的和，我们则完全根据 presum 数组得到，是不是有点和我们之前说的字符串匹配算法中 BM,KMP 中的 next 数组和 suffix 数组作用类似。那么我们怎么根据 presum 数组获取 nums[2] 到 nums[4] 区间的和呢？见下图
 
 ![前缀和](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/前缀和.77twdj3gpkg0.png)
 
@@ -61,7 +61,7 @@
 
 理解了我们前缀和的概念（不知道好像也可以做，这个题太简单了哈哈）。我们可以一下就能把这个题目做出来，先遍历一遍求出数组的和，然后第二次遍历时，直接进行对比左半部分和右半部分是否相同，如果相同则返回 true，不同则继续遍历。
 
-Java Code: 
+Java Code:
 
 ```java
 class Solution {
@@ -70,14 +70,14 @@ class Solution {
         //数组的和
         for (int x : nums) {
            presum += x;
-        }      
+        }
         int leftsum = 0;
         for (int i = 0; i < nums.length; ++i) {
             //发现相同情况
             if (leftsum == presum - nums[i] - leftsum) {
                 return i;
             }
-            leftsum += nums[i];          
+            leftsum += nums[i];
         }
         return -1;
     }
@@ -94,17 +94,16 @@ public:
         //数组的和
         for (int x : nums) {
            presum += x;
-        }      
+        }
         int leftsum = 0;
         for (int i = 0; i < nums.size(); ++i) {
             //发现相同情况
             if (leftsum == presum - nums[i] - leftsum) {
                 return i;
             }
-            leftsum += nums[i];          
+            leftsum += nums[i];
         }
         return -1;
     }
 };
 ```
-

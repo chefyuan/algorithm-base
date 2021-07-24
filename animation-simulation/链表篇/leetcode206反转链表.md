@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 今天咱们说一道非常简单但是很经典的面试题，思路很容易，但是里面细节挺多，所以我们还是需要注意。
 
@@ -37,11 +37,10 @@
 
 我会对每个关键点进行注释，大家可以参考动图理解。
 
-
-
 **题目代码**
 
 Java Code:
+
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
@@ -60,11 +59,12 @@ class Solution {
             temp.next = low;
             //移动黄色指针
             low = temp;
-        }     
+        }
         return low;
     }
 }
 ```
+
 C++ Code:
 
 ```cpp
@@ -86,7 +86,7 @@ public:
             temp->next = low;
             //移动黄色指针
             low = temp;
-        }     
+        }
         return low;
     }
 };
@@ -95,24 +95,24 @@ public:
 JS Code:
 
 ```javascript
-var reverseList = function(head) {
-    //特殊情况
-    if(!head || !head.next) {
-        return head;
-    }
-    let low = null;
-    let pro = head;
-    while (pro) {
-        //代表橙色指针
-        let temp = pro;
-        //移动绿色指针
-        pro = pro.next;
-        //反转节点
-        temp.next = low;
-        //移动黄色指针
-        low = temp;
-    }
-    return low;
+var reverseList = function (head) {
+  //特殊情况
+  if (!head || !head.next) {
+    return head;
+  }
+  let low = null;
+  let pro = head;
+  while (pro) {
+    //代表橙色指针
+    let temp = pro;
+    //移动绿色指针
+    pro = pro.next;
+    //反转节点
+    temp.next = low;
+    //移动黄色指针
+    low = temp;
+  }
+  return low;
 };
 ```
 
@@ -166,11 +166,10 @@ class Solution {
 
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
 
-
-
 **题目代码**
 
 Java Code:
+
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
@@ -217,20 +216,20 @@ public:
 JS Code:
 
 ```javascript
-var reverseList = function(head) {
-    //结束条件
-    if (!head || !head.next) {
-        return head;
-    }
-    //保存最后一个节点
-    let pro = reverseList(head.next);
-    //将节点进行反转。我们可以这样理解 4.next.next = 4
-    //4.next = 5
-    //则 5.next = 4 则实现了反转
-    head.next.next = head;
-    //防止循环
-    head.next = null;
-    return pro;
+var reverseList = function (head) {
+  //结束条件
+  if (!head || !head.next) {
+    return head;
+  }
+  //保存最后一个节点
+  let pro = reverseList(head.next);
+  //将节点进行反转。我们可以这样理解 4.next.next = 4
+  //4.next = 5
+  //则 5.next = 4 则实现了反转
+  head.next.next = head;
+  //防止循环
+  head.next = null;
+  return pro;
 };
 ```
 
@@ -290,4 +289,3 @@ class Solution {
 >            # 给定下一组该反转的节点
 >            return self.reverseList(next_nd, head)
 > ```
-

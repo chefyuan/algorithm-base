@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
 
@@ -25,11 +25,11 @@
 
 **解析**
 
-双指针（L,R）法的思路很简单，L指针用来指向第一个值，R指针用来从第L指针的后面查找数组中是否含有和L指针指向值和为目标值的数。见下图
+双指针（L,R）法的思路很简单，L 指针用来指向第一个值，R 指针用来从第 L 指针的后面查找数组中是否含有和 L 指针指向值和为目标值的数。见下图
 
 ![图示](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/微信图片_20210104150003.3unncifeoe80.jpg)
 
-例：绿指针指向的值为3，蓝指针需要在绿指针的后面遍历查找是否含有 target - 3  = 2的元素，若含有返回即可。
+例：绿指针指向的值为 3，蓝指针需要在绿指针的后面遍历查找是否含有 target - 3 = 2 的元素，若含有返回即可。
 
 **题目代码**
 
@@ -85,7 +85,7 @@ class Solution {
         if count < 2 {
             return [0]
         }
-        
+
         var rearr: [Int] = []
         // 查询元素
         for i in 0..<count {
@@ -106,7 +106,7 @@ class Solution {
 
 **解析**
 
-哈希表的做法很容易理解，我们只需通过一次循环即可，假如我们的 target 值为 9，当前指针指向的值为 2 ，我们只需从哈希表中查找是否含有 7，因为9 - 2 =7 。如果含有 7 我们直接返回即可，如果不含有则将当前的2存入哈希表中，指针移动，指向下一元素。注： key 为元素值，value 为元素索引。
+哈希表的做法很容易理解，我们只需通过一次循环即可，假如我们的 target 值为 9，当前指针指向的值为 2 ，我们只需从哈希表中查找是否含有 7，因为 9 - 2 =7 。如果含有 7 我们直接返回即可，如果不含有则将当前的 2 存入哈希表中，指针移动，指向下一元素。注： key 为元素值，value 为元素索引。
 
 **动图解析：**
 
@@ -137,7 +137,7 @@ class Solution {
 }
 ```
 
-C++  Code:
+C++ Code:
 
 ```cpp
 class Solution {
@@ -171,7 +171,7 @@ const twoSum = function (nums, target) {
 
 Python3 Code:
 
-```python 
+```python
 from typing import List
 class Solution:
     def twoSum(self, nums: List[int], target: int)->List[int]:

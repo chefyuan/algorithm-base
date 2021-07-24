@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 今天我们来说一下反转链表 2，其实这个和 1 的思路差不多，今天先说一个比较好理解的方法，完全按照反转链表 1 的方法来解决，大家看这个题目之前要先看一下[【动画模拟】leetcode 206 反转链表](https://github.com/chefyuan/algorithm-base/blob/main/animation-simulation/%E9%93%BE%E8%A1%A8%E7%AF%87/leetcode206%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8.md)。
 
@@ -31,8 +31,6 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210327163804112.gif)
 
 是不是很容易理解，下面我们来看代码吧。
-
-
 
 **题目代码**
 
@@ -78,7 +76,7 @@ class Solution {
             pro = pro.next;
             temp.next = low;
             low = temp;
-        }     
+        }
         return low;
     }
 }
@@ -126,7 +124,7 @@ public:
             pro = pro->next;
             temp->next = low;
             low = temp;
-        }     
+        }
         return low;
     }
 };
@@ -135,46 +133,46 @@ public:
 JS Code:
 
 ```js
-var reverseBetween = function(head, left, right) {
-    //虚拟头节点
-    let temp = new ListNode(-1);
-    temp.next = head;
-    let pro = temp;
-    //来到 left 节点前的一个节点
-    let i = 0;
-    for (; i < left-1; ++i) {
-        pro = pro.next;
-    }
-    //保存 left 节点前的一个节点
-    let leftNode = pro;
-    //来到 right 节点
-    for (; i < right; ++i) {
-        pro = pro.next;
-    }
-    //保存 right 节点后的一个节点
-    let rightNode = pro.next;
-    //切断链表
-    pro.next = null;//切断 right 后的部分
-    let newhead = leftNode.next;//保存 left 节点
-    leftNode.next = null;//切断 left 前的部分
-    //反转
-    leftNode.next = reverse(newhead);
-    //重新接头
-    newhead.next = rightNode;
-    return temp.next;
+var reverseBetween = function (head, left, right) {
+  //虚拟头节点
+  let temp = new ListNode(-1);
+  temp.next = head;
+  let pro = temp;
+  //来到 left 节点前的一个节点
+  let i = 0;
+  for (; i < left - 1; ++i) {
+    pro = pro.next;
+  }
+  //保存 left 节点前的一个节点
+  let leftNode = pro;
+  //来到 right 节点
+  for (; i < right; ++i) {
+    pro = pro.next;
+  }
+  //保存 right 节点后的一个节点
+  let rightNode = pro.next;
+  //切断链表
+  pro.next = null; //切断 right 后的部分
+  let newhead = leftNode.next; //保存 left 节点
+  leftNode.next = null; //切断 left 前的部分
+  //反转
+  leftNode.next = reverse(newhead);
+  //重新接头
+  newhead.next = rightNode;
+  return temp.next;
 };
 
 //和反转链表1代码一致
-var reverse = function(head) {
-    let low = null;
-    let pro = head;
-    while (pro) {
-        let temp = pro;
-        pro = pro.next;
-        temp.next = low;
-        low = temp;
-    }     
-    return low;
+var reverse = function (head) {
+  let low = null;
+  let pro = head;
+  while (pro) {
+    let temp = pro;
+    pro = pro.next;
+    temp.next = low;
+    low = temp;
+  }
+  return low;
 };
 ```
 
@@ -205,7 +203,7 @@ class Solution:
         # 重新接头
         newhead.next = rightNode
         return temp.next
-        
+
     # 和反转链表1代码一致
     def reverse(self, head):
         low = None
