@@ -1,4 +1,4 @@
-name: Format files
+name: Restructure files
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Install Prettier
         run: npm install --save-dev --save-exact prettier
 
-      - name: Format files
+      - name: Restructure files
         run: node_modules/.bin/prettier --write README.md animation-simulation/
 
       - name: Commit files
