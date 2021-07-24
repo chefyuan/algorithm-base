@@ -26,7 +26,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -am "代码重构 【Github Actions】"
+          git diff-index --quiet HEAD -- || git commit -am "代码重构 【Github Actions】"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
