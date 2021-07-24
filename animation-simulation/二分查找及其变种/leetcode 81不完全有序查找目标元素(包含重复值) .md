@@ -76,4 +76,35 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func search(nums []int, target int) bool {
+    l, r := 0, len(nums) - 1
+    for l <= r {
+        m := l + (r - l) / 2
+        if nums[m] == target {
+            return true
+        }
+        // 先判断哪边是递增的，再查找范围
+        if nums[m] == nums[l] {
+            l++
+        } else if nums[l] < nums[m] {
+            // 判断target是否在有序的那边就行了。
+            if nums[l] <= target && target < nums[m] {
+                r = m - 1
+            } else {
+                l = m + 1
+            }
+        } else if nums[l] > nums[m] {
+            if nums[m] < target && target <= nums[r] {
+                l = m + 1
+            } else {
+                r = m - 1
+            }
+        }
+    }
+    return false
+}
+```
 
