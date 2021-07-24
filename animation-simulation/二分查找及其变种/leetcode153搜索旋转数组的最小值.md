@@ -111,3 +111,26 @@ public:
 };
 ```
 
+Go Code:
+
+```go
+func findMin(nums []int) int {
+    left := 0
+    right := len(nums) - 1
+
+    for (left < right) {
+            
+        if (nums[left] < nums[right]) {
+            return nums[left]
+        } 
+        mid := left + ((right - left) >> 1)
+        if (nums[left] > nums[mid]) {
+            right = mid
+        } else {
+            left = mid + 1
+        }
+    }
+    return nums[left]
+}
+```
+
