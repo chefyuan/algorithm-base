@@ -196,3 +196,31 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func deleteDuplicates(head *ListNode) *ListNode {
+	// 新建一个头结点，他的下一个节点才是开始
+    root := &ListNode{
+        Next: head,
+    }
+    pre, cur := root, head
+    for cur != nil && cur.Next != nil {
+        if cur.Val == cur.Next.Val {
+            // 相等的话，cur就一直向后移动
+            for cur != nil && cur.Next != nil && cur.Val == cur.Next.Val {
+                cur = cur.Next
+            }
+            // 循环后移动到了最后一个相同的节点。
+            cur = cur.Next
+            pre.Next = cur
+        } else {
+            cur = cur.Next
+            pre = pre.Next
+        }
+    }
+    return root.Next
+}
+```
+

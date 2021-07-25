@@ -299,3 +299,28 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func detectCycle(head *ListNode) *ListNode {
+    if head == nil { return nil }
+    s, f := head, head
+    for f != nil && f.Next != nil {
+        s = s.Next
+        f = f.Next.Next
+        // 快慢指针相遇
+        if f == s {
+            // 快指针从头开始一步一步走，也可以用一个新的指针
+            f = head
+            for f != s {
+                f = f.Next
+                s = s.Next
+            }
+            return f
+        }
+    }
+    return nil
+}
+```
+

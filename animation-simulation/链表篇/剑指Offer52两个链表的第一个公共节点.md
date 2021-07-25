@@ -274,6 +274,28 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func getIntersectionNode(headA, headB *ListNode) *ListNode {
+    tempA, tempB := headA, headB
+    for tempA != tempB {
+        // 如果不为空就指针下移，为空就跳到另一链表的头部
+        if tempA == nil {
+            tempA = headB
+        } else {
+            tempA = tempA.Next
+        }
+        if tempB == nil {
+            tempB = headA
+        } else {
+            tempB = tempB.Next
+        }
+    }
+    return tempA
+}
+```
+
 好啦，链表的题目就结束啦，希望大家能有所收获，下周就要更新新的题型啦，继续坚持，肯定会有收获的。
 
 <br/>

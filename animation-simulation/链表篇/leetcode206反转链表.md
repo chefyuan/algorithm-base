@@ -164,6 +164,27 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func reverseList(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil { return head }
+    cur := head
+    var pre *ListNode
+    for cur != nil {
+        nxt := cur.Next
+        cur.Next = pre
+        pre = cur
+        cur = nxt
+        if nxt == nil {
+            return pre
+        }
+        nxt = nxt.Next
+    }
+    return pre
+}
+```
+
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
 
 
