@@ -131,6 +131,8 @@ int upperBound(int[] nums, int target) {
 
 #### **题目完整代码**
 
+Java Code:
+
 ```java
 class Solution {
     public int[] searchRange (int[] nums, int target) {
@@ -173,6 +175,52 @@ class Solution {
         }
         return right;
     }
+}
+```
+
+Go Code:
+
+```go
+func searchRange(nums []int, target int) []int {
+    upper := upperBound(nums, target)
+    low := lowerBound(nums, target)
+    // 不存在情况
+    if (upper < low) {
+        return []int{-1, -1}
+    }
+
+    return []int{low, upper}
+}
+
+//计算下边界
+func lowerBound(nums []int, target int) int {
+    left, right := 0, len(nums) - 1
+    for (left <= right) {
+        //这里需要注意，计算mid
+        mid := left + ((right - left) >> 1)
+        if (target <= nums[mid]) {
+            //当目标值小于等于nums[mid]时，继续在左区间检索，找到第一个数
+            right = mid - 1
+
+        }else if (target > nums[mid]) {
+            //目标值大于nums[mid]时，则在右区间继续检索，找到第一个等于目标值的数
+            left = mid + 1
+        }
+    }
+    return left
+}
+//计算上边界
+func upperBound(nums []int, target int) int {
+    left, right := 0, len(nums) - 1
+    for (left <= right) {          
+        mid := left + ((right - left) >> 1)
+        if (target >= nums[mid]) {
+            left = mid + 1             
+        }else if (target < nums[mid]) {
+            right = mid - 1
+        }            
+    }
+    return right
 }
 ```
 
