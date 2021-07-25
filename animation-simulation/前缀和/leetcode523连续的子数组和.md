@@ -101,3 +101,35 @@ public:
 };
 ```
 
+Go Code:
+
+```go
+func checkSubarraySum(nums []int, k int) bool {
+    m := map[int]int{}
+    // 由于前缀和%k可能为0，所以需要给出没有元素的时候，索引位置，即-1
+    m[0] = -1
+    sum := 0
+    for i, num := range nums {
+        sum += num
+        key := sum % k
+        /*
+        // 题目中告诉k >= 1
+        key := sum
+        if k != 0 {
+            key = sum % k
+        }
+        */
+        if v, ok := m[key]; ok {
+            if i - v >= 2 {
+                return true
+            }
+            // 避免更新最小索引
+            continue
+        }
+        // 保存的是最小的索引
+        m[key] = i
+    }
+    return false
+}
+```
+

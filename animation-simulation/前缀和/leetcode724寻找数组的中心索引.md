@@ -108,3 +108,23 @@ public:
 };
 ```
 
+Go Code:
+
+```go
+func pivotIndex(nums []int) int {
+    presum := 0
+    for _, num := range nums {
+        presum += num
+    }
+    var leftsum int
+    for i, num := range nums {
+        // 比较左半和右半是否相同
+        if presum - leftsum - num == leftsum {
+            return i
+        }
+        leftsum += num
+    }
+    return -1
+}
+```
+
