@@ -203,13 +203,13 @@ func lowerBound(nums []int, target int) int {
 //计算上边界
 func upperBound(nums []int, target int) int {
     left, right := 0, len(nums) - 1
-    for (left <= right) {          
+    for (left <= right) {
         mid := left + ((right - left) >> 1)
         if (target >= nums[mid]) {
-            left = mid + 1             
+            left = mid + 1
         }else if (target < nums[mid]) {
             right = mid - 1
-        }            
+        }
     }
     return right
 }

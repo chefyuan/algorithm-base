@@ -96,7 +96,7 @@ func search(nums []int, target int) bool {
                     right = mid - 1
             } else if (target > nums[mid] || target < nums[left]) {
                     left = mid + 1
-            } 
+            }
 
         }else if (nums[mid] < nums[left]) {
             if (nums[mid] < target && target <= nums[right]) {
@@ -104,7 +104,7 @@ func search(nums []int, target int) bool {
             } else if (target < nums[mid] || target > nums[right]) {
                 right = mid - 1
             }
-        } 
+        }
     }
     return false
 }
