@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [1438. 绝对差不超过限制的最长连续子数组](https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
@@ -13,7 +13,7 @@
 示例
 
 > 输入：nums = [10,1,2,4,7,2], limit = 5
-> 输出：4 
+> 输出：4
 > 解释：满足题意的最长子数组是 [2,4,7,2]，其最大绝对差 |2-7| = 5 <= 5 。
 
 **提示：**
@@ -48,7 +48,7 @@ Java Code:
 ```java
 class Solution {
     public int longestSubarray(int[] nums, int limit) {
-      
+
         Deque<Integer> maxdeque = new LinkedList<>();
         Deque<Integer> mindeque = new LinkedList<>();
         int len = nums.length;
@@ -63,7 +63,7 @@ class Solution {
              }
              //需要更多视频解算法，可以来我的公众号：袁厨的算法小屋
              maxdeque.addLast(nums[right]);
-             mindeque.addLast(nums[right]);                        
+             mindeque.addLast(nums[right]);
              while (maxdeque.peekFirst() - mindeque.peekFirst() > limit) {
                 if (maxdeque.peekFirst() == nums[left]) maxdeque.removeFirst();
                 if (mindeque.peekFirst() == nums[left]) mindeque.removeFirst();
@@ -96,7 +96,7 @@ class Solution:
                 maxdeque.pop()
             while len(mindeque) != 0 and mindeque[-1] > nums[right]:
                 mindeque.pop()
-            
+
             maxdeque.append(nums[right])
             mindeque.append(nums[right])
             while (maxdeque[0] - mindeque[0]) > limit:
@@ -111,3 +111,152 @@ class Solution:
         return maxwin
 ```
 
+Swift Code
+
+Swift：数组模拟，超时（58 / 61 个通过测试用例）
+
+```swift
+class Solution {
+    func longestSubarray(_ nums: [Int], _ limit: Int) -> Int {
+        var maxQueue:[Int] = []
+        var minQueue:[Int] = []
+        let len = nums.count
+        var right = 0, left = 0, maxWin = 0
+        while right < len {
+            while !maxQueue.isEmpty && (maxQueue.last! < nums[right]) {
+                maxQueue.removeLast()
+            }
+            while !minQueue.isEmpty && (minQueue.last! > nums[right]) {
+                minQueue.removeLast()
+            }
+            maxQueue.append(nums[right])
+            minQueue.append(nums[right])
+            while (maxQueue.first! - minQueue.first!) > limit {
+                if maxQueue.first! == nums[left] {
+                    maxQueue.removeFirst()
+                }
+                if minQueue.first! == nums[left] {
+                    minQueue.removeFirst()
+                }
+                left += 1
+            }
+            maxWin = max(maxWin, right - left + 1)
+            right += 1
+        }
+        return maxWin
+    }
+}
+```
+
+Swift：使用双端队列（击败了 100.00%）
+
+```swift
+class Solution {
+    func longestSubarray(_ nums: [Int], _ limit: Int) -> Int {
+        var maxQueue = Deque<Int>.init()
+        var minQueue = Deque<Int>.init()
+        let len = nums.count
+        var right = 0, left = 0, maxWin = 0
+        while right < len {
+            while !maxQueue.isEmpty && (maxQueue.peekBack()! < nums[right]) {
+                maxQueue.dequeueBack()
+            }
+            while !minQueue.isEmpty && (minQueue.peekBack()! > nums[right]) {
+                minQueue.dequeueBack()
+            }
+            maxQueue.enqueue(nums[right])
+            minQueue.enqueue(nums[right])
+            while (maxQueue.peekFront()! - minQueue.peekFront()!) > limit {
+                if maxQueue.peekFront()! == nums[left] {
+                    maxQueue.dequeue()
+                }
+                if minQueue.peekFront()! == nums[left] {
+                    minQueue.dequeue()
+                }
+                left += 1
+            }
+            maxWin = max(maxWin, right - left + 1)
+            right += 1
+        }
+        return maxWin
+    }
+
+    // 双端队列数据结构
+    public struct Deque<T> {
+        private var array: [T?]
+        private var head: Int
+        private var capacity: Int
+        private let originalCapacity: Int
+
+        public init(_ capacity: Int = 10) {
+            self.capacity = max(capacity, 1)
+            originalCapacity = self.capacity
+            array = [T?](repeating: nil, count: capacity)
+            head = capacity
+        }
+
+        public var isEmpty: Bool {
+            return count == 0
+        }
+
+        public var count: Int {
+            return array.count - head
+        }
+
+        public mutating func enqueue(_ element: T) {
+            array.append(element)
+        }
+
+        public mutating func enqueueFront(_ element: T) {
+            if head == 0 {
+            capacity *= 2
+            let emptySpace = [T?](repeating: nil, count: capacity)
+            array.insert(contentsOf: emptySpace, at: 0)
+            head = capacity
+            }
+
+            head -= 1
+            array[head] = element
+        }
+
+        public mutating func dequeue() -> T? {
+            guard head < array.count, let element = array[head] else { return nil }
+
+            array[head] = nil
+            head += 1
+
+            if capacity >= originalCapacity && head >= capacity*2 {
+            let amountToRemove = capacity + capacity/2
+            array.removeFirst(amountToRemove)
+            head -= amountToRemove
+            capacity /= 2
+            }
+            return element
+        }
+
+        public mutating func dequeueBack() -> T? {
+            if isEmpty {
+            return nil
+            } else {
+            return array.removeLast()
+            }
+        }
+
+        public func peekFront() -> T? {
+            if isEmpty {
+            return nil
+            } else {
+            return array[head]
+            }
+        }
+
+        public func peekBack() -> T? {
+            if isEmpty {
+            return nil
+            } else {
+            return array.last!
+            }
+        }
+    }
+}
+```

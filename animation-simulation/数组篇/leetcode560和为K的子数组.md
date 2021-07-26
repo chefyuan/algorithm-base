@@ -1,10 +1,10 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
-### [leetcode560. 和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+### [leetcode560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
 
 **题目描述**
 
@@ -43,7 +43,9 @@ class Solution {
 }
 ```
 
-Python3版本的代码会超时
+Python3 版本的代码会超时
+
+Swift 版本的代码会超时
 
 下面我们我们使用前缀和的方法来解决这个题目，那么我们先来了解一下前缀和是什么东西。其实这个思想我们很早就接触过了。见下图
 
@@ -55,7 +57,7 @@ presum [2] = presum[1] + nums[1],presum[3] = presum[2] + nums[2] ... 所以我�
 
 例如我们需要获取 nums[2] 到 nums[4] 这个区间的和，我们则完全根据 presum 数组得到，是不是有点和我们之前说的字符串匹配算法中 BM,KMP 中的 next 数组和 suffix 数组作用类似。
 
-那么我们怎么根据presum 数组获取 nums[2] 到 nums[4] 区间的和呢？见下图
+那么我们怎么根据 presum 数组获取 nums[2] 到 nums[4] 区间的和呢？见下图
 
 ![前缀和](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/前缀和.77twdj3gpkg0.png)
 
@@ -92,7 +94,7 @@ class Solution {
 }
 ```
 
-Python3版本的代码也会超时
+Python3 版本的代码也会超时
 
 我们通过上面的例子我们简单了解了前缀和思想，那么我们如果继续将其优化呢？
 
@@ -112,7 +114,7 @@ class Solution {
         //一次遍历
         for (int i = 0; i < nums.length; ++i) {
             //存在时，我们用数组得值为 key，索引为 value
-            if (map.containsKey(target - nums[i])){              
+            if (map.containsKey(target - nums[i])){
                return new int[]{i,map.get(target-nums[i])};
             }
             //存入值
@@ -160,3 +162,58 @@ class Solution {
 }
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func subarraySum(_ nums: [Int], _ k: Int) -> Int {
+        if nums.count == 0 {
+            return 0
+        }
+        var map: [Int: Int] = [:]
+        map[0] = 1 // 需要添加入一个元素垫底，已支持前几位就满足的情况
+        var presum = 0, count = 0
+
+        for x in nums {
+            presum += x
+            //当前前缀和已知，判断是否含有 presum - k的前缀和，那么我们就知道某一区间的和为 k 了。
+            if let v = map[presum - k] {
+                count += v //获取presum-k前缀和出现次数
+            }
+            map[presum] = (map[presum] ?? 0) + 1
+        }
+        return count
+    }
+}
+```
+
+C++ Code
+
+```C++
+class Solution
+{
+public:
+    int subarraySum(vector<int> &nums, int k)
+    {
+        unordered_map<int, int> smp;
+        int sum = 0;
+        //初始化"最外面"的0
+        smp[0] = 1;
+        int result = 0;
+        for(int i = 0; i < nums.size(); i++)
+        {
+            sum += nums[i];
+            auto mp = smp.find(sum - k);
+            if (mp != smp.end())
+            {
+                //map里面存的一定是在前面的元素
+                //可以尝试将map的value换为数组
+                result += mp->second;
+            }
+            smp[sum]++;
+        }
+
+        return result;
+    }
+};
+```

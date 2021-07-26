@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
 
@@ -31,7 +31,7 @@
 
 ![微信截图_20210109135536](https://cdn.jsdelivr.net/gh/tan45du/github.io.phonto2@master/myphoto/微信截图_20210109135536.41h4amio2me0.png)
 
-上图中，我们遍历一遍原数组，将正整数保存到新数组中，然后遍历新数组，第一次发现 newnum[i]  !=  i 时，则说明该值是缺失的，返回即可，例如我上图中的第一个示例中的 2，如果遍历完新数组，发现说所有值都对应，说明缺失的是 新数组的长度对应的那个数，比如第二个示例中 ，新数组的长度为 5，此时缺失的为 5，返回长度即可，很容易理解。
+上图中，我们遍历一遍原数组，将正整数保存到新数组中，然后遍历新数组，第一次发现 newnum[i] != i 时，则说明该值是缺失的，返回即可，例如我上图中的第一个示例中的 2，如果遍历完新数组，发现说所有值都对应，说明缺失的是 新数组的长度对应的那个数，比如第二个示例中 ，新数组的长度为 5，此时缺失的为 5，返回长度即可，很容易理解。
 
 注：我们发现我们新的数组长度比原数组大 1，是因为我们遍历新数组从 1，开始遍历。
 
@@ -53,15 +53,15 @@ class Solution {
         for (int x : nums) {
             if (x > 0 && x < res.length) {
                res[x] = x;
-            }       
+            }
         }
         //遍历查找,发现不一样时直接返回
         for (int i = 1; i < res.length; i++) {
             if (res[i] != i) {
                 return i;
-            }           
+            }
         }
-        //缺少最后一个，例如 1，2，3此时缺少 4 ，细节2 
+        //缺少最后一个，例如 1，2，3此时缺少 4 ，细节2
         return res.length;
     }
 }
@@ -85,10 +85,37 @@ class Solution:
         for i in range(1, len(res)):
             if res[i] != i:
                 return i
-        # 缺少最后一个，例如 1，2，3此时缺少 4 ，细节2 
+        # 缺少最后一个，例如 1，2，3此时缺少 4 ，细节2
         return len(res)
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func firstMissingPositive(_ nums: [Int]) -> Int {
+        if nums.count == 0 {
+            return 1
+        }
+        // 因为是返回第一个正整数，不包括 0，所以需要长度加1，细节1
+        var res:[Int] = Array.init(repeating: 0, count: nums.count + 1)
+        // 将数组元素添加到辅助数组中
+        for x in nums {
+            if x > 0 && x < res.count {
+                res[x] = x
+            }
+        }
+        // 遍历查找,发现不一样时直接返回
+        for i in 1..<res.count {
+            if res[i] != i {
+                return i
+            }
+        }
+        // 缺少最后一个，例如 1，2，3此时缺少 4 ，细节2
+        return res.count
+    }
+}
+```
 
 我们通过上面的例子了解这个解题思想，我们有没有办法不使用辅助数组完成呢？我们可以使用原地置换，直接在 nums 数组内，将值换到对应的索引处，与上个方法思路一致，只不过没有使用辅助数组，理解起来也稍微难理解一些。
 
@@ -118,7 +145,7 @@ class Solution {
         for (int i = 0; i < len; ++i) {
             //需要考虑指针移动情况，大于0，小于len+1，不等与i+1，两个交换的数相等时，防止死循环
             while (nums[i] > 0 && nums[i] < len + 1 && nums[i] != i+1 && nums[i] != nums[nums[i]-1]) {
-                swap(nums,i,nums[i] - 1);               
+                swap(nums,i,nums[i] - 1);
             }
         }
         //遍历寻找缺失的正整数
@@ -166,3 +193,83 @@ class Solution:
         return n + 1
 ```
 
+Swift Code
+
+```swift
+class Solution {
+    func firstMissingPositive(_ nums: [Int]) -> Int {
+        var nums = nums
+        let len = nums.count
+        if len == 0 {
+            return 1
+        }
+        // 遍历数组
+        for i in 0..<len {
+            // 需要考虑指针移动情况，大于0，小于len+1，不等与i+1，
+            // 两个交换的数相等时，防止死循环
+            while nums[i] > 0
+                  && nums[i] < len + 1
+                  && nums[i] != i + 1
+                  && nums[i] != nums[nums[i] - 1]
+            {
+                //nums.swapAt(i, (nums[i] - 1)) // 系统方法
+                self.swap(&nums, i, (nums[i] - 1)) // 自定义方法
+            }
+        }
+        // 遍历寻找缺失的正整数
+        for i in 0..<len {
+            if nums[i] != i + 1 {
+                return i + 1
+            }
+        }
+
+        return len + 1
+    }
+    func swap(_ nums: inout [Int], _ i: Int, _ j: Int) {
+        let temp = nums[i]
+        nums[i] = nums[j]
+        nums[j] = temp
+    }
+}
+```
+
+C++ Code
+
+```C++
+class Solution
+{
+public:
+    int firstMissingPositive(vector<int> &nums)
+    {
+        int size = nums.size();
+        //判断范围是否符合要求
+        auto inRange = [](auto s, auto e)
+        {
+            return [s, e](auto &n)
+            {
+                return e >= n && n >= s;
+            };
+        };
+        auto cusInRange = inRange(1, size);
+        //增加数组长度, 便于计算, 不需要再转换
+        nums.push_back(0);
+
+        for (int i = 0; i < size; i++)
+        {
+            //将不在正确位置的元素放到正确位置上
+            while (cusInRange(nums[i]) && nums[i] != i && nums[nums[i]] != nums[i])
+            {
+                swap(nums[i], nums[nums[i]]);
+            }
+        }
+
+        //找出缺失的元素
+        for (int i = 1; i <= size; i++)
+        {
+            if (nums[i] != i)
+                return i;
+        }
+        return size + 1;
+    }
+};
+```

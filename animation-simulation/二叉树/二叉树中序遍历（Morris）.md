@@ -33,7 +33,7 @@ class Solution {
                 //对应 right 指针存在的情况，则去掉 right 指针
                 p2.right = null;
                 //标注2
-            } else {            
+            } else {
                 list.add(p1.val);
             }
             //移动 p1
@@ -58,13 +58,11 @@ class Solution {
 
 我们在前序遍历时，遇到 `p2.right == p1`的情况时，则会执行 `p2.right == null` 并让 `p1 = p1.right`,这样做是因为，我们此时 p1 指向的值已经遍历完毕，为了防止重复遍历。
 
-但是呢，在我们的中序 Morris 中我们遇到`p2.right  == p1`此时 p1 还未遍历，所以我们需要在上面两条代码之间添加一行代码`list.add(p1.val);`
+但是呢，在我们的中序 Morris 中我们遇到`p2.right == p1`此时 p1 还未遍历，所以我们需要在上面两条代码之间添加一行代码`list.add(p1.val);`
 
 好啦，到这里我们就基本上就搞定了中序遍历的 Morris 方法，下面我们通过动画来加深一下印象吧，当然我也会把前序遍历的动画放在这里，大家可以看一下哪里有所不同。
 
 ![二叉树中序](https://img-blog.csdnimg.cn/20210622155624486.gif)
-
-
 
 ![二叉树前序Morris](https://img-blog.csdnimg.cn/20210622155959185.gif)
 
@@ -89,7 +87,7 @@ class Solution {
                 if (p2.right == null) {
                     p2.right = p1;
                     p1 = p1.left;
-                    continue;                   
+                    continue;
                 } else {
                     p2.right  = null;
                 }
@@ -102,3 +100,34 @@ class Solution {
 }
 ```
 
+Swift Code：
+
+```swift
+class Solution {
+    func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        var list:[Int] = []
+        guard root != nil else {
+            return list
+        }
+        var p1 = root, p2: TreeNode?
+        while p1 != nil {
+            p2 = p1!.left
+            if p2 != nil {
+                while p2!.right != nil && p2!.right !== p1 {
+                    p2 = p2!.right
+                }
+                if p2!.right == nil {
+                    p2!.right = p1
+                    p1 = p1!.left
+                    continue
+                } else {
+                    p2!.right = nil
+                }
+            }
+            list.append(p1!.val)
+            p1 = p1!.right
+        }
+        return list
+    }
+}
+```
