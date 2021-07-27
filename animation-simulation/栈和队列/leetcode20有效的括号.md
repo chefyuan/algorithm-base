@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 
@@ -35,15 +35,13 @@
 > 输入: "()]"
 > 输出: false
 
-示例4：
+示例 4：
 
 > 输入:"()["
 >
 > 输出:false
 
-
-
-我这里用了两种方法进行解决，第一种是利用ArrayList，第二种是利用栈，今天主要讲 一下用栈的方法。思路很简单，我们遇到左括号就将其入栈，遇到右括号就和栈顶元素进行比较，如果是对应的则pop栈顶元素，不对应直接返回false即可。另外我们还需要考虑的就是示例3和示例4这两种情况，需要我们好好思考一下。
+我这里用了两种方法进行解决，第一种是利用 ArrayList，第二种是利用栈，今天主要讲 一下用栈的方法。思路很简单，我们遇到左括号就将其入栈，遇到右括号就和栈顶元素进行比较，如果是对应的则 pop 栈顶元素，不对应直接返回 false 即可。另外我们还需要考虑的就是示例 3 和示例 4 这两种情况，需要我们好好思考一下。
 
 下面我们直接上动图。
 
@@ -87,13 +85,9 @@ class Solution {
 }
 ```
 
-
-
-另外我们看下另一种方法,这个方法很有趣，，我们遇到  ‘ [ ’  时，则入栈 ' ] ' ，这样当我们遇到 ‘]’ 时只需判断栈顶元素是否和其一致即可，一致则出，继续遍历下一个，否则返回 false 。
+另外我们看下另一种方法,这个方法很有趣，，我们遇到 ‘ [ ’ 时，则入栈 ' ] ' ，这样当我们遇到 ‘]’ 时只需判断栈顶元素是否和其一致即可，一致则出，继续遍历下一个，否则返回 false 。
 
 这个方法有些巧妙，大家第一次看时可能不是那么容易理解，所以大家可以自己打一下，动脑子想一下代码逻辑。
-
-
 
 ```java
 class Solution {
@@ -112,4 +106,3 @@ class Solution {
     }
 }
 ```
-

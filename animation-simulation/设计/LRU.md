@@ -4,11 +4,11 @@
 
 说起**缓存淘汰策略**我们也很熟悉。
 
-例如先进先出策略FIFO（First In，First Out）,最少使用策略LFU（Least Frequently Used）,最近最少使用策略LRU（Least Recently Used）
+例如先进先出策略 FIFO（First In，First Out）,最少使用策略 LFU（Least Frequently Used）,最近最少使用策略 LRU（Least Recently Used）
 
 看到这里大家是不是想到我们今天要说什么啦。
 
-我们就来说一下其中的一个缓存淘汰策略，**最近最少使用策略LRU**
+我们就来说一下其中的一个缓存淘汰策略，**最近最少使用策略 LRU**
 
 LRU 的含义很容易理解，我们可以这样思考，最近使用过的我们则认为其是有用的，很久没用过的则认为是无用的，因为我们的内存有限，当我们内存满的时候，肯定是先清除那些很久没用过的数据。
 

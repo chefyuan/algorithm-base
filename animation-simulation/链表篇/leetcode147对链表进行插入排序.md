@@ -1,8 +1,8 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 有的老哥说链表的排序搞不明白，让我写一下，一不小心给忘记了，今天咱们就安排上。没有学过数据结构的同学可以先看下这个文章：
 
@@ -26,11 +26,9 @@
 
 ![直接插入排序](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/直接插入排序.2marc4epuzy0.gif)
 
-
-
 我们的指针在数组时，可以随意的前后移动，将指针指向值和新元素的值比较后，将新元素插入到合适的位置。
 
-我们知道链表查询元素的时间复杂度为O(n)，我们只能够通过遍历链表查询元素。
+我们知道链表查询元素的时间复杂度为 O(n)，我们只能够通过遍历链表查询元素。
 
 那么我们怎么才能将新元素放到合适的位置呢？见下图。
 
@@ -46,8 +44,8 @@
 
 ```java
  while (temphead.next.val <= pre.val) {
-      temphead = temphead.next;   
- } 
+      temphead = temphead.next;
+ }
 ```
 
 下面我们再来看动画模拟具体过程。
@@ -60,11 +58,7 @@
 
 见下图。
 
-
-
 ![插入排序](https://cdn.jsdelivr.net/gh/tan45du/photobed@master/微信截图_20210325132359.1hc2axzks3k0.png)
-
-
 
 我们想要将 3 插入到 2 和 4 的中间，此时我们三个指针分别指向 2，4，3。
 
@@ -101,12 +95,12 @@ class Solution {
                 pre = pre.next;
                 last = last.next;
                 continue;
-            }               
+            }
             //开始出发，查找新元素的合适位置
             ListNode temphead = dummyNode;
             while (temphead.next.val <= pre.val) {
                 temphead = temphead.next;
-            }           
+            }
             //此时我们已经找到了合适位置，我们需要进行插入，大家可以画一画
             last.next = pre.next;
             pre.next = temphead.next;
@@ -119,7 +113,7 @@ class Solution {
 }
 ```
 
- C++ Code:
+C++ Code:
 
 ```cpp
 class Solution {
@@ -141,12 +135,12 @@ public:
                 pre = pre->next;
                 last = last->next;
                 continue;
-            }               
+            }
             //开始出发，查找新元素的合适位置
             ListNode * temphead = dummyNode;
             while (temphead->next->val <= pre->val) {
                 temphead = temphead->next;
-            }           
+            }
             //此时我们已经找到了合适位置，我们需要进行插入，大家可以画一画
             last->next = pre->next;
             pre->next = temphead->next;
@@ -162,34 +156,34 @@ public:
 JS Code:
 
 ```javascript
-var insertionSortList = function(head) {
-    if (head === null || head.next === null) return head;
-    //哑节点
-    let dummyNode = new ListNode(-1, head);
-    let pre = head.next;
-    //pre负责指向新元素，last 负责指向新元素的前一元素
-    //判断是否需要执行插入操作
-    let last = head;
-    while (pre) {
-        //不需要插入到合适位置，则继续往下移动
-        if (last.val <= pre.val) {
-            last = last.next;
-            pre = pre.next;
-            continue;
-        }
-        //开始出发，查找新元素的合适位置
-        let tempHead = dummyNode;
-        while (tempHead.next.val <= pre.val) {
-            tempHead = tempHead.next;
-        }
-        //此时我们已经找到了合适位置，我们需要进行插入，大家可以画一画
-        last.next = pre.next;
-        pre.next = tempHead.next;
-        tempHead.next = pre;
-        //继续往下移动
-        pre = last.next;
+var insertionSortList = function (head) {
+  if (head === null || head.next === null) return head;
+  //哑节点
+  let dummyNode = new ListNode(-1, head);
+  let pre = head.next;
+  //pre负责指向新元素，last 负责指向新元素的前一元素
+  //判断是否需要执行插入操作
+  let last = head;
+  while (pre) {
+    //不需要插入到合适位置，则继续往下移动
+    if (last.val <= pre.val) {
+      last = last.next;
+      pre = pre.next;
+      continue;
     }
-    return dummyNode.next;
+    //开始出发，查找新元素的合适位置
+    let tempHead = dummyNode;
+    while (tempHead.next.val <= pre.val) {
+      tempHead = tempHead.next;
+    }
+    //此时我们已经找到了合适位置，我们需要进行插入，大家可以画一画
+    last.next = pre.next;
+    pre.next = tempHead.next;
+    tempHead.next = pre;
+    //继续往下移动
+    pre = last.next;
+  }
+  return dummyNode.next;
 };
 ```
 

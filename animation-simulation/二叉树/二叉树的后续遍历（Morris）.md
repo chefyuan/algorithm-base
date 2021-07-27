@@ -14,7 +14,7 @@
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210622142148928.png)
 
-由上图可知，仅仅有三处不同，后序遍历里少了 `list.add()`，多了一个函数` postMorris() `  ，那后序遍历的 list.add()  肯定是在 postMorris 函数中的。所以我们搞懂了 postMorris  函数，也就搞懂了后序遍历的 Morris 方法（默认大家看了之前的文章，没有看过的同学，可以点击文首的链接）
+由上图可知，仅仅有三处不同，后序遍历里少了 `list.add()`，多了一个函数`postMorris()` ，那后序遍历的 list.add() 肯定是在 postMorris 函数中的。所以我们搞懂了 postMorris 函数，也就搞懂了后序遍历的 Morris 方法（默认大家看了之前的文章，没有看过的同学，可以点击文首的链接）
 
 下面我们一起来剖析下 postMorris 函数.代码如下
 
@@ -82,7 +82,7 @@ class Solution {
                      p2.right = null;
                      postMorris(p1.left);
                  }
-            } 
+            }
             p1 = p1.right;
         }
         //以根节点为起点的链表
@@ -113,14 +113,14 @@ class Solution {
         return pre;
     }
 
-}      
+}
 ```
 
 Swift Code：
 
 ```swift
 class Solution {
-    var list:[Int] = [] 
+    var list:[Int] = []
     func postorderTraversal(_ root: TreeNode?) -> [Int] {
         guard root != nil else {
             return list
@@ -177,6 +177,3 @@ class Solution {
 总结：后序遍历比起前序和中序稍微复杂了一些，所以我们解题的时候，需要好好注意一下，迭代法的核心是利用一个指针来定位我们上一个遍历的节点，Morris 的核心是，将某节点的右子节点，看成是一条链表，进行反向遍历。
 
 好啦，今天就唠到这吧，拜了个拜。
-
-
-

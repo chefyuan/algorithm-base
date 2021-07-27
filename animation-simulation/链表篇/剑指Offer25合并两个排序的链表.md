@@ -1,12 +1,12 @@
-> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友  **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注  github  + 题目 + 问题  向我反馈
+> 如果阅读时，发现错误，或者动画不可以显示的问题可以添加我微信好友 **[tan45du_one](https://raw.githubusercontent.com/tan45du/tan45du.github.io/master/个人微信.15egrcgqd94w.jpg)** ，备注 github + 题目 + 问题 向我反馈
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [剑指 Offer 25. 合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
 
-将两个升序链表合并为一个新的 **升序** 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
+将两个升序链表合并为一个新的 **升序** 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 
 示例：
 
@@ -15,7 +15,7 @@
 输出：1->1->2->3->4->4
 ```
 
-今天的题目思路很简单，但是一遍AC也是不容易的。链表大部分题目考察的都是考生代码的完整性和鲁棒性，所以有些题目我们看着思路很简单，但是想直接通过还是需要下一翻工夫的，所以建议大家将所有链表的题目都自己写一下。实在没有时间做的同学，可以自己在脑子里打一遍代码，想清每一行代码的作用。
+今天的题目思路很简单，但是一遍 AC 也是不容易的。链表大部分题目考察的都是考生代码的完整性和鲁棒性，所以有些题目我们看着思路很简单，但是想直接通过还是需要下一翻工夫的，所以建议大家将所有链表的题目都自己写一下。实在没有时间做的同学，可以自己在脑子里打一遍代码，想清每一行代码的作用。
 
 迭代法：
 
@@ -47,7 +47,7 @@ Java Code:
                  l1 = l1.next;
              }
              headpro = headpro.next;
-         } 
+         }
          headpro.next = l1 != null ? l1:l2;
          return headtemp.next;
     }
@@ -73,7 +73,7 @@ public:
                  l1 = l1->next;
              }
              headpro = headpro->next;
-         } 
+         }
          headpro->next = l1 != nullptr ? l1: l2;
          return headtemp->next;
     }
@@ -83,23 +83,22 @@ public:
 JS Code:
 
 ```js
-var mergeTwoLists = function(l1, l2) {
-    let headpro = new ListNode(-1);
-    let headtemp = headpro;
-    while (l1 && l2) {
-        //接上大的那个
-        if (l1.val >= l2.val) {
-            headpro.next = l2;
-            l2 = l2.next;
-        }
-        else {
-            headpro.next = l1;
-            l1 = l1.next;
-        }
-        headpro = headpro.next;
-    } 
-    headpro.next = l1 != null ? l1:l2;
-    return headtemp.next;
+var mergeTwoLists = function (l1, l2) {
+  let headpro = new ListNode(-1);
+  let headtemp = headpro;
+  while (l1 && l2) {
+    //接上大的那个
+    if (l1.val >= l2.val) {
+      headpro.next = l2;
+      l2 = l2.next;
+    } else {
+      headpro.next = l1;
+      l1 = l1.next;
+    }
+    headpro = headpro.next;
+  }
+  headpro.next = l1 != null ? l1 : l2;
+  return headtemp.next;
 };
 ```
 
