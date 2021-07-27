@@ -2,7 +2,7 @@
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
 
 ### [328. 奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
 
@@ -21,7 +21,7 @@
 
 示例 2:
 
-> 输入: 2->1->3->5->6->4->7->NULL
+> 输入: 2->1->3->5->6->4->7->NULL 
 > 输出: 2->3->6->7->1->5->4->NULL
 
 #### 题目解析
@@ -54,7 +54,7 @@ class Solution {
              odd = odd.next;
              even.next = odd.next;
              even = even.next;
-         }
+         }  
          //链接
          odd.next = evenHead;
          return head;
@@ -81,7 +81,7 @@ public:
              odd = odd->next;
              even->next = odd->next;
              even = even->next;
-         }
+         }  
          //链接
          odd->next = evenHead;
          return head;
@@ -98,15 +98,15 @@ var oddEvenList = function (head) {
     even = head.next,
     evenHead = even;
   while (odd.next && even.next) {
-    //将偶数位合在一起，奇数位合在一起
-    odd.next = even.next;
-    odd = odd.next;
-    even.next = odd.next;
-    even = even.next;
-  }
-  //链接
-  odd.next = evenHead;
-  return head;
+        //将偶数位合在一起，奇数位合在一起
+        odd.next = even.next;
+        odd = odd.next;
+        even.next = odd.next;
+        even = even.next;
+    }
+    //链接
+    odd.next = evenHead;
+    return head;
 };
 ```
 
@@ -153,5 +153,25 @@ class Solution {
         odd?.next = evenHead
         return head
     }
+}
+```
+
+Go Code:
+
+```go
+func oddEvenList(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil {
+        return head
+    }
+    odd, even := head, head.Next
+    evenHead := even
+    for odd.Next != nil && even.Next != nil {
+        odd.Next = even.Next
+        odd = odd.Next
+        even.Next = odd.Next
+        even = even.Next
+    }
+    odd.Next = evenHead
+    return head
 }
 ```

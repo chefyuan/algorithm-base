@@ -48,7 +48,7 @@ class Solution {
         //这里和三向切分不完全一致
         int i = left;
         int right = len-1;
-
+        
         while (i <= right) {
              if (nums[i] == 2) {
                  swap(nums,i,right--);
@@ -57,7 +57,7 @@ class Solution {
              } else {
                  i++;
              }
-        }
+        }     
     }
     public void swap (int[] nums, int i, int j) {
         int temp = nums[i];
@@ -72,7 +72,7 @@ Python3 Code:
 ```python
 from typing import List
 class Solution:
-    def sortColors(self, nums: List[int]):
+    def sortColors(self, nums: List[int]): 
         leng = len(nums)
         left = 0
         # 这里和三向切分不完全一致
@@ -89,7 +89,7 @@ class Solution:
             else:
                 i += 1
         return nums
-
+    
     def swap(self, nums: List[int], i: int, j: int):
         temp = nums[i]
         nums[i] = nums[j]
@@ -112,7 +112,7 @@ public:
              } else {
                  i++;
              }
-        }
+        }  
     }
 };
 ```
@@ -149,6 +149,32 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func sortColors(nums []int)  {
+    length := len(nums)
+    left, right := 0, length - 1
+    i := left
+    for i <= right {
+        if nums[i] == 2 {
+            // 把2换到最后
+            nums[i], nums[right] = nums[right], nums[i]
+            right--
+        } else if nums[i] == 0 {
+            // 把0换到最前面
+            nums[i], nums[left] = nums[left], nums[i]
+            i++
+            left++
+        } else {
+            i++
+        }
+    }
+}
+```
+
+
+
 另外我们看这段代码，有什么问题呢？那就是我们即使完全符合时，仍会交换元素，这样会大大降低我们的效率。
 
 例如：[0,0,0,1,1,1,2,2,2]
@@ -177,7 +203,7 @@ class Solution {
         int len = nums.length;
         int right = len - 1;
         for (int i = 0; i <= right; ++i) {
-            if (nums[i] == 0) {
+            if (nums[i] == 0) {             
                 swap(nums,i,left);
                 left++;
             }
@@ -190,7 +216,7 @@ class Solution {
                 }
             }
         }
-
+        
     }
     public void swap (int[] nums,int i, int j) {
         int temp = nums[i];
@@ -220,7 +246,7 @@ class Solution:
                 # 如果不等于 1 则需要继续判断，所以不移动 i 指针，i--
                 if nums[i] != 1:
                     i -= 1
-            i += 1
+            i += 1    
         return nums
 
     def swap(self, nums: List[int], i: int, j: int):
@@ -238,7 +264,7 @@ public:
         int left = 0, len = nums.size();
         int right = len - 1;
         for (int i = 0; i <= right; ++i) {
-            if (nums[i] == 0) {
+            if (nums[i] == 0) {             
                 swap(nums[i],nums[left++]);
             }
             if (nums[i] == 2) {
@@ -265,7 +291,7 @@ class Solution {
                 //nums.swapAt(i, left) 直接调用系统方法
                 self.swap(&nums, i, left) // 保持风格统一走自定义交换
                 left += 1
-            }
+            } 
             if nums[i] == 2 {
                 //nums.swapAt(i, right) 直接调用系统方法
                 self.swap(&nums, i, right) // 保持风格统一走自定义交换
@@ -286,3 +312,28 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func sortColors(nums []int)  {
+    length := len(nums)
+    left, right := 0, length - 1
+    for i := 0; i <= right; i++ {
+        if nums[i] == 0 {
+            // 为0时，和头交换
+            nums[i], nums[left] = nums[left], nums[i]
+            left++
+        } else if nums[i] == 2 {
+            // 为2时，和尾交换
+            nums[i], nums[right] = nums[right], nums[i]
+            right--
+            // 不为1时，需要把i减回去
+            if nums[i] != 1 {
+                i--
+            }
+        }
+    }
+}
+```
+

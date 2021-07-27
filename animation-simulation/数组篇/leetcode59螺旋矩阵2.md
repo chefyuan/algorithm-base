@@ -360,3 +360,49 @@ class Solution {
     }
 }
 ```
+
+
+Go Code:
+
+```go
+func generateMatrix(n int) [][]int {
+    res := make([][]int, n)
+    for i := 0; i < n; i++ {
+        res[i] = make([]int, n)
+    }
+    left, right := 0, n - 1
+    top, buttom := 0, n - 1
+    size, num := n * n, 1
+    for {
+        for i := left; i <= right; i++ {
+            res[top][i] = num
+            num++
+        }
+        top++
+        if num > size { break }
+
+        for i := top; i <= buttom; i++ {
+            res[i][right] = num
+            num++
+        }
+        right--
+        if num > size { break }
+
+        for i := right; i >= left; i-- {
+            res[buttom][i] = num
+            num++
+        }
+        buttom--
+        if num > size { break }
+        
+        for i := buttom; i >= top; i-- {
+            res[i][left] = num
+            num++
+        }
+        left++
+        if num > size { break }
+    }
+    return res
+}
+```
+

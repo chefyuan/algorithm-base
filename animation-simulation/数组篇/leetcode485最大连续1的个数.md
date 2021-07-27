@@ -22,7 +22,7 @@
 
 下面我们通过一个视频模拟代码执行步骤大家一下就能搞懂了。
 
-![leetcode485最长连续1的个数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode485最长连续1的个数.7avzcthkit80.gif)
+ ![leetcode485最长连续1的个数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode485最长连续1的个数.7avzcthkit80.gif)
 
 下面我们直接看代码吧
 
@@ -207,3 +207,28 @@ public:
     }
 };
 ```
+
+Go Code:
+
+```go
+func findMaxConsecutiveOnes(nums []int) int {
+    cnt, maxCnt := 0, 0
+    for i := 0; i < len(nums); i++ {
+        if nums[i] == 1 {
+            cnt++
+        } else {
+            maxCnt = max(maxCnt, cnt)
+            cnt = 0
+        }
+    }
+    return max(maxCnt, cnt)
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+```
+

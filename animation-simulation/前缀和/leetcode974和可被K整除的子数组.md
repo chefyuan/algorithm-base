@@ -129,3 +129,21 @@ public:
     }
 };
 ```
+
+Go Code:
+
+```go
+func subarraysDivByK(nums []int, k int) int {
+    m := make(map[int]int)
+    cnt := 0
+    sum := 0
+    m[0] = 1
+    for _, num := range nums {
+        sum += num
+        key := (sum % k + k) % k
+        cnt += m[key]
+        m[key]++
+    }
+    return cnt
+}
+```

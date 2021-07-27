@@ -217,3 +217,23 @@ public:
     }
 };
 ```
+
+Go Code:
+
+```go
+func subarraySum(nums []int, k int) int {
+    m := map[int]int{}
+    m[0] = 1
+    sum := 0
+    cnt := 0
+    for _, num := range nums {
+        sum += num
+        if v, ok := m[sum - k]; ok {
+            cnt += v
+        }
+        m[sum]++
+    }
+    return cnt
+}
+```
+

@@ -58,3 +58,25 @@ class Solution {
     }
 }
 ```
+
+GO Code:
+
+```go
+func dailyTemperatures(temperatures []int) []int {
+    l := len(temperatures)
+    if l == 0 {
+        return temperatures
+    }
+    stack := []int{}
+    arr   := make([]int, l)
+    for i := 0; i < l; i++ {
+        for len(stack) != 0 && temperatures[i] > temperatures[stack[len(stack) - 1]] {
+            idx := stack[len(stack) - 1]
+            arr[idx] = i - idx
+            stack = stack[: len(stack) - 1]
+        }
+        // 栈保存的是索引
+        stack = append(stack, i)
+    }
+    return arr
+}

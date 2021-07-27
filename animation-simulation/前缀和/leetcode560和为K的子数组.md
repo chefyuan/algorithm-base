@@ -182,3 +182,24 @@ public:
     }
 };
 ```
+
+Go Code:
+
+```GO
+func subarraySum(nums []int, k int) int {
+    m := map[int]int{}
+    // m存的是前缀和，没有元素的时候，和为0，且有1个子数组(空数组)满足条件，即m[0] = 1
+    m[0] = 1
+    sum := 0
+    cnt := 0
+    for _, num := range nums {
+        sum += num
+        if v, ok := m[sum - k]; ok {
+            cnt += v
+        }
+        // 更新满足前缀和的子数组数量
+        m[sum]++
+    }
+    return cnt
+}
+```
