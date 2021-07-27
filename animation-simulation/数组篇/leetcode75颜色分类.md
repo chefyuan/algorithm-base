@@ -149,6 +149,32 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func sortColors(nums []int)  {
+    length := len(nums)
+    left, right := 0, length - 1
+    i := left
+    for i <= right {
+        if nums[i] == 2 {
+            // 把2换到最后
+            nums[i], nums[right] = nums[right], nums[i]
+            right--
+        } else if nums[i] == 0 {
+            // 把0换到最前面
+            nums[i], nums[left] = nums[left], nums[i]
+            i++
+            left++
+        } else {
+            i++
+        }
+    }
+}
+```
+
+
+
 另外我们看这段代码，有什么问题呢？那就是我们即使完全符合时，仍会交换元素，这样会大大降低我们的效率。
 
 例如：[0,0,0,1,1,1,2,2,2]
@@ -286,3 +312,28 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func sortColors(nums []int)  {
+    length := len(nums)
+    left, right := 0, length - 1
+    for i := 0; i <= right; i++ {
+        if nums[i] == 0 {
+            // 为0时，和头交换
+            nums[i], nums[left] = nums[left], nums[i]
+            left++
+        } else if nums[i] == 2 {
+            // 为2时，和尾交换
+            nums[i], nums[right] = nums[right], nums[i]
+            right--
+            // 不为1时，需要把i减回去
+            if nums[i] != 1 {
+                i--
+            }
+        }
+    }
+}
+```
+

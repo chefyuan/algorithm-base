@@ -193,3 +193,40 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func spiralOrder(matrix [][]int) []int {
+    res := []int{}
+    left, right := 0, len(matrix[0]) - 1
+    top, down   := 0, len(matrix) - 1
+
+    for {
+        for i := left; i <= right; i++ {
+            res = append(res, matrix[top][i])
+        }
+        top++
+        if top > down { break }
+
+        for i := top; i <= down; i++ {
+            res = append(res, matrix[i][right])
+        }
+        right--
+        if left > right { break }
+
+        for i := right; i >= left; i-- {
+            res = append(res, matrix[down][i])
+        }
+        down--
+        if top > down { break }
+        
+        for i := down; i >= top; i-- {
+            res = append(res, matrix[i][left])
+        }
+        left++
+        if left > right { break }
+    }
+    return res
+}
+```
+

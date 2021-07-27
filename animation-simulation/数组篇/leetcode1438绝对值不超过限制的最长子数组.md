@@ -260,3 +260,46 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func longestSubarray(nums []int, limit int) int {
+    maxdeq := []int{} // 递减队列
+    mindeq := []int{} // 递增队列
+
+    length := len(nums)
+    left, right, maxwin := 0, 0, 0
+    for right < length {
+        for len(maxdeq) != 0 && maxdeq[len(maxdeq) - 1] < nums[right] {
+            maxdeq = maxdeq[: len(maxdeq) - 1]
+        }
+        maxdeq = append(maxdeq, nums[right])
+
+        for len(mindeq) != 0 && mindeq[len(mindeq) - 1] > nums[right] {
+            mindeq = mindeq[: len(mindeq) - 1]
+        }
+        mindeq = append(mindeq, nums[right])
+
+        for maxdeq[0] - mindeq[0] > limit {
+            if maxdeq[0] == nums[left] {
+                maxdeq = maxdeq[1:]
+            }
+            if mindeq[0] == nums[left] {
+                mindeq = mindeq[1:]
+            }
+            left++
+        }
+        maxwin = max(maxwin, right - left + 1)
+        right++
+    }
+    return maxwin
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+```
+
