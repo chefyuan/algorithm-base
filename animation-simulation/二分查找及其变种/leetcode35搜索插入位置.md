@@ -69,4 +69,3 @@ class Solution {
 ```
 
 Go Code:
-
