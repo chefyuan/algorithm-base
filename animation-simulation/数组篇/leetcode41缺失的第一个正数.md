@@ -273,3 +273,26 @@ public:
     }
 };
 ```
+
+Go Code:
+
+```go
+func firstMissingPositive(nums []int) int {
+    length := len(nums)
+    if length == 0 { return 1 }
+    for i := 0; i < length; i++ {
+        // 将不在正确位置的元素放在正确的位置上。
+        for nums[i] > 0 && nums[i] < length + 1 && nums[i] != i + 1 && nums[i] != nums[nums[i] - 1] {
+            j := nums[i] - 1
+            nums[i], nums[j] = nums[j], nums[i]
+        }
+    }
+	// 第一个不在正确位置上的元素就是结果。
+    for i := 0; i < length; i++ {
+        if nums[i] != i + 1 {
+            return i + 1
+        }
+    }
+    return length + 1
+}
+```

@@ -187,3 +187,29 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func partition(head *ListNode, x int) *ListNode {
+    big, small := &ListNode{}, &ListNode{}
+    headBig, headSmall := big, small
+    temp := head
+    for temp != nil {
+        // 分开存
+        if temp.Val < x {
+            small.Next = temp
+            small = small.Next
+        } else {
+            big.Next = temp
+            big = big.Next
+        }
+        temp = temp.Next
+    }
+    // 最后一个节点指向nil
+    big.Next = nil
+    // 存小数的链表和存大数的连起来
+    small.Next = headBig.Next
+    return headSmall.Next
+}
+```

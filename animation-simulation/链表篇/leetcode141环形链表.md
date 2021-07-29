@@ -124,3 +124,20 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func hasCycle(head *ListNode) bool {
+    if head == nil { return false }
+    s, f := head, head
+    for f != nil && f.Next != nil {
+        s = s.Next
+        f = f.Next.Next
+        if s == f {
+            return true
+        }
+    }
+    return false
+}
+```

@@ -76,36 +76,4 @@ class Solution {
 }
 ```
 
-Go Code:
 
-```go
-func search(nums []int, target int) bool {
-    left := 0
-    right := len(nums) - 1
-    for (left <= right) {
-        mid := left+((right-left)>>1)
-        if (nums[mid] == target) {
-            return true
-        }
-        if (nums[mid] == nums[left]) {
-            left++
-            continue
-        }
-        if (nums[mid] > nums[left]) {
-            if (nums[mid] > target && target >= nums[left]) {
-                    right = mid - 1
-            } else if (target > nums[mid] || target < nums[left]) {
-                    left = mid + 1
-            }
-
-        }else if (nums[mid] < nums[left]) {
-            if (nums[mid] < target && target <= nums[right]) {
-                left = mid + 1
-            } else if (target < nums[mid] || target > nums[right]) {
-                right = mid - 1
-            }
-        }
-    }
-    return false
-}
-```

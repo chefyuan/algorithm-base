@@ -207,3 +207,27 @@ public:
     }
 };
 ```
+
+Go Code:
+
+```go
+func findMaxConsecutiveOnes(nums []int) int {
+    cnt, maxCnt := 0, 0
+    for i := 0; i < len(nums); i++ {
+        if nums[i] == 1 {
+            cnt++
+        } else {
+            maxCnt = max(maxCnt, cnt)
+            cnt = 0
+        }
+    }
+    return max(maxCnt, cnt)
+}
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+```

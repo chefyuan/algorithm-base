@@ -222,3 +222,24 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func containsNearbyDuplicate(nums []int, k int) bool {
+    length := len(nums)
+    if length == 0 {
+        return false
+    }
+    m := map[int]int{}
+    for i := 0; i < length; i++ {
+        if v, ok := m[nums[i]]; ok {
+            if i - v <= k {
+                return true
+            }
+        }
+        m[nums[i]] = i
+    }
+    return false
+}
+```

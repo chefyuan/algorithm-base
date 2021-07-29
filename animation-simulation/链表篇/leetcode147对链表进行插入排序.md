@@ -257,3 +257,34 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func insertionSortList(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil { return head }
+    root := &ListNode{
+        Next: head,
+    }
+    cur, nxt := head, head.Next
+    for nxt != nil {
+        // 有序的不需要换位置
+        if cur.Val <= nxt.Val {
+            cur = cur.Next
+            nxt = nxt.Next
+            continue
+        }
+        temp := root
+        for temp.Next.Val <= nxt.Val {
+            temp = temp.Next
+        }
+        // 此时找到合适的位置
+        cur.Next = nxt.Next
+        nxt.Next = temp.Next
+        temp.Next = nxt
+        // 继续向下
+        nxt = cur.Next
+    }
+    return root.Next
+}
+```

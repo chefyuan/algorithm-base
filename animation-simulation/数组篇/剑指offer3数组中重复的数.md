@@ -174,3 +174,24 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func findRepeatNumber(nums []int) int {
+    l := len(nums)
+    if l == 0 {
+        return -1
+    }
+    for i := 0; i < l; i++ {
+        // 将nums[i]换到i的位置。
+        for nums[i] != i {
+            if nums[i] == nums[nums[i]] {
+                return nums[i]
+            }
+            nums[i], nums[nums[i]] = nums[nums[i]], nums[i]
+        }
+    }
+    return -1
+}
+```
