@@ -263,3 +263,48 @@ class Solution {
     }
 }
 ```
+
+
+GoCode:
+
+```go
+func reverseBetween(head *ListNode, left int, right int) *ListNode {
+    root := &ListNode{
+        Next: head,
+    }
+    temp := root
+    i := 0
+    // left的前一个节点
+    for ; i < left - 1; i++ {
+        temp = temp.Next
+    }
+    leftNode := temp
+    // right的后一个节点
+    for ; i < right; i++ {
+        temp = temp.Next
+    }
+    rightNode := temp.Next
+    // 切断链表
+    temp.Next = nil
+    newhead := leftNode.Next
+    leftNode.Next = nil
+
+    // 反转后将3段链表接上。
+    leftNode.Next = reverse(newhead)
+    newhead.Next = rightNode
+    return root.Next
+}
+
+func reverse(head *ListNode) *ListNode {
+    var pre *ListNode
+    cur := head
+    for cur != nil {
+        temp := cur
+        cur = cur.Next
+        temp.Next = pre
+        pre = temp
+    }
+    return pre
+}
+```
+

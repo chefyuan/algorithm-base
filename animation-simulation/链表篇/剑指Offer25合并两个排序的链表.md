@@ -146,3 +146,31 @@ class Solution {
     }
 }
 ```
+
+
+Go Code:
+
+```go
+func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+    root := &ListNode{}
+    node := root
+    for l1 != nil && l2 != nil {
+        if l1.Val < l2.Val {
+            node.Next = l1
+            l1 = l1.Next
+        } else {
+            node.Next = l2
+            l2 = l2.Next
+        }
+        node = node.Next
+    }
+	// node接上l1或l2剩下的节点
+    if l1 != nil {
+        node.Next = l1
+    } else {
+        node.Next = l2
+    }
+    return root.Next
+}
+```
+

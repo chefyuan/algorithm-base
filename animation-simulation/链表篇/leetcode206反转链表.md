@@ -164,6 +164,27 @@ class Solution {
 }
 ```
 
+Go Code:
+
+```go
+func reverseList(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil { return head }
+    cur := head
+    var pre *ListNode
+    for cur != nil {
+        nxt := cur.Next
+        cur.Next = pre
+        pre = cur
+        cur = nxt
+        if nxt == nil {
+            return pre
+        }
+        nxt = nxt.Next
+    }
+    return pre
+}
+```
+
 上面的迭代写法是不是搞懂啦，现在还有一种递归写法，不是特别容易理解，刚开始刷题的同学，可以只看迭代解法。
 
 **题目代码**
@@ -217,19 +238,19 @@ JS Code:
 
 ```javascript
 var reverseList = function (head) {
-  //结束条件
-  if (!head || !head.next) {
-    return head;
-  }
-  //保存最后一个节点
-  let pro = reverseList(head.next);
-  //将节点进行反转。我们可以这样理解 4.next.next = 4
-  //4.next = 5
-  //则 5.next = 4 则实现了反转
-  head.next.next = head;
-  //防止循环
-  head.next = null;
-  return pro;
+    //结束条件
+    if (!head || !head.next) {
+        return head;
+    }
+    //保存最后一个节点
+    let pro = reverseList(head.next);
+    //将节点进行反转。我们可以这样理解 4.next.next = 4
+    //4.next = 5
+    //则 5.next = 4 则实现了反转
+    head.next.next = head;
+    //防止循环
+    head.next = null;
+    return pro;
 };
 ```
 

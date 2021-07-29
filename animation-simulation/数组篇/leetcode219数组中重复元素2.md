@@ -45,7 +45,7 @@ class Solution {
             if (map.containsKey(nums[i])) {
                 //判断是否小于K，如果小于等于则直接返回
                 int abs = Math.abs(i - map.get(nums[i]));
-                if (abs <= k)  return true;//小于等于则返回
+                if (abs <= k)  return true;//小于等于则返回        
             }
             //更新索引，此时有两种情况，不存在，或者存在时，将后出现的索引保存
             map.put(nums[i],i);
@@ -72,7 +72,7 @@ class Solution:
                 # 判断是否小于K，如果小于等于则直接返回
                 a = abs(i - m[nums[i]])
                 if a <= k:
-                    return True# 小于等于则返回
+                    return True# 小于等于则返回  
             # 更新索引，此时有两种情况，不存在，或者存在时，将后出现的索引保存
             m[nums[i]] = i
         return False
@@ -222,3 +222,25 @@ class Solution {
     }
 }
 ```
+
+Go Code:
+
+```go
+func containsNearbyDuplicate(nums []int, k int) bool {
+    length := len(nums)
+    if length == 0 {
+        return false
+    }
+    m := map[int]int{}
+    for i := 0; i < length; i++ {
+        if v, ok := m[nums[i]]; ok {
+            if i - v <= k {
+                return true
+            }
+        }
+        m[nums[i]] = i
+    }
+    return false
+}
+```
+

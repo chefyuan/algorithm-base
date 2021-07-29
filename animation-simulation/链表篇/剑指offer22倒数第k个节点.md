@@ -163,3 +163,23 @@ class Solution {
     }
 }
 ```
+
+
+Go Code:
+
+```go
+func getKthFromEnd(head *ListNode, k int) *ListNode {
+    if head == nil { return head }
+    pro, after := head, head
+    //先移动绿指针到指定位置
+    for i := 0; i < k - 1; i++ {
+        pro = pro.Next
+    }
+    for pro.Next != nil {
+        pro = pro.Next
+        after = after.Next
+    }
+    return after
+}
+```
+
