@@ -147,7 +147,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -173,4 +172,3 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
     return root.Next
 }
 ```
-

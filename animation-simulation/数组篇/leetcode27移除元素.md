@@ -183,7 +183,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -203,4 +202,3 @@ func removeElement(nums []int, val int) int {
     return i
 }
 ```
-

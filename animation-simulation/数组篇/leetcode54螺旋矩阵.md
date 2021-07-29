@@ -181,7 +181,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -208,7 +207,7 @@ func spiralOrder(matrix [][]int) []int {
         }
         down--
         if top > down { break }
-        
+
         for i := down; i >= top; i-- {
             res = append(res, matrix[i][left])
         }
@@ -218,4 +217,3 @@ func spiralOrder(matrix [][]int) []int {
     return res
 }
 ```
-

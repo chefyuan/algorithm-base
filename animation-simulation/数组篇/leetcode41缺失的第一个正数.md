@@ -274,7 +274,6 @@ public:
 };
 ```
 
-
 Go Code:
 
 ```go
@@ -297,4 +296,3 @@ func firstMissingPositive(nums []int) int {
     return length + 1
 }
 ```
-

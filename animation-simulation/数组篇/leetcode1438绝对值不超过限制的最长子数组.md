@@ -261,7 +261,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -304,4 +303,3 @@ func max(a, b int) int {
     return b
 }
 ```
-

@@ -125,7 +125,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -142,4 +141,3 @@ func hasCycle(head *ListNode) bool {
     return false
 }
 ```
-

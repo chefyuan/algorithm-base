@@ -264,7 +264,6 @@ class Solution {
 }
 ```
 
-
 GoCode:
 
 ```go
@@ -307,4 +306,3 @@ func reverse(head *ListNode) *ListNode {
     return pre
 }
 ```
-

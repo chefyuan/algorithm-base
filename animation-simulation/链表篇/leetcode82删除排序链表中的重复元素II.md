@@ -195,7 +195,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -222,4 +221,3 @@ func deleteDuplicates(head *ListNode) *ListNode {
     return root.Next
 }
 ```
-

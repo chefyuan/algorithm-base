@@ -22,7 +22,7 @@
 
 下面我们通过一个视频模拟代码执行步骤大家一下就能搞懂了。
 
- ![leetcode485最长连续1的个数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode485最长连续1的个数.7avzcthkit80.gif)
+![leetcode485最长连续1的个数](https://cdn.jsdelivr.net/gh/tan45du/test1@master/20210122/leetcode485最长连续1的个数.7avzcthkit80.gif)
 
 下面我们直接看代码吧
 
@@ -231,4 +231,3 @@ func max(a, b int) int {
     return b
 }
 ```
-

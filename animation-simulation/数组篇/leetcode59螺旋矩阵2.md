@@ -361,7 +361,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -394,7 +393,7 @@ func generateMatrix(n int) [][]int {
         }
         buttom--
         if num > size { break }
-        
+
         for i := buttom; i >= top; i-- {
             res[i][left] = num
             num++
@@ -405,4 +404,3 @@ func generateMatrix(n int) [][]int {
     return res
 }
 ```
-

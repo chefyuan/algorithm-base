@@ -238,19 +238,19 @@ JS Code:
 
 ```javascript
 var reverseList = function (head) {
-    //结束条件
-    if (!head || !head.next) {
-        return head;
-    }
-    //保存最后一个节点
-    let pro = reverseList(head.next);
-    //将节点进行反转。我们可以这样理解 4.next.next = 4
-    //4.next = 5
-    //则 5.next = 4 则实现了反转
-    head.next.next = head;
-    //防止循环
-    head.next = null;
-    return pro;
+  //结束条件
+  if (!head || !head.next) {
+    return head;
+  }
+  //保存最后一个节点
+  let pro = reverseList(head.next);
+  //将节点进行反转。我们可以这样理解 4.next.next = 4
+  //4.next = 5
+  //则 5.next = 4 则实现了反转
+  head.next.next = head;
+  //防止循环
+  head.next = null;
+  return pro;
 };
 ```
 

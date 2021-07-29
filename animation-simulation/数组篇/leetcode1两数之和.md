@@ -203,7 +203,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -218,4 +217,3 @@ func twoSum(nums []int, target int) []int {
     return []int{}
 }
 ```
-

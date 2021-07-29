@@ -188,7 +188,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -214,4 +213,3 @@ func partition(head *ListNode, x int) *ListNode {
     return headSmall.Next
 }
 ```
-

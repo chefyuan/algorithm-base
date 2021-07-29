@@ -111,7 +111,7 @@ func (mq *MaxQueue) Is_empty() bool {
     return mq.size == 0
 }
 
-// Max_value 取最大值值，返回我们双端队列的对头即可，因为我们双端队列是单调递减的嘛 
+// Max_value 取最大值值，返回我们双端队列的对头即可，因为我们双端队列是单调递减的嘛
 func (mq *MaxQueue) Max_value() int {
     if mq.Is_empty() { return -1 }
     return mq.deq[0]

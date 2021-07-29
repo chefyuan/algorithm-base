@@ -164,7 +164,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -182,4 +181,3 @@ func getKthFromEnd(head *ListNode, k int) *ListNode {
     return after
 }
 ```
-

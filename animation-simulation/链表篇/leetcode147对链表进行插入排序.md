@@ -258,7 +258,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -289,4 +288,3 @@ func insertionSortList(head *ListNode) *ListNode {
     return root.Next
 }
 ```
-

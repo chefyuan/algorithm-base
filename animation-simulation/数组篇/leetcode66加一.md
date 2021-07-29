@@ -2,7 +2,7 @@
 >
 > 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助。
 >
-> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。 
+> 另外希望手机阅读的同学可以来我的 <u>[**公众号：袁厨的算法小屋**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u> 两个平台同步，想要和题友一起刷题，互相监督的同学，可以在我的小屋点击<u>[**刷题小队**](https://raw.githubusercontent.com/tan45du/test/master/微信图片_20210320152235.2pthdebvh1c0.png)</u>进入。
 
 #### [66. 加一](https://leetcode-cn.com/problems/plus-one/)
 
@@ -56,10 +56,10 @@ class Solution {
             if (digits[i] != 0) {
                 return digits;
             }
-        
+
         }
         //第三种情况，因为数组初始化每一位都为0，我们只需将首位设为1即可
-        int[] arr = new int[len+1]; 
+        int[] arr = new int[len+1];
         arr[0] = 1;
         return arr;
     }
@@ -138,4 +138,3 @@ func plusOne(digits []int) []int {
     return digits
 }
 ```
-

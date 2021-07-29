@@ -298,7 +298,6 @@ class Solution {
 }
 ```
 
-
 Go Code:
 
 ```go
@@ -322,4 +321,3 @@ func detectCycle(head *ListNode) *ListNode {
     return nil
 }
 ```
-
