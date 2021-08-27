@@ -1,12 +1,6 @@
 # **algorithm-base**
 
-<div  align="left">   <a href = "https://www.zhihu.com/people/suan-fa-ji-di"><img src="https://img.shields.io/badge/Zhihu-知乎-blue" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@算法基地</span>&nbsp&nbsp&nbsp&nbsp
-    <a href = "https://mp.weixin.qq.com/s/BcRXQGncUpydeSuQRywTSA"><img src="https://img.shields.io/badge/WX-公众号-green" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@袁厨的算法小屋</span>
-    &nbsp&nbsp&nbsp&nbsp
-    <a href = "https://github.com/chefyuan/algorithm-base"><img src="https://img.shields.io/badge/GitHub-仓库-red" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp @算法基地</span> 
-     </div>
-
-### **❤️ 致各位题友的一封信（使用仓库前必读）**
+**❤️ 致各位题友的一封信（使用仓库前必读）**
 
 大家刚开始刷题时，会有不知道该从何刷起，也看不懂别人题解的情况
 
@@ -44,18 +38,6 @@
 如果老哥觉得仓库很用心的话，麻烦大佬帮忙点个 star ，这也是我们一直更新下去的动力。
 
 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助.
-
-> 另外我和几位老哥，给刚开始刷题，但是不知道从哪里开始刷的同学，整理了一份 【刷题大纲 】可以先按这个顺序刷，刷完之后应该就能入门，当然该仓库的大部分题解也是来自那个大纲。
->
-> 需要的同学可以扫描下方二维码回复【刷题大纲】获取
-
-我把我之前学习算法时，**对我帮助很大的算法书籍，谷歌大神的刷题笔记，面经等整理在了云盘**，需要进阶的同学，可以自己下载，比较适合有一定基础的同学。
-
-> [**下载地址**](https://wwr.lanzoui.com/iSGhjox0yne)
-
-想要手机阅读的大佬，可以来我的[公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png)进行阅读，两个平台同步更新，另外想要和题友们一起刷题**的同学可以来我的小屋，**点击**刷题小队**进入，另外群里老哥还会不定期发布内推消息，面经等，需要的可以进一下,不过来的时候**记得备注**，希望这个群能对你们有一丢丢帮助吧，一起加油。
-
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png" width = "150px" hight = "150px"/> </div>
 
 ---
 
