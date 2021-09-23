@@ -53,7 +53,7 @@
 
 > [**下载地址**](https://wwr.lanzoui.com/iJT03ty9ycd)
 
-想要手机阅读的大佬，可以来我的[公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png)进行阅读，两个平台同步更新，另外想要和题友们一起刷题**的同学可以来我的小屋，**点击**刷题小队**进入，另外群里老哥还会不定期发布内推消息，面经等，需要的可以进一下,不过来的时候**记得备注**，希望这个群能对你们有一丢丢帮助吧，一起加油。
+想要手机阅读的大佬，可以来我的[公众号：袁厨的算法小屋](https://cdn.jsdelivr.net/gh/tan45du/test@master/微信图片_20210320152235.wp1ysdbibsw.png)进行阅读，两个平台同步更新，另外我最近建了一个秋招群，主要面向 2023 届，具体细节可以看这篇文章，[建了一个秋招群（2023）](https://mp.weixin.qq.com/s/nWcyTu8a-FXXgYjO4Sra1Q)需要的同学可以扫描二维码，点击求职交流，选择校招/社招。
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png" width = "150px" hight = "150px"/> </div>
 
@@ -240,14 +240,6 @@
 - [一个半月拿到阿里字节拼多多美团 offer 总结](https://mp.weixin.qq.com/s/YziTP0jqYSNS0mP18qGlAw)
 - [从大学到秋招，我如何拿下腾讯 offer](https://mp.weixin.qq.com/s/-Uez375ECoBda_a3coOegw)
 - [在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
-
-### 🍖 其他知识
-
-- [C++程序喵大人 ](https://github.com/fightingwangzq/cpp-learning)
-- [C++拓跋阿秀](https://github.com/forthespada/InterviewGuide)
-- [编程资源](https://www.code-nav.cn)
-- [腾讯云开发鱼皮](https://github.com/liyupi)
-- [架构雷架](https://github.com/smileArchitect/JavaMap)
 
 ### 🍰 数据库学习
 
