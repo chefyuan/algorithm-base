@@ -155,6 +155,7 @@ class Solution {
 C++ Code：
 
 ```cpp
+class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
          if (nums.size() == 0) {
