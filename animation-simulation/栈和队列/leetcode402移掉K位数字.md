@@ -75,7 +75,7 @@ class Solution {
             }
             stack.push(i);
         }
-        while (k > 0) {
+        while (k > 0  && !stack.isEmpty()) {
             stack.pop();
             k--;
         }
