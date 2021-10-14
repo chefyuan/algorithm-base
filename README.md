@@ -67,8 +67,6 @@
 
 [联系厨子](http://www.chengxuchu.com/#/Exchange/README)
 
-
-
 ---
 
 ### 📢 数据结构（前置知识）
@@ -228,9 +226,45 @@
 
 - 敬请期待。。。
 
+<<<<<<< HEAD
+=======
+---
+
+### 🛬 一些分享
+
+- [一些贼好用的写作软件](https://mp.weixin.qq.com/s/UtE9aEE9RFwDDrbuK-s2qQ)
+- [贼牛批的办公工具](https://mp.weixin.qq.com/s/mJL1xCGZ3zJEPsrwg5d7oQ)
+
+### 🍉 唠唠嗑
+
+- [厨子的 2020](http://www.chengxuchu.com/#/Share/%E5%94%A0%E5%94%A0%E5%97%91/%E5%8E%A8%E5%AD%90%E7%9A%842020?id=%e6%88%91%e7%9a%84%e9%82%a3%e4%ba%9b%e7%89%9bx%e7%9a%84%e4%ba%8b)
+- [在家如何高效学习](http://www.chengxuchu.com/#/Share/%E5%94%A0%E5%94%A0%E5%97%91/%E5%9C%A8%E5%AE%B6%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0?id=%e5%9c%a8%e5%ae%b6%e5%a6%82%e4%bd%95%e9%ab%98%e6%95%88%e5%ad%a6%e4%b9%a0)
+- [数字币原理详解](http://www.chengxuchu.com/#/Share/%E5%94%A0%E5%94%A0%E5%97%91/%E6%AF%94%E7%89%B9%E5%B8%81%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3?id=%e6%af%94%e7%89%b9%e5%b8%81%e5%8e%9f%e7%90%86%e8%af%a6%e8%a7%a3)
+- [常看的 UP 主](http://www.chengxuchu.com/#/Share/%E5%94%A0%E5%94%A0%E5%97%91/%E5%B8%B8%E7%9C%8B%E7%9A%84UP%E4%B8%BB?id=%e5%b8%b8%e7%9c%8b%e7%9a%84up%e4%b8%bb)
+- [如何高效阅读](https://mp.weixin.qq.com/s/ZJZyZFM4qCjOnz14CVYbmg)
+
+### 🍎 他人经验
+
+[跨考上岸浙大](http://www.chengxuchu.com/#/Experience/%E8%80%83%E7%A0%94/%E8%80%83%E7%A0%94%E5%88%86%E4%BA%AB)
+
+[如何高效复习](http://www.chengxuchu.com/#/Experience/%E6%B1%82%E8%81%8C/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%A4%8D%E4%B9%A0)
+
+[面试流程及面试形式](http://www.chengxuchu.com/#/Experience/%E6%B1%82%E8%81%8C/%E9%9D%A2%E8%AF%95%E6%B5%81%E7%A8%8B%E5%8F%8A%E9%9D%A2%E8%AF%95%E5%BD%A2%E5%BC%8F)
+
+[面试技巧](http://www.chengxuchu.com/#/Experience/%E6%B1%82%E8%81%8C/%E9%9D%A2%E8%AF%95%E6%8A%80%E5%B7%A7)
+
+[Java 学习路线](http://www.chengxuchu.com/#/Experience/%E6%B1%82%E8%81%8C/Java%E8%B7%AF%E7%BA%BF)
+
+[CPP 学习路线](http://www.chengxuchu.com/#/Experience/%E6%B1%82%E8%81%8C/CPP%E8%B7%AF%E7%BA%BF)
+
+[校招进腾讯，二本也可以？](https://mp.weixin.qq.com/s/GZtdcHB94bwKVyaopSODuQ)
+
+[在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
+
+[学弟问了我一个问题](http://www.chengxuchu.com/#/Experience/%E5%BF%83%E8%B7%AF/%E5%AD%A6%E5%BC%9F%E9%97%AE%E4%BA%86%E6%88%91%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98)
+>>>>>>> 22bdc0c59be8899da4fafa23916e21564fe07e53
 
 
 ---
 
 <div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/photobed@master/赞赏码.2mrhxsmxexa0.png" width = "200px" hight = "200px"/> </div>
-
