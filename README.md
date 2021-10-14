@@ -257,6 +257,8 @@
 
 [CPP学习路线](http://www.chengxuchu.com/#/Experience/%E6%B1%82%E8%81%8C/CPP%E8%B7%AF%E7%BA%BF)
 
+[CPP复习](https://github.com/fightingwangzq/cpp-learning)
+
 [校招进腾讯，二本也可以？](https://mp.weixin.qq.com/s/GZtdcHB94bwKVyaopSODuQ)
 
 [在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
