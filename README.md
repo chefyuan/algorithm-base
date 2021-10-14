@@ -226,8 +226,8 @@
 
 - 敬请期待。。。
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
+
 ---
 
 ### 🛬 一些分享
@@ -262,8 +262,8 @@
 [在腾讯连拿六个五星](https://mp.weixin.qq.com/s/tgSgZ-VeZwqyQYiMu2a4HQ)
 
 [学弟问了我一个问题](http://www.chengxuchu.com/#/Experience/%E5%BF%83%E8%B7%AF/%E5%AD%A6%E5%BC%9F%E9%97%AE%E4%BA%86%E6%88%91%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98)
->>>>>>> 22bdc0c59be8899da4fafa23916e21564fe07e53
 
+> > > > > > > 22bdc0c59be8899da4fafa23916e21564fe07e53
 
 ---
 
