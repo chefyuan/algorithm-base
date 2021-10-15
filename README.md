@@ -45,8 +45,7 @@
 
 另外我把我刚开始刷题时，让我受益匪浅的谷歌大佬的刷题笔记，整理打包了一下，如果你们也需要的话，可以自行下载。
 
-> 链接: https://pan.baidu.com/s/1miPqTeY92EafI78D-3Kpvg   提取码: 620l
->
+> 链接: https://pan.baidu.com/s/1miPqTeY92EafI78D-3Kpvg 提取码: 620l
 
 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助.
 
