@@ -1,10 +1,11 @@
 # **algorithm-base**
 
 <div  align="left">   <a href = "https://www.zhihu.com/people/suan-fa-ji-di"><img src="https://img.shields.io/badge/Zhihu-知乎-blue" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@程序厨</span>&nbsp&nbsp&nbsp&nbsp
-    <a href = "https://mp.weixin.qq.com/s/BcRXQGncUpydeSuQRywTSA"><img src="https://img.shields.io/badge/WX-公众号-green" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@袁厨的算法小屋</span>
+    <a href = "https://mp.weixin.qq.com/s/TJ_U9B3ttghwz_vWNdAjXw"><img src="https://img.shields.io/badge/WX-公众号-green" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp@程序厨</span>
     &nbsp&nbsp&nbsp&nbsp
     <a href = "https://github.com/chefyuan/algorithm-base"><img src="https://img.shields.io/badge/GitHub-仓库-red" width = "80px" hight = "50px"/></a><span style="font-size:12px">&nbsp @算法基地</span> 
      </div>
+
 
 ### **❤️ 致各位题友的一封信（使用仓库前必读）**
 
@@ -49,9 +50,9 @@
 
 感谢支持，该仓库会一直维护，希望对各位有一丢丢帮助.
 
-如果你需要加入**刷题/秋招小队**的话，可以扫描下方二维码，回复 校招/社招 即可，该小队永不收费，也不会有人发广告，仅仅用作交流，但是希望大家进入时，可以备注自身情况，并做一个简短的自我介绍。
+如果你需要加入**刷题/秋招小队**的话，可以扫描下方二维码，点击与我联系/交流小队，该小队永不收费，也不会有人发广告，仅仅用作交流，但是希望大家进入时，可以备注自身情况，并做一个简短的自我介绍。
 
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/chefyuantwo/testphonto@master/TTTT/WechatIMG372.2aq5pdsep474.webp" width = "150px" hight = "150px"/> </div>
 
 **如果你觉得 Github 加载不稳定的话，可以来我的个人网站进行阅读**
 
