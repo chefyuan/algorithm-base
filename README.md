@@ -37,7 +37,7 @@
 - 符合动画思想
 - 可以对代码进行简写，难懂的地方注意添加注释，因为我们的基地主要是为刚刷题的同学服务，所以就尽量让大家容易理解一些。
 
-如果想要贡献代码的大佬可以添加我的微信 **[chefyuan105](https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png)** 备注贡献仓库即可。
+如果想要贡献代码的大佬可以添加我的微信 **[iamchuzi](https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png)** 备注贡献仓库即可。
 
 在这里先替所有使用仓库的同学，谢谢各位贡献者啦。
 
@@ -57,7 +57,7 @@
 
 如果在阅读过程中，有什么问题或者建议 或者需要其他科目的面经 都可以点击下方链接 call me。
 
-[联系厨子](http://www.chengxuchu.com/#/Exchange/README)
+[联系厨子](https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png)
 
 ---
 
