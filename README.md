@@ -8,7 +8,7 @@
 
 ### **❤️ 致各位题友的一封信（使用仓库前必读）**
 
-推荐在线阅读，更稳定[wwww.chengxuchu.com](www.chengxuchu.com)
+推荐在线阅读，更稳定[www.chengxuchu.com](www.chengxuchu.com)
 
 ![image-20230510221119772](https://chengxuchu-1301103198.cos.ap-beijing.myqcloud.com/Photo/202305102212466.png)
 
