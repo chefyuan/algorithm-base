@@ -8,34 +8,11 @@
 
 ### **❤️ 致各位题友的一封信（使用仓库前必读）**
 
-大家刚开始刷题时，会有不知道该从何刷起，也看不懂别人题解的情况
+推荐在线阅读，更稳定[wwww.chengxuchu.com](www.chengxuchu.com)
 
-不要着急，这是正常的。
+![image-20230510221119772](https://chengxuchu-1301103198.cos.ap-beijing.myqcloud.com/Photo/202305102212466.png)
 
-当你刷题一定数量之后，你就会有自己的刷题思维。
-
-知道这个题目属于何种类型，使用什么解题方法。
-
-刷题速度也会大幅提升。
-
-我现在想做的就是尽量把一些基础但很经典的问题细化，理清逻辑。
-
-为后面的师弟师妹提供一丢丢帮助。
-
-毕竟刚开始刷题时，不知道从哪开始和看不懂题解，是很打击自信心的，
-
-我就想着帮助大家尽快度过这段时期，让刷题初期的你对刷题没有那么排斥
-
-所以基地里的题解都尽量用动画模拟，加深大家对题目的理解。往下看吧
-
-另外因为一个人的精力有限，所以基地目前大部分题目还只有 JAVA 代码，欢迎大家[贡献其他版本代码]()
-
-贡献仓库注意事项
-
-- 提交的代码必须符合编码规范
-- 必须经过测试，可以在刷题网站上面 AC
-- 符合动画思想
-- 可以对代码进行简写，难懂的地方注意添加注释，因为我们的基地主要是为刚刷题的同学服务，所以就尽量让大家容易理解一些。
+![image-20230509230219980](https://chengxuchu-1301103198.cos.ap-beijing.myqcloud.com/Photo/202305092302002.png)
 
 如果想要贡献代码的大佬可以添加我的微信 **[iamchuzi](https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png)** 备注贡献仓库即可。
 
@@ -47,17 +24,8 @@
 
 如果你需要加入**刷题/秋招小队**的话，可以扫描下方二维码，点击与我联系/交流小队，该小队永不收费，也不会有人发广告，仅仅用作交流，但是希望大家进入时，可以备注自身情况，并做一个简短的自我介绍。
 
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/chefyuantwo/testphonto@master/TTTT/WechatIMG372.2aq5pdsep474.webp" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/chefyuantwo/testphonto@master/tttt/wechatimg372.2aq5pdsep474.webp" width = "150px" hight = "150px"/> </div>
 
-**如果你觉得 Github 加载不稳定的话，可以来我的个人网站进行阅读**
-
-网站地址：www.chengxuchu.com
-
-![www.chengxuchu.com](https://gitee.com/cookchef/test/raw/master/img/%E5%B0%81%E9%9D%A2%E7%9A%84%E5%89%AF%E6%9C%AC.png)
-
-如果在阅读过程中，有什么问题或者建议 或者需要其他科目的面经 都可以点击下方链接 call me。
-
-[联系厨子](https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png)
 
 ---
 
