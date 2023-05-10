@@ -24,7 +24,7 @@
 
 如果你需要加入**刷题/秋招小队**的话，可以扫描下方二维码，点击与我联系/交流小队，该小队永不收费，也不会有人发广告，仅仅用作交流，但是希望大家进入时，可以备注自身情况，并做一个简短的自我介绍。
 
-<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/chefyuantwo/testphonto@master/tttt/wechatimg372.2aq5pdsep474.webp" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://chengxuchu-1301103198.cos.ap-beijing.myqcloud.com/Photo/202305102218053.png" width = "150px" hight = "150px"/> </div>
 
 
 ---
