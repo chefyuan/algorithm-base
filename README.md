@@ -8,7 +8,7 @@
 
 ### **❤️ 致各位题友的一封信（使用仓库前必读）**
 
-推荐在线阅读，更稳定[www.chengxuchu.com](www.chengxuchu.com)
+推荐在线阅读，更稳定[www.chengxuchu.com](https://www.chengxuchu.com)
 
 ![](https://files.mdnice.com/user/8139/e26facfd-4009-4bed-9009-8f2062b81bfd.png)
 
@@ -24,7 +24,7 @@
 
 如果你需要加入**刷题/秋招小队**的话，可以扫描下方二维码，点击与我联系/交流小队，该小队永不收费，也不会有人发广告，仅仅用作交流，但是希望大家进入时，可以备注自身情况，并做一个简短的自我介绍。
 
-<div  align="center">  <img src="https://files.mdnice.com/user/8139/869f2d7d-8b28-4144-9a89-2c281cee38f7.png" width = "150px" hight = "150px"/> </div>
+<div  align="center">  <img src="https://cdn.jsdelivr.net/gh/tan45du/test@master/美化.1kdnk85ce5c0.png" width = "150px" hight = "150px"/> </div>
 
 
 ---
